@@ -96,7 +96,7 @@ client.fetch(pangaeaID: id, completionHandler: {result in
 		}
 		print("……………… \((result.first?.count ?? maxOutputLines)-maxOutputLines) more rows omitted")
 		//print(result)
-    case let .success(.dataParent(meta: meta, childrenURLs: childrenURLs)):
+	case let .success(.dataParent(meta: meta, childrenURLs: childrenURLs)):
 		print("This is a Parent record for multiple datasets with IDs: \(childrenURLs.map{$0.relativeString}). Please re-run query for cited dataset.")
 	case let .success(.dataLink(meta: meta)):
 		print("This Pangaea ID \(id) represents a link to binary data. Citation: \(String(describing: meta.citation)). Not implemented.")

@@ -9,7 +9,7 @@ It currently retrieves data only for child records. Parent records retrieve the 
 It is written in the Swift language, and uses a number of third-party libraries 
 (see VendorLicenses.swift)
 
-A Playground is provided to show parts of the capabilities. Data retrievals are caches
+A Playground is provided to show parts of the capabilities. Data retrievals are cached
 for faster subsequent access.
 
 The code and libraries is written in pure swift, and should thus be useable on all platforms

@@ -251,6 +251,8 @@
 		4273FD63223F882A003B6AE3 /* PangaeaCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PangaeaCache.swift; sourceTree = "<group>"; };
 		429ED40722422C2400BF28EB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		42B92AB32240FB2B006DB07E /* SwiftZSTD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftZSTD.xcodeproj; path = SwiftZSTD/SwiftZSTD.xcodeproj; sourceTree = "<group>"; };
+		42C691F8224237AE00C93608 /* MetaData.xsd */ = {isa = PBXFileReference; lastKnownFileType = text; path = MetaData.xsd; sourceTree = "<group>"; };
+		42C691F9224237AE00C93608 /* MetaData.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MetaData.png; sourceTree = "<group>"; };
 		42E6C5EF223550FF00F0AF2B /* PangaeaClientCLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PangaeaClientCLI; sourceTree = BUILT_PRODUCTS_DIR; };
 		42E6C5F1223550FF00F0AF2B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -313,6 +315,7 @@
 		420229BE2233B64400043999 /* PangaeaClient */ = {
 			isa = PBXGroup;
 			children = (
+				42C691ED2242378A00C93608 /* Resources */,
 				420229D62233B65900043999 /* Model */,
 				420229BF2233B64400043999 /* PangaeaClient.h */,
 				421FA477223FDD6200AB713D /* VendorLicenses.swift */,
@@ -432,6 +435,15 @@
 				42B92AB92240FB2B006DB07E /* SwiftZSTD.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		42C691ED2242378A00C93608 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				42C691F9224237AE00C93608 /* MetaData.png */,
+				42C691F8224237AE00C93608 /* MetaData.xsd */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		42E6C5F0223550FF00F0AF2B /* PangaeaClientCLI */ = {

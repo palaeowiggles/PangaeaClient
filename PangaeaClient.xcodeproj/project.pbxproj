@@ -36,11 +36,12 @@
 		42022A6E2233C10900043999 /* PMKFoundation.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 42022A522233C0AC00043999 /* PMKFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		42022A6F2233C11700043999 /* PMKFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42022A522233C0AC00043999 /* PMKFoundation.framework */; };
 		421FA478223FDD6200AB713D /* VendorLicenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FA477223FDD6200AB713D /* VendorLicenses.swift */; };
+		422DE9342242884700AD3B07 /* ZStandard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422DE9332242884700AD3B07 /* ZStandard.swift */; };
+		422DE9372242886000AD3B07 /* Zstandard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422DE92E2242883700AD3B07 /* Zstandard.framework */; };
+		422DE9382242896700AD3B07 /* Zstandard.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 422DE92E2242883700AD3B07 /* Zstandard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4273FD6E223F882A003B6AE3 /* PangaeaCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4273FD63223F882A003B6AE3 /* PangaeaCache.swift */; };
 		429ED41322422E6400BF28EB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 429ED40722422C2400BF28EB /* README.md */; };
 		429ED41522422E6A00BF28EB /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 421FA479223FDFB000AB713D /* LICENSE.md */; };
-		42B92ABE2240FB57006DB07E /* SwiftZSTD.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 42B92AB92240FB2B006DB07E /* SwiftZSTD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		42B92ABF2240FB67006DB07E /* SwiftZSTD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B92AB92240FB2B006DB07E /* SwiftZSTD.framework */; };
 		42E6C5F2223550FF00F0AF2B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E6C5F1223550FF00F0AF2B /* main.swift */; };
 		42E6C6022235512100F0AF2B /* PangaeaClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420229BC2233B64400043999 /* PangaeaClient.framework */; };
 /* End PBXBuildFile section */
@@ -165,19 +166,33 @@
 			remoteGlobalIDString = 63C7FFA61D5BEE09003BAE60;
 			remoteInfo = PMKFoundation;
 		};
-		42B92AB82240FB2B006DB07E /* PBXContainerItemProxy */ = {
+		422DE92D2242883700AD3B07 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 42B92AB32240FB2B006DB07E /* SwiftZSTD.xcodeproj */;
+			containerPortal = 422DE91D2242883600AD3B07 /* Zstandard.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = B60EDDA71E0A2C2400F2713B;
-			remoteInfo = SwiftZSTD_macOS;
+			remoteGlobalIDString = 42B5953D1D7ED3A700F076B2;
+			remoteInfo = Zstandard;
 		};
-		42B92ABC2240FB52006DB07E /* PBXContainerItemProxy */ = {
+		422DE92F2242883700AD3B07 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 42B92AB32240FB2B006DB07E /* SwiftZSTD.xcodeproj */;
+			containerPortal = 422DE91D2242883600AD3B07 /* Zstandard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42B595461D7ED3A700F076B2;
+			remoteInfo = ZstandardTests;
+		};
+		422DE9312242883700AD3B07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 422DE91D2242883600AD3B07 /* Zstandard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 422DE90E22426A5300AD3B07;
+			remoteInfo = ZstdTestCLI;
+		};
+		422DE9352242885900AD3B07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 422DE91D2242883600AD3B07 /* Zstandard.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = B60EDDA61E0A2C2400F2713B;
-			remoteInfo = SwiftZSTD_macOS;
+			remoteGlobalIDString = 42B5953C1D7ED3A700F076B2;
+			remoteInfo = Zstandard;
 		};
 		42E6C6002235510D00F0AF2B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -195,7 +210,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				42B92ABE2240FB57006DB07E /* SwiftZSTD.framework in CopyFiles */,
+				422DE9382242896700AD3B07 /* Zstandard.framework in CopyFiles */,
 				42022A6E2233C10900043999 /* PMKFoundation.framework in CopyFiles */,
 				42022A392233B77B00043999 /* XMLCoder.framework in CopyFiles */,
 				42022A3A2233B77B00043999 /* PromiseKit.framework in CopyFiles */,
@@ -247,10 +262,11 @@
 		421FA46B223FD47D00AB713D /* PangaeaClient.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PangaeaClient.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		421FA477223FDD6200AB713D /* VendorLicenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendorLicenses.swift; sourceTree = "<group>"; };
 		421FA479223FDFB000AB713D /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = ../LICENSE.md; sourceTree = "<group>"; };
+		422DE91D2242883600AD3B07 /* Zstandard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Zstandard.xcodeproj; path = ZStandard/Zstandard.xcodeproj; sourceTree = "<group>"; };
+		422DE9332242884700AD3B07 /* ZStandard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStandard.swift; sourceTree = "<group>"; };
 		42454FD122367B3D0063D451 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PangaeaClientCLI/Info.plist; sourceTree = SOURCE_ROOT; };
 		4273FD63223F882A003B6AE3 /* PangaeaCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PangaeaCache.swift; sourceTree = "<group>"; };
 		429ED40722422C2400BF28EB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		42B92AB32240FB2B006DB07E /* SwiftZSTD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftZSTD.xcodeproj; path = SwiftZSTD/SwiftZSTD.xcodeproj; sourceTree = "<group>"; };
 		42C691F8224237AE00C93608 /* MetaData.xsd */ = {isa = PBXFileReference; lastKnownFileType = text; path = MetaData.xsd; sourceTree = "<group>"; };
 		42C691F9224237AE00C93608 /* MetaData.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MetaData.png; sourceTree = "<group>"; };
 		42E6C5EF223550FF00F0AF2B /* PangaeaClientCLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PangaeaClientCLI; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -262,7 +278,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42B92ABF2240FB67006DB07E /* SwiftZSTD.framework in Frameworks */,
+				422DE9372242886000AD3B07 /* Zstandard.framework in Frameworks */,
 				42022A352233B75D00043999 /* Cache.framework in Frameworks */,
 				42022A362233B75D00043999 /* PromiseKit.framework in Frameworks */,
 				42022A372233B75D00043999 /* XMLCoder.framework in Frameworks */,
@@ -353,6 +369,7 @@
 				420229E02233B65900043999 /* PMTechnicalInfo.swift */,
 				42022A4A2233BF7C00043999 /* PangaeaError.swift */,
 				4273FD63223F882A003B6AE3 /* PangaeaCache.swift */,
+				422DE9332242884700AD3B07 /* ZStandard.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -360,7 +377,7 @@
 		420229E12233B66B00043999 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				42B92AB32240FB2B006DB07E /* SwiftZSTD.xcodeproj */,
+				422DE91D2242883600AD3B07 /* Zstandard.xcodeproj */,
 				42022A232233B74300043999 /* XMLCoder.xcodeproj */,
 				420229FA2233B73800043999 /* PromiseKit.xcodeproj */,
 				42022A4C2233C0AC00043999 /* PMKFoundation.xcodeproj */,
@@ -429,10 +446,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		42B92AB42240FB2B006DB07E /* Products */ = {
+		422DE91E2242883600AD3B07 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				42B92AB92240FB2B006DB07E /* SwiftZSTD.framework */,
+				422DE92E2242883700AD3B07 /* Zstandard.framework */,
+				422DE9302242883700AD3B07 /* ZstandardTests.xctest */,
+				422DE9322242883700AD3B07 /* ZstdTestCLI */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -482,7 +501,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				42B92ABD2240FB52006DB07E /* PBXTargetDependency */,
+				422DE9362242885900AD3B07 /* PBXTargetDependency */,
 				42022A562233C0C200043999 /* PBXTargetDependency */,
 				42022A2F2233B75300043999 /* PBXTargetDependency */,
 				42022A312233B75300043999 /* PBXTargetDependency */,
@@ -576,12 +595,12 @@
 					ProjectRef = 420229FA2233B73800043999 /* PromiseKit.xcodeproj */;
 				},
 				{
-					ProductGroup = 42B92AB42240FB2B006DB07E /* Products */;
-					ProjectRef = 42B92AB32240FB2B006DB07E /* SwiftZSTD.xcodeproj */;
-				},
-				{
 					ProductGroup = 42022A242233B74300043999 /* Products */;
 					ProjectRef = 42022A232233B74300043999 /* XMLCoder.xcodeproj */;
+				},
+				{
+					ProductGroup = 422DE91E2242883600AD3B07 /* Products */;
+					ProjectRef = 422DE91D2242883600AD3B07 /* Zstandard.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -678,11 +697,25 @@
 			remoteRef = 42022A532233C0AC00043999 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		42B92AB92240FB2B006DB07E /* SwiftZSTD.framework */ = {
+		422DE92E2242883700AD3B07 /* Zstandard.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = SwiftZSTD.framework;
-			remoteRef = 42B92AB82240FB2B006DB07E /* PBXContainerItemProxy */;
+			path = Zstandard.framework;
+			remoteRef = 422DE92D2242883700AD3B07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		422DE9302242883700AD3B07 /* ZstandardTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ZstandardTests.xctest;
+			remoteRef = 422DE92F2242883700AD3B07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		422DE9322242883700AD3B07 /* ZstdTestCLI */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = ZstdTestCLI;
+			remoteRef = 422DE9312242883700AD3B07 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -716,6 +749,7 @@
 				42022A482233BE8400043999 /* PangaeaBaseURL.swift in Sources */,
 				42022A472233BE8400043999 /* PMExtent.swift in Sources */,
 				42022A422233BE8400043999 /* PMProject.swift in Sources */,
+				422DE9342242884700AD3B07 /* ZStandard.swift in Sources */,
 				42022A462233BE8400043999 /* PMMatrixColumn.swift in Sources */,
 				4273FD6E223F882A003B6AE3 /* PangaeaCache.swift in Sources */,
 				42022A432233BE8400043999 /* PMCitation.swift in Sources */,
@@ -777,10 +811,10 @@
 			name = PMKFoundation;
 			targetProxy = 42022A552233C0C200043999 /* PBXContainerItemProxy */;
 		};
-		42B92ABD2240FB52006DB07E /* PBXTargetDependency */ = {
+		422DE9362242885900AD3B07 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SwiftZSTD_macOS;
-			targetProxy = 42B92ABC2240FB52006DB07E /* PBXContainerItemProxy */;
+			name = Zstandard;
+			targetProxy = 422DE9352242885900AD3B07 /* PBXContainerItemProxy */;
 		};
 		42E6C6012235510D00F0AF2B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

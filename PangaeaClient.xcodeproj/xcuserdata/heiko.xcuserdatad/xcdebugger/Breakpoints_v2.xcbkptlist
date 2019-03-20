@@ -138,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PangaeaClient/PangaeaClient.swift"
-            timestampString = "574691614.718617"
+            timestampString = "574785996.820099"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "157"
@@ -154,7 +154,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PangaeaClient/PangaeaClient.swift"
-            timestampString = "574691614.718715"
+            timestampString = "574785996.82052"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "104"
@@ -170,7 +170,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PangaeaClient/PangaeaClient.swift"
-            timestampString = "574691614.718786"
+            timestampString = "574785996.8207459"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "91"
@@ -214,11 +214,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PangaeaClient/PangaeaClient.swift"
-            timestampString = "574691614.718837"
+            timestampString = "574785996.820994"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "109"
@@ -227,14 +227,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "No"
+                  shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "getter of fetchMetaData #1 : PromiseKit.Promise&lt;Swift.String&gt; in closure #1 (PromiseKit.Resolver&lt;PangaeaClient.PangaeaMeta&gt;) -&gt; () in PangaeaClient.PangaeaClient.(fetch in _E603A9C3D5CAFCE8191ED063A57F1960)(pangaeaID: Swift.String) -&gt; PromiseKit.Promise&lt;PangaeaClient.PangaeaMeta&gt;"
                   moduleName = "PangaeaClient"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Developer_Disk/nonApple/PangaeaClient/PangaeaClient/PangaeaClient.swift"
-                  timestampString = "574687413.8341841"
+                  timestampString = "574785997.328966"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "109"
@@ -242,14 +242,14 @@
                   offsetFromSymbolStart = "677">
                </Location>
                <Location
-                  shouldBeEnabled = "No"
+                  shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (PromiseKit.Resolver&lt;Swift.String&gt;) -&gt; () in getter of fetchMetaData #1 : PromiseKit.Promise&lt;Swift.String&gt; in closure #1 (PromiseKit.Resolver&lt;PangaeaClient.PangaeaMeta&gt;) -&gt; () in PangaeaClient.PangaeaClient.(fetch in _E603A9C3D5CAFCE8191ED063A57F1960)(pangaeaID: Swift.String) -&gt; PromiseKit.Promise&lt;PangaeaClient.PangaeaMeta&gt;"
                   moduleName = "PangaeaClient"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Developer_Disk/nonApple/PangaeaClient/PangaeaClient/PangaeaClient.swift"
-                  timestampString = "574687413.836535"
+                  timestampString = "574785997.331741"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "109"
@@ -266,11 +266,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PangaeaClient/Model/PangaeaCache.swift"
-            timestampString = "574691614.718897"
+            timestampString = "574785996.821197"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "set(id:data:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -282,11 +282,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PangaeaClient/Model/PangaeaCache.swift"
-            timestampString = "574691614.718972"
+            timestampString = "574785996.8212399"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "get(id:)"
             landmarkType = "7">
          </BreakpointContent>

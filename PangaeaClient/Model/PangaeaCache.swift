@@ -10,7 +10,6 @@ import Foundation
 import Cache
 import PromiseKit
 import PMKFoundation
-import SwiftZSTD
 
 public enum CacheKey : String {
     case metaCacheKey
@@ -33,7 +32,6 @@ struct PangaeaMetaCacheController {
     let cacheKey = CacheKey.metaCacheKey.rawValue
     let memoryConfig = MemoryConfig()
     var storage : Storage!
-	var processor = ZSTDProcessor(useContext: true)
 
     init?(){
         if let storage = try? Storage(diskConfig: diskConfig, memoryConfig: memoryConfig){
@@ -46,7 +44,8 @@ struct PangaeaMetaCacheController {
     
     func get(id: String) throws -> String {
 		let compressedData = try storage.entry(ofType: Data.self, forKey: id).object
-		let uncompressedString = try processor.decompressFrame(compressedData)
+		let uncompressedString = try decompress(compressedData: compressedData)
+
 		guard let result = String(data: uncompressedString, encoding: .utf8) else {
 			throw PangaeaError.decoding(message: "error in ZSTD decompression of cache for \(id)")
 		}
@@ -55,7 +54,7 @@ struct PangaeaMetaCacheController {
     
     func set(id: String, data: String) throws {
 		if let stringData = data.data(using: .utf8) {
-			 let compressed =  try processor.compressBuffer(stringData, compressionLevel: 17)
+			let compressed = try compress(data: stringData, compressionLevel: 17)
 			return try storage.setObject(compressed, forKey: id)
 		} else {
             return try storage.setObject(data, forKey: id)
@@ -76,7 +75,6 @@ struct PangaeaDataCacheController {
     let cacheKey = CacheKey.dataCacheKey.rawValue
     let memoryConfig = MemoryConfig()
     var storage : Storage!
-	var processor = ZSTDProcessor(useContext: true)
 
     init?(){
         if let storage = try? Storage(diskConfig: diskConfig, memoryConfig: memoryConfig){
@@ -89,7 +87,7 @@ struct PangaeaDataCacheController {
     
 	func get(id: String) throws -> String {
 		let compressedData = try storage.entry(ofType: Data.self, forKey: id).object
-		let uncompressedString = try! processor.decompressFrame(compressedData)
+		let uncompressedString = try decompress(compressedData: compressedData)
 		guard let result = String(data: uncompressedString, encoding: .utf8) else {
 			throw PangaeaError.decoding(message: "error in ZSTD decompression of cache for \(id)")
 		}
@@ -98,7 +96,8 @@ struct PangaeaDataCacheController {
     
 	func set(id: String, data: String) throws {
 		if let stringData = data.data(using: .utf8) {
-			let compressed =  try processor.compressBuffer(stringData, compressionLevel: 17)
+			let compressed = try compress(data: stringData, compressionLevel: 17)
+			//let compressed =  try processor.compressBuffer(stringData, compressionLevel: 17)
 			return try storage.setObject(compressed, forKey: id)
 		} else {
 			return try storage.setObject(data, forKey: id)

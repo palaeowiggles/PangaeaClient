@@ -112,7 +112,7 @@ client.fetch(pangaeaID: id, completionHandler: {result in
 ```
 
 Output:
-
+```
 ⇾ Results for id: PANGAEA.547797
 
 -⇾ META citation
@@ -146,3 +146,4 @@ Depth [m]	Depth comp [mcd]	Depth cr [rmcd]	Sample label	Age model [ka] (consiste
 62.45	70.51	70.51	199-1218A-7H-5,75-77	20772.0	20273.0	20274.0	0.81	1.45	nan	nan	nan	nan		Lear et al., 2004
 62.65	71.04	71.04	199-1218B-8H-2,25-27	20917.0	20362.0	20358.0	nan	1.62	nan	nan	nan	nan		Lear et al., 2004
 ……………… 3433 more rows omitted
+```

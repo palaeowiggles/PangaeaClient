@@ -246,10 +246,10 @@
 		420A29F922405B8E00CBE568 /* Zstandard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Zstandard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		421FA46B223FD47D00AB713D /* PangaeaClient.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PangaeaClient.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		421FA477223FDD6200AB713D /* VendorLicenses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendorLicenses.swift; sourceTree = "<group>"; };
-		421FA479223FDFB000AB713D /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		421FA479223FDFB000AB713D /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = ../LICENSE.md; sourceTree = "<group>"; };
 		42454FD122367B3D0063D451 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PangaeaClientCLI/Info.plist; sourceTree = SOURCE_ROOT; };
 		4273FD63223F882A003B6AE3 /* PangaeaCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PangaeaCache.swift; sourceTree = "<group>"; };
-		429ED40722422C2400BF28EB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		429ED40722422C2400BF28EB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		42B92AB32240FB2B006DB07E /* SwiftZSTD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftZSTD.xcodeproj; path = SwiftZSTD/SwiftZSTD.xcodeproj; sourceTree = "<group>"; };
 		42E6C5EF223550FF00F0AF2B /* PangaeaClientCLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PangaeaClientCLI; sourceTree = BUILT_PRODUCTS_DIR; };
 		42E6C5F1223550FF00F0AF2B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };

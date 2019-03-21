@@ -161,6 +161,7 @@ public struct PangaeaClient {
 						let children = meta.technicalInfo?
 							.entries["collectionChilds"]?
 							.replacingOccurrences(of: "D", with: "PANGAEA.")
+							.replacingOccurrences(of: "U", with: "PANGAEA.")
 							.split(separator: ",")
 							.compactMap({ URL(string: String($0), relativeTo: self.configuration.metaBaseURL) })
 

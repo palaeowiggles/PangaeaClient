@@ -64,14 +64,14 @@
       <CommandLineArguments>
          <CommandLineArgument
             argument = "-o Testfile"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "-j"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "PANGAEA.547797"
+            argument = "PANGAEA.883104"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

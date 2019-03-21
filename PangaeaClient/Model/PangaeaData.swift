@@ -20,6 +20,9 @@ public enum PangaeaMeta {
 	case error(pangaeaError: PangaeaError)
 }
 
+struct Dataset : Codable {
+	
+}
 extension PangaeaMeta : Codable {
 	enum CodingKeys: String, CodingKey {
 		case dataset, dataParent, dataLink, loginRequired, error

@@ -8,7 +8,7 @@
 
 import Foundation
 import PromiseKit
-import PMKFoundation
+//import PMKFoundation
 import Cache
 import XMLCoder
 
@@ -20,9 +20,13 @@ public struct PangaeaClient {
         dateFormatter.dateFormat = "yyyy-MM-d'T'H:mm:ss'Z"
         return dateFormatter
     }()
-    
+	
+	static public let vendorLicenses = vendorlicenses
+	static public let license = pangaeaClientLicense
+	
     private let configuration: PangaeaConfiguration
     let decoder = XMLDecoder()
+	
     var pangaeaMetaCacheController = PangaeaMetaCacheController.shared
     var pangaeaDataCacheController = PangaeaDataCacheController.shared
 

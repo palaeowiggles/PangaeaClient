@@ -9,7 +9,7 @@
 import Foundation
 import Cache
 import PromiseKit
-import PMKFoundation
+//import PMKFoundation
 
 public enum CacheKey : String {
     case metaCacheKey

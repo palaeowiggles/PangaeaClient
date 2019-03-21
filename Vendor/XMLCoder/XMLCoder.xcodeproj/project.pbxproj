@@ -21,6 +21,43 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		42D756AB22438F4A00A37BEE /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9457A421CBB497005ACFDE /* Box.swift */; };
+		42D756AC22438F4A00A37BEE /* NullBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF94579E21CBB497005ACFDE /* NullBox.swift */; };
+		42D756AD22438F4A00A37BEE /* BoolBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9457A321CBB497005ACFDE /* BoolBox.swift */; };
+		42D756AE22438F4A00A37BEE /* IntBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9457D421CBB59D005ACFDE /* IntBox.swift */; };
+		42D756AF22438F4A00A37BEE /* UIntBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9457D221CBB59D005ACFDE /* UIntBox.swift */; };
+		42D756B022438F4A00A37BEE /* DecimalBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9457A121CBB497005ACFDE /* DecimalBox.swift */; };
+		42D756B122438F4A00A37BEE /* FloatBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9457D321CBB59D005ACFDE /* FloatBox.swift */; };
+		42D756B222438F4A00A37BEE /* StringBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9457A521CBB498005ACFDE /* StringBox.swift */; };
+		42D756B322438F4B00A37BEE /* DataBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9457D821CBB5D2005ACFDE /* DataBox.swift */; };
+		42D756B422438F4B00A37BEE /* DateBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9457D921CBB5D2005ACFDE /* DateBox.swift */; };
+		42D756B522438F4B00A37BEE /* URLBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63EF0521CD7A74001D38C5 /* URLBox.swift */; };
+		42D756B622438F4B00A37BEE /* UnkeyedBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9457A021CBB497005ACFDE /* UnkeyedBox.swift */; };
+		42D756B722438F4B00A37BEE /* KeyedBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF94579F21CBB497005ACFDE /* KeyedBox.swift */; };
+		42D756B822438F4B00A37BEE /* SharedBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF63EF1721CEB6BD001D38C5 /* SharedBox.swift */; };
+		42D756B922438F4B00A37BEE /* ISO8601DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9457B421CBB4DB005ACFDE /* ISO8601DateFormatter.swift */; };
+		42D756BA22438F4B00A37BEE /* Metatypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E0C85421D91EBF0042A261 /* Metatypes.swift */; };
+		42D756BB22438F4B00A37BEE /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9457B221CBB4DB005ACFDE /* String+Extensions.swift */; };
+		42D756BC22438F4B00A37BEE /* XMLCoderElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9457B621CBB4DB005ACFDE /* XMLCoderElement.swift */; };
+		42D756BD22438F4B00A37BEE /* XMLHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9457B121CBB4DB005ACFDE /* XMLHeader.swift */; };
+		42D756BE22438F4B00A37BEE /* XMLStackParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9457B321CBB4DB005ACFDE /* XMLStackParser.swift */; };
+		42D756BF22438F4B00A37BEE /* XMLKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9457B521CBB4DB005ACFDE /* XMLKey.swift */; };
+		42D756C022438F4B00A37BEE /* DecodingErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* DecodingErrorExtension.swift */; };
+		42D756C122438F4B00A37BEE /* XMLDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* XMLDecoder.swift */; };
+		42D756C222438F4B00A37BEE /* XMLDecoderImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE1D662202CBF800259831 /* XMLDecoderImplementation.swift */; };
+		42D756C322438F4B00A37BEE /* XMLDecoderImplementation+SingleValueDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE1D672202CBF800259831 /* XMLDecoderImplementation+SingleValueDecodingContainer.swift */; };
+		42D756C422438F4B00A37BEE /* XMLDecodingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* XMLDecodingStorage.swift */; };
+		42D756C522438F4B00A37BEE /* XMLKeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* XMLKeyedDecodingContainer.swift */; };
+		42D756C622438F4B00A37BEE /* XMLUnkeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* XMLUnkeyedDecodingContainer.swift */; };
+		42D756C722438F4B00A37BEE /* EncodingErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* EncodingErrorExtension.swift */; };
+		42D756C822438F4B00A37BEE /* XMLEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* XMLEncoder.swift */; };
+		42D756C922438F4B00A37BEE /* XMLEncoderImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE1D622202CB1400259831 /* XMLEncoderImplementation.swift */; };
+		42D756CA22438F4B00A37BEE /* XMLEncoderImplementation+SingleValueEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE1D642202CB7200259831 /* XMLEncoderImplementation+SingleValueEncodingContainer.swift */; };
+		42D756CB22438F4B00A37BEE /* XMLEncodingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* XMLEncodingStorage.swift */; };
+		42D756CC22438F4B00A37BEE /* XMLKeyedEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* XMLKeyedEncodingContainer.swift */; };
+		42D756CD22438F4B00A37BEE /* XMLReferencingEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* XMLReferencingEncoder.swift */; };
+		42D756CE22438F4B00A37BEE /* XMLUnkeyedEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* XMLUnkeyedEncodingContainer.swift */; };
+		42D756CF22438F4B00A37BEE /* DynamicNodeEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35157CD21F986DD009CA0CC /* DynamicNodeEncoding.swift */; };
 		A61DCCD821DF9CA200C0A19D /* ClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61DCCD621DF8DB300C0A19D /* ClassTests.swift */; };
 		A61FE03921E4D60B0015D993 /* UnkeyedIntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61FE03721E4D4F10015D993 /* UnkeyedIntTests.swift */; };
 		A61FE03C21E4EAB10015D993 /* KeyedIntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61FE03A21E4EA8B0015D993 /* KeyedIntTests.swift */; };
@@ -132,6 +169,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42D756A722438F2600A37BEE /* libXMLCoder-static.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libXMLCoder-static.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A61DCCD621DF8DB300C0A19D /* ClassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTests.swift; sourceTree = "<group>"; };
 		A61FE03721E4D4F10015D993 /* UnkeyedIntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnkeyedIntTests.swift; sourceTree = "<group>"; };
 		A61FE03A21E4EA8B0015D993 /* KeyedIntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyedIntTests.swift; sourceTree = "<group>"; };
@@ -230,6 +268,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		42D756A522438F2600A37BEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_62 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
@@ -397,6 +442,7 @@
 			children = (
 				"XMLCoder::XMLCoderTests::Product" /* XMLCoderTests.xctest */,
 				"XMLCoder::XMLCoder::Product" /* XMLCoder.framework */,
+				42D756A722438F2600A37BEE /* libXMLCoder-static.a */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -451,7 +497,34 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		42D756A322438F2600A37BEE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		42D756A622438F2600A37BEE /* XMLCoder-static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42D756AA22438F2600A37BEE /* Build configuration list for PBXNativeTarget "XMLCoder-static" */;
+			buildPhases = (
+				42D756A322438F2600A37BEE /* Headers */,
+				42D756A422438F2600A37BEE /* Sources */,
+				42D756A522438F2600A37BEE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "XMLCoder-static";
+			productName = "XMLCoder-static";
+			productReference = 42D756A722438F2600A37BEE /* libXMLCoder-static.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		"XMLCoder::SwiftPMPackageDescription" /* XMLCoderPackageDescription */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_64 /* Build configuration list for PBXNativeTarget "XMLCoderPackageDescription" */;
@@ -508,6 +581,11 @@
 			attributes = {
 				LastUpgradeCheck = 1020;
 				TargetAttributes = {
+					42D756A622438F2600A37BEE = {
+						CreatedOnToolsVersion = 10.2;
+						DevelopmentTeam = QW4597S5KD;
+						ProvisioningStyle = Automatic;
+					};
 					"XMLCoder::XMLCoder" = {
 						DevelopmentTeam = QW4597S5KD;
 						LastSwiftMigration = 1010;
@@ -535,6 +613,7 @@
 				"XMLCoder::SwiftPMPackageDescription" /* XMLCoderPackageDescription */,
 				"XMLCoder::XMLCoderPackageTests::ProductTarget" /* XMLCoderPackageTests */,
 				"XMLCoder::XMLCoderTests" /* XMLCoderTests */,
+				42D756A622438F2600A37BEE /* XMLCoder-static */,
 			);
 		};
 /* End PBXProject section */
@@ -560,6 +639,50 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		42D756A422438F2600A37BEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42D756AB22438F4A00A37BEE /* Box.swift in Sources */,
+				42D756AC22438F4A00A37BEE /* NullBox.swift in Sources */,
+				42D756AD22438F4A00A37BEE /* BoolBox.swift in Sources */,
+				42D756AE22438F4A00A37BEE /* IntBox.swift in Sources */,
+				42D756AF22438F4A00A37BEE /* UIntBox.swift in Sources */,
+				42D756B022438F4A00A37BEE /* DecimalBox.swift in Sources */,
+				42D756B122438F4A00A37BEE /* FloatBox.swift in Sources */,
+				42D756B222438F4A00A37BEE /* StringBox.swift in Sources */,
+				42D756B322438F4B00A37BEE /* DataBox.swift in Sources */,
+				42D756B422438F4B00A37BEE /* DateBox.swift in Sources */,
+				42D756B522438F4B00A37BEE /* URLBox.swift in Sources */,
+				42D756B622438F4B00A37BEE /* UnkeyedBox.swift in Sources */,
+				42D756B722438F4B00A37BEE /* KeyedBox.swift in Sources */,
+				42D756B822438F4B00A37BEE /* SharedBox.swift in Sources */,
+				42D756B922438F4B00A37BEE /* ISO8601DateFormatter.swift in Sources */,
+				42D756BA22438F4B00A37BEE /* Metatypes.swift in Sources */,
+				42D756BB22438F4B00A37BEE /* String+Extensions.swift in Sources */,
+				42D756BC22438F4B00A37BEE /* XMLCoderElement.swift in Sources */,
+				42D756BD22438F4B00A37BEE /* XMLHeader.swift in Sources */,
+				42D756BE22438F4B00A37BEE /* XMLStackParser.swift in Sources */,
+				42D756BF22438F4B00A37BEE /* XMLKey.swift in Sources */,
+				42D756C022438F4B00A37BEE /* DecodingErrorExtension.swift in Sources */,
+				42D756C122438F4B00A37BEE /* XMLDecoder.swift in Sources */,
+				42D756C222438F4B00A37BEE /* XMLDecoderImplementation.swift in Sources */,
+				42D756C322438F4B00A37BEE /* XMLDecoderImplementation+SingleValueDecodingContainer.swift in Sources */,
+				42D756C422438F4B00A37BEE /* XMLDecodingStorage.swift in Sources */,
+				42D756C522438F4B00A37BEE /* XMLKeyedDecodingContainer.swift in Sources */,
+				42D756C622438F4B00A37BEE /* XMLUnkeyedDecodingContainer.swift in Sources */,
+				42D756C722438F4B00A37BEE /* EncodingErrorExtension.swift in Sources */,
+				42D756C822438F4B00A37BEE /* XMLEncoder.swift in Sources */,
+				42D756C922438F4B00A37BEE /* XMLEncoderImplementation.swift in Sources */,
+				42D756CA22438F4B00A37BEE /* XMLEncoderImplementation+SingleValueEncodingContainer.swift in Sources */,
+				42D756CB22438F4B00A37BEE /* XMLEncodingStorage.swift in Sources */,
+				42D756CC22438F4B00A37BEE /* XMLKeyedEncodingContainer.swift in Sources */,
+				42D756CD22438F4B00A37BEE /* XMLReferencingEncoder.swift in Sources */,
+				42D756CE22438F4B00A37BEE /* XMLUnkeyedEncodingContainer.swift in Sources */,
+				42D756CF22438F4B00A37BEE /* DynamicNodeEncoding.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_47 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
@@ -687,6 +810,71 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		42D756A822438F2600A37BEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QW4597S5KD;
+				ENABLE_HARDENED_RUNTIME = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		42D756A922438F2600A37BEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = QW4597S5KD;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		OBJ_3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -923,6 +1111,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		42D756AA22438F2600A37BEE /* Build configuration list for PBXNativeTarget "XMLCoder-static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42D756A822438F2600A37BEE /* Debug */,
+				42D756A922438F2600A37BEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		OBJ_2 /* Build configuration list for PBXProject "XMLCoder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

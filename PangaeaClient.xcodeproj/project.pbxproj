@@ -15,12 +15,6 @@
 		420229ED2233B6FD00043999 /* ExampleLoginRequired.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420229E72233B6FD00043999 /* ExampleLoginRequired.swift */; };
 		420229EE2233B6FD00043999 /* ExampleParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420229E82233B6FD00043999 /* ExampleParent.swift */; };
 		420229F02233B71500043999 /* PangaeaClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420229EF2233B71500043999 /* PangaeaClient.swift */; };
-		42022A352233B75D00043999 /* Cache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420229F72233B72E00043999 /* Cache.framework */; };
-		42022A362233B75D00043999 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42022A182233B73C00043999 /* PromiseKit.framework */; };
-		42022A372233B75D00043999 /* XMLCoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42022A2B2233B74300043999 /* XMLCoder.framework */; };
-		42022A392233B77B00043999 /* XMLCoder.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 42022A2B2233B74300043999 /* XMLCoder.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		42022A3A2233B77B00043999 /* PromiseKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 42022A182233B73C00043999 /* PromiseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		42022A3B2233B77B00043999 /* Cache.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 420229F72233B72E00043999 /* Cache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		42022A3D2233BCC500043999 /* PangaeaDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42022A3C2233BCC500043999 /* PangaeaDefaults.swift */; };
 		42022A402233BE8400043999 /* PMEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420229D72233B65900043999 /* PMEvent.swift */; };
 		42022A412233BE8400043999 /* PMLicense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420229D82233B65900043999 /* PMLicense.swift */; };
@@ -33,17 +27,50 @@
 		42022A482233BE8400043999 /* PangaeaBaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420229DF2233B65900043999 /* PangaeaBaseURL.swift */; };
 		42022A492233BE8400043999 /* PMTechnicalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420229E02233B65900043999 /* PMTechnicalInfo.swift */; };
 		42022A4B2233BF7C00043999 /* PangaeaError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42022A4A2233BF7C00043999 /* PangaeaError.swift */; };
-		42022A6E2233C10900043999 /* PMKFoundation.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 42022A522233C0AC00043999 /* PMKFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		42022A6F2233C11700043999 /* PMKFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42022A522233C0AC00043999 /* PMKFoundation.framework */; };
 		421FA478223FDD6200AB713D /* VendorLicenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FA477223FDD6200AB713D /* VendorLicenses.swift */; };
 		422DE9342242884700AD3B07 /* ZStandard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422DE9332242884700AD3B07 /* ZStandard.swift */; };
-		422DE9372242886000AD3B07 /* Zstandard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422DE92E2242883700AD3B07 /* Zstandard.framework */; };
-		422DE9382242896700AD3B07 /* Zstandard.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 422DE92E2242883700AD3B07 /* Zstandard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4273FD6E223F882A003B6AE3 /* PangaeaCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4273FD63223F882A003B6AE3 /* PangaeaCache.swift */; };
 		429ED41322422E6400BF28EB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 429ED40722422C2400BF28EB /* README.md */; };
 		429ED41522422E6A00BF28EB /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 421FA479223FDFB000AB713D /* LICENSE.md */; };
+		42D7561F2243856C00A37BEE /* CommandLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D7560E2243856500A37BEE /* CommandLine.swift */; };
+		42D756202243856C00A37BEE /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D7560F2243856500A37BEE /* Option.swift */; };
+		42D756212243856C00A37BEE /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D756102243856500A37BEE /* StringExtensions.swift */; };
+		42D756232243863300A37BEE /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D756222243863300A37BEE /* Utilities.swift */; };
+		42D75634224386B000A37BEE /* libRainbow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D7562F2243867600A37BEE /* libRainbow.a */; };
+		42D75637224387C700A37BEE /* CommandLineProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D75636224387C700A37BEE /* CommandLineProcessing.swift */; };
+		42D75639224388BF00A37BEE /* licenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D75638224388BF00A37BEE /* licenses.swift */; };
+		42D756FF224393C700A37BEE /* NSURLSession+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D756FE224393C700A37BEE /* NSURLSession+Promise.swift */; };
+		42D757362243A05200A37BEE /* NSURLSession+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D756FE224393C700A37BEE /* NSURLSession+Promise.swift */; };
+		42D757372243A05200A37BEE /* PangaeaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420229DC2233B65900043999 /* PangaeaData.swift */; };
+		42D757382243A05200A37BEE /* PMEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420229D72233B65900043999 /* PMEvent.swift */; };
+		42D757392243A05200A37BEE /* PMLicense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420229D82233B65900043999 /* PMLicense.swift */; };
+		42D7573A2243A05200A37BEE /* PMProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420229D92233B65900043999 /* PMProject.swift */; };
+		42D7573B2243A05200A37BEE /* PMCitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420229DA2233B65900043999 /* PMCitation.swift */; };
+		42D7573C2243A05200A37BEE /* PMKeywords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420229DB2233B65900043999 /* PMKeywords.swift */; };
+		42D7573D2243A05200A37BEE /* PMMatrixColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420229DD2233B65900043999 /* PMMatrixColumn.swift */; };
+		42D7573E2243A05200A37BEE /* PMExtent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420229DE2233B65900043999 /* PMExtent.swift */; };
+		42D7573F2243A05200A37BEE /* PangaeaBaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420229DF2233B65900043999 /* PangaeaBaseURL.swift */; };
+		42D757402243A05200A37BEE /* PMTechnicalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420229E02233B65900043999 /* PMTechnicalInfo.swift */; };
+		42D757412243A05200A37BEE /* PangaeaError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42022A4A2233BF7C00043999 /* PangaeaError.swift */; };
+		42D757422243A05200A37BEE /* PangaeaCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4273FD63223F882A003B6AE3 /* PangaeaCache.swift */; };
+		42D757432243A05200A37BEE /* ZStandard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422DE9332242884700AD3B07 /* ZStandard.swift */; };
+		42D757442243A05200A37BEE /* VendorLicenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FA477223FDD6200AB713D /* VendorLicenses.swift */; };
+		42D757452243A05200A37BEE /* PangaeaClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420229EF2233B71500043999 /* PangaeaClient.swift */; };
+		42D757462243A05200A37BEE /* PangaeaDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42022A3C2233BCC500043999 /* PangaeaDefaults.swift */; };
+		42D7574F2243A07E00A37BEE /* libCache.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D7572C224398A800A37BEE /* libCache.a */; };
+		42D757502243A07E00A37BEE /* libPromiseKit-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D756F22243917500A37BEE /* libPromiseKit-static.a */; };
+		42D757512243A07E00A37BEE /* libXMLCoder-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D756D422438F6E00A37BEE /* libXMLCoder-static.a */; };
+		42D757522243A07E00A37BEE /* libZstandard-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D7567C22438E6300A37BEE /* libZstandard-static.a */; };
+		42D757552243A09300A37BEE /* libPangaeaClient-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D757322243A02A00A37BEE /* libPangaeaClient-static.a */; };
+		42D757692243CA7B00A37BEE /* Cache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420229F72233B72E00043999 /* Cache.framework */; };
+		42D7576B2243CA7B00A37BEE /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42022A182233B73C00043999 /* PromiseKit.framework */; };
+		42D7576C2243CA7B00A37BEE /* XMLCoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42022A2B2233B74300043999 /* XMLCoder.framework */; };
+		42D7576D2243CA7B00A37BEE /* Zstandard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422DE92E2242883700AD3B07 /* Zstandard.framework */; };
+		42D7576E2243CA8F00A37BEE /* Zstandard.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 422DE92E2242883700AD3B07 /* Zstandard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42D7576F2243CA9000A37BEE /* XMLCoder.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 42022A2B2233B74300043999 /* XMLCoder.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42D757702243CA9000A37BEE /* PromiseKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 42022A182233B73C00043999 /* PromiseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42D757722243CA9000A37BEE /* Cache.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 420229F72233B72E00043999 /* Cache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		42E6C5F2223550FF00F0AF2B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E6C5F1223550FF00F0AF2B /* main.swift */; };
-		42E6C6022235512100F0AF2B /* PangaeaClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420229BC2233B64400043999 /* PangaeaClient.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,27 +151,6 @@
 			remoteGlobalIDString = "XMLCoder::XMLCoderTests::Product";
 			remoteInfo = XMLCoderTests;
 		};
-		42022A2E2233B75300043999 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42022A232233B74300043999 /* XMLCoder.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = "XMLCoder::XMLCoder";
-			remoteInfo = XMLCoder;
-		};
-		42022A302233B75300043999 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 420229FA2233B73800043999 /* PromiseKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 63B0AC561D595E1B00FA21D9;
-			remoteInfo = PromiseKit;
-		};
-		42022A322233B75300043999 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 420229F12233B72E00043999 /* Cache.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D5291D5F1C283B5300B702C9;
-			remoteInfo = "Cache-Mac";
-		};
 		42022A512233C0AC00043999 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 42022A4C2233C0AC00043999 /* PMKFoundation.xcodeproj */;
@@ -158,13 +164,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 63C7FFF21D5C020D003BAE60;
 			remoteInfo = PMKNSTests;
-		};
-		42022A552233C0C200043999 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 42022A4C2233C0AC00043999 /* PMKFoundation.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 63C7FFA61D5BEE09003BAE60;
-			remoteInfo = PMKFoundation;
 		};
 		422DE92D2242883700AD3B07 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -180,26 +179,124 @@
 			remoteGlobalIDString = 42B595461D7ED3A700F076B2;
 			remoteInfo = ZstandardTests;
 		};
-		422DE9312242883700AD3B07 /* PBXContainerItemProxy */ = {
+		42D7562A2243867600A37BEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42D756242243867500A37BEE /* Rainbow.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4BC821761C29254C00F68E70;
+			remoteInfo = "Rainbow(OSX)";
+		};
+		42D7562C2243867600A37BEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42D756242243867500A37BEE /* Rainbow.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4BC821801C29254C00F68E70;
+			remoteInfo = RainbowTests;
+		};
+		42D7562E2243867600A37BEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42D756242243867500A37BEE /* Rainbow.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 420ECF3C20B7F0E8000F70AC;
+			remoteInfo = "Rainbow-static";
+		};
+		42D756322243869F00A37BEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42D756242243867500A37BEE /* Rainbow.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 420ECF3B20B7F0E8000F70AC;
+			remoteInfo = "Rainbow-static";
+		};
+		42D7567B22438E6300A37BEE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 422DE91D2242883600AD3B07 /* Zstandard.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 422DE90E22426A5300AD3B07;
-			remoteInfo = ZstdTestCLI;
+			remoteGlobalIDString = 42D7563E22438DF600A37BEE;
+			remoteInfo = "Zstandard-static";
 		};
-		422DE9352242885900AD3B07 /* PBXContainerItemProxy */ = {
+		42D756D322438F6E00A37BEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42022A232233B74300043999 /* XMLCoder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42D756A722438F2600A37BEE;
+			remoteInfo = "XMLCoder-static";
+		};
+		42D756F12243917500A37BEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 420229FA2233B73800043999 /* PromiseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42D756DA2243913C00A37BEE;
+			remoteInfo = "PromiseKit-static";
+		};
+		42D7572B224398A800A37BEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 420229F12233B72E00043999 /* Cache.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42D7570C2243984800A37BEE;
+			remoteInfo = "Cache-static";
+		};
+		42D757472243A07500A37BEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 422DE91D2242883600AD3B07 /* Zstandard.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 42D7568122438EBA00A37BEE;
+			remoteInfo = "Zstandard-static";
+		};
+		42D757492243A07500A37BEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42022A232233B74300043999 /* XMLCoder.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 42D756A622438F2600A37BEE;
+			remoteInfo = "XMLCoder-static";
+		};
+		42D7574B2243A07500A37BEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 420229FA2233B73800043999 /* PromiseKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 42D756D92243913C00A37BEE;
+			remoteInfo = "PromiseKit-static";
+		};
+		42D7574D2243A07500A37BEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 420229F12233B72E00043999 /* Cache.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 42D7570B2243984800A37BEE;
+			remoteInfo = "Cache-static";
+		};
+		42D7575F2243CA6A00A37BEE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 422DE91D2242883600AD3B07 /* Zstandard.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 42B5953C1D7ED3A700F076B2;
 			remoteInfo = Zstandard;
 		};
-		42E6C6002235510D00F0AF2B /* PBXContainerItemProxy */ = {
+		42D757612243CA6A00A37BEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42022A232233B74300043999 /* XMLCoder.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = "XMLCoder::XMLCoder";
+			remoteInfo = XMLCoder;
+		};
+		42D757632243CA6A00A37BEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 420229FA2233B73800043999 /* PromiseKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 63B0AC561D595E1B00FA21D9;
+			remoteInfo = PromiseKit;
+		};
+		42D757672243CA6A00A37BEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 420229F12233B72E00043999 /* Cache.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D5291D5F1C283B5300B702C9;
+			remoteInfo = "Cache-Mac";
+		};
+		42D757752243CBC000A37BEE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 420229B32233B64300043999 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 420229BB2233B64400043999;
-			remoteInfo = PangaeaClient;
+			remoteGlobalIDString = 42D757312243A02A00A37BEE;
+			remoteInfo = "PangaeaClient-static";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -210,11 +307,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				422DE9382242896700AD3B07 /* Zstandard.framework in CopyFiles */,
-				42022A6E2233C10900043999 /* PMKFoundation.framework in CopyFiles */,
-				42022A392233B77B00043999 /* XMLCoder.framework in CopyFiles */,
-				42022A3A2233B77B00043999 /* PromiseKit.framework in CopyFiles */,
-				42022A3B2233B77B00043999 /* Cache.framework in CopyFiles */,
+				42D7576E2243CA8F00A37BEE /* Zstandard.framework in CopyFiles */,
+				42D7576F2243CA9000A37BEE /* XMLCoder.framework in CopyFiles */,
+				42D757702243CA9000A37BEE /* PromiseKit.framework in CopyFiles */,
+				42D757722243CA9000A37BEE /* Cache.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +365,15 @@
 		429ED40722422C2400BF28EB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		42C691F8224237AE00C93608 /* MetaData.xsd */ = {isa = PBXFileReference; lastKnownFileType = text; path = MetaData.xsd; sourceTree = "<group>"; };
 		42C691F9224237AE00C93608 /* MetaData.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MetaData.png; sourceTree = "<group>"; };
+		42D7560E2243856500A37BEE /* CommandLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandLine.swift; sourceTree = "<group>"; };
+		42D7560F2243856500A37BEE /* Option.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		42D756102243856500A37BEE /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		42D756222243863300A37BEE /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		42D756242243867500A37BEE /* Rainbow.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Rainbow.xcodeproj; path = Vendor/Rainbow/Rainbow.xcodeproj; sourceTree = SOURCE_ROOT; };
+		42D75636224387C700A37BEE /* CommandLineProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLineProcessing.swift; sourceTree = "<group>"; };
+		42D75638224388BF00A37BEE /* licenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = licenses.swift; sourceTree = "<group>"; };
+		42D756FE224393C700A37BEE /* NSURLSession+Promise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSURLSession+Promise.swift"; path = "PromiseKit/Extensions/Foundation/Sources/NSURLSession+Promise.swift"; sourceTree = "<group>"; };
+		42D757322243A02A00A37BEE /* libPangaeaClient-static.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPangaeaClient-static.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42E6C5EF223550FF00F0AF2B /* PangaeaClientCLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PangaeaClientCLI; sourceTree = BUILT_PRODUCTS_DIR; };
 		42E6C5F1223550FF00F0AF2B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -278,11 +383,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				422DE9372242886000AD3B07 /* Zstandard.framework in Frameworks */,
-				42022A352233B75D00043999 /* Cache.framework in Frameworks */,
-				42022A362233B75D00043999 /* PromiseKit.framework in Frameworks */,
-				42022A372233B75D00043999 /* XMLCoder.framework in Frameworks */,
-				42022A6F2233C11700043999 /* PMKFoundation.framework in Frameworks */,
+				42D757692243CA7B00A37BEE /* Cache.framework in Frameworks */,
+				42D7576B2243CA7B00A37BEE /* PromiseKit.framework in Frameworks */,
+				42D7576C2243CA7B00A37BEE /* XMLCoder.framework in Frameworks */,
+				42D7576D2243CA7B00A37BEE /* Zstandard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,11 +398,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42D757302243A02A00A37BEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42D7574F2243A07E00A37BEE /* libCache.a in Frameworks */,
+				42D757502243A07E00A37BEE /* libPromiseKit-static.a in Frameworks */,
+				42D757512243A07E00A37BEE /* libXMLCoder-static.a in Frameworks */,
+				42D757522243A07E00A37BEE /* libZstandard-static.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42E6C5EC223550FF00F0AF2B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42E6C6022235512100F0AF2B /* PangaeaClient.framework in Frameworks */,
+				42D757552243A09300A37BEE /* libPangaeaClient-static.a in Frameworks */,
+				42D75634224386B000A37BEE /* libRainbow.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +440,7 @@
 				420229BC2233B64400043999 /* PangaeaClient.framework */,
 				420229C52233B64400043999 /* PangaeaClientTests.xctest */,
 				42E6C5EF223550FF00F0AF2B /* PangaeaClientCLI */,
+				42D757322243A02A00A37BEE /* libPangaeaClient-static.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -377,6 +494,7 @@
 		420229E12233B66B00043999 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				42D756FE224393C700A37BEE /* NSURLSession+Promise.swift */,
 				422DE91D2242883600AD3B07 /* Zstandard.xcodeproj */,
 				42022A232233B74300043999 /* XMLCoder.xcodeproj */,
 				420229FA2233B73800043999 /* PromiseKit.xcodeproj */,
@@ -402,6 +520,7 @@
 			children = (
 				420229F72233B72E00043999 /* Cache.framework */,
 				420229F92233B72E00043999 /* Cache-Mac-Tests.xctest */,
+				42D7572C224398A800A37BEE /* libCache.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -415,6 +534,7 @@
 				42022A1E2233B73C00043999 /* PMKCoreTests.xctest */,
 				42022A202233B73C00043999 /* PMKDeprecatedTests.xctest */,
 				42022A222233B73C00043999 /* PMKJSA+Tests.xctest */,
+				42D756F22243917500A37BEE /* libPromiseKit-static.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -424,6 +544,7 @@
 			children = (
 				42022A2B2233B74300043999 /* XMLCoder.framework */,
 				42022A2D2233B74300043999 /* XMLCoderTests.xctest */,
+				42D756D422438F6E00A37BEE /* libXMLCoder-static.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -451,7 +572,7 @@
 			children = (
 				422DE92E2242883700AD3B07 /* Zstandard.framework */,
 				422DE9302242883700AD3B07 /* ZstandardTests.xctest */,
-				422DE9322242883700AD3B07 /* ZstdTestCLI */,
+				42D7567C22438E6300A37BEE /* libZstandard-static.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -465,11 +586,36 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		42D7560D2243856500A37BEE /* CommandLineKit */ = {
+			isa = PBXGroup;
+			children = (
+				42D7560E2243856500A37BEE /* CommandLine.swift */,
+				42D7560F2243856500A37BEE /* Option.swift */,
+				42D756102243856500A37BEE /* StringExtensions.swift */,
+			);
+			path = CommandLineKit;
+			sourceTree = "<group>";
+		};
+		42D756252243867500A37BEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42D7562B2243867600A37BEE /* Rainbow.framework */,
+				42D7562D2243867600A37BEE /* RainbowTests.xctest */,
+				42D7562F2243867600A37BEE /* libRainbow.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		42E6C5F0223550FF00F0AF2B /* PangaeaClientCLI */ = {
 			isa = PBXGroup;
 			children = (
+				42D756242243867500A37BEE /* Rainbow.xcodeproj */,
+				42D7560D2243856500A37BEE /* CommandLineKit */,
 				42454FD122367B3D0063D451 /* Info.plist */,
 				42E6C5F1223550FF00F0AF2B /* main.swift */,
+				42D75638224388BF00A37BEE /* licenses.swift */,
+				42D756222243863300A37BEE /* Utilities.swift */,
+				42D75636224387C700A37BEE /* CommandLineProcessing.swift */,
 			);
 			path = PangaeaClientCLI;
 			sourceTree = "<group>";
@@ -482,6 +628,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				420229CD2233B64400043999 /* PangaeaClient.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42D7572E2243A02A00A37BEE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,11 +654,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				422DE9362242885900AD3B07 /* PBXTargetDependency */,
-				42022A562233C0C200043999 /* PBXTargetDependency */,
-				42022A2F2233B75300043999 /* PBXTargetDependency */,
-				42022A312233B75300043999 /* PBXTargetDependency */,
-				42022A332233B75300043999 /* PBXTargetDependency */,
+				42D757602243CA6A00A37BEE /* PBXTargetDependency */,
+				42D757622243CA6A00A37BEE /* PBXTargetDependency */,
+				42D757642243CA6A00A37BEE /* PBXTargetDependency */,
+				42D757682243CA6A00A37BEE /* PBXTargetDependency */,
 			);
 			name = PangaeaClient;
 			productName = PangaeaClient;
@@ -530,6 +682,27 @@
 			productReference = 420229C52233B64400043999 /* PangaeaClientTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		42D757312243A02A00A37BEE /* PangaeaClient-static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42D757332243A02A00A37BEE /* Build configuration list for PBXNativeTarget "PangaeaClient-static" */;
+			buildPhases = (
+				42D7572E2243A02A00A37BEE /* Headers */,
+				42D7572F2243A02A00A37BEE /* Sources */,
+				42D757302243A02A00A37BEE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42D757482243A07500A37BEE /* PBXTargetDependency */,
+				42D7574A2243A07500A37BEE /* PBXTargetDependency */,
+				42D7574C2243A07500A37BEE /* PBXTargetDependency */,
+				42D7574E2243A07500A37BEE /* PBXTargetDependency */,
+			);
+			name = "PangaeaClient-static";
+			productName = "PangaeaClient-static";
+			productReference = 42D757322243A02A00A37BEE /* libPangaeaClient-static.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		42E6C5EE223550FF00F0AF2B /* PangaeaClientCLI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42E6C5FF223550FF00F0AF2B /* Build configuration list for PBXNativeTarget "PangaeaClientCLI" */;
@@ -537,11 +710,13 @@
 				42E6C5EB223550FF00F0AF2B /* Sources */,
 				42E6C5EC223550FF00F0AF2B /* Frameworks */,
 				42E6C5ED223550FF00F0AF2B /* CopyFiles */,
+				42D75635224386DC00A37BEE /* Set Build Number */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				42E6C6012235510D00F0AF2B /* PBXTargetDependency */,
+				42D757762243CBC000A37BEE /* PBXTargetDependency */,
+				42D756332243869F00A37BEE /* PBXTargetDependency */,
 			);
 			name = PangaeaClientCLI;
 			productName = PangaeaClientCLI;
@@ -563,6 +738,9 @@
 						LastSwiftMigration = 1020;
 					};
 					420229C42233B64400043999 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					42D757312243A02A00A37BEE = {
 						CreatedOnToolsVersion = 10.2;
 					};
 					42E6C5EE223550FF00F0AF2B = {
@@ -595,6 +773,10 @@
 					ProjectRef = 420229FA2233B73800043999 /* PromiseKit.xcodeproj */;
 				},
 				{
+					ProductGroup = 42D756252243867500A37BEE /* Products */;
+					ProjectRef = 42D756242243867500A37BEE /* Rainbow.xcodeproj */;
+				},
+				{
 					ProductGroup = 42022A242233B74300043999 /* Products */;
 					ProjectRef = 42022A232233B74300043999 /* XMLCoder.xcodeproj */;
 				},
@@ -608,6 +790,7 @@
 				420229BB2233B64400043999 /* PangaeaClient */,
 				420229C42233B64400043999 /* PangaeaClientTests */,
 				42E6C5EE223550FF00F0AF2B /* PangaeaClientCLI */,
+				42D757312243A02A00A37BEE /* PangaeaClient-static */,
 			);
 		};
 /* End PBXProject section */
@@ -711,11 +894,53 @@
 			remoteRef = 422DE92F2242883700AD3B07 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		422DE9322242883700AD3B07 /* ZstdTestCLI */ = {
+		42D7562B2243867600A37BEE /* Rainbow.framework */ = {
 			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = ZstdTestCLI;
-			remoteRef = 422DE9312242883700AD3B07 /* PBXContainerItemProxy */;
+			fileType = wrapper.framework;
+			path = Rainbow.framework;
+			remoteRef = 42D7562A2243867600A37BEE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		42D7562D2243867600A37BEE /* RainbowTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RainbowTests.xctest;
+			remoteRef = 42D7562C2243867600A37BEE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		42D7562F2243867600A37BEE /* libRainbow.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRainbow.a;
+			remoteRef = 42D7562E2243867600A37BEE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		42D7567C22438E6300A37BEE /* libZstandard-static.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libZstandard-static.a";
+			remoteRef = 42D7567B22438E6300A37BEE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		42D756D422438F6E00A37BEE /* libXMLCoder-static.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libXMLCoder-static.a";
+			remoteRef = 42D756D322438F6E00A37BEE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		42D756F22243917500A37BEE /* libPromiseKit-static.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPromiseKit-static.a";
+			remoteRef = 42D756F12243917500A37BEE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		42D7572C224398A800A37BEE /* libCache.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCache.a;
+			remoteRef = 42D7572B224398A800A37BEE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -739,6 +964,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		42D75635224386DC00A37BEE /* Set Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Set Build Number";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n$SRCROOT/set_build_number.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		420229B82233B64400043999 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -754,6 +1000,7 @@
 				4273FD6E223F882A003B6AE3 /* PangaeaCache.swift in Sources */,
 				42022A432233BE8400043999 /* PMCitation.swift in Sources */,
 				42022A412233BE8400043999 /* PMLicense.swift in Sources */,
+				42D756FF224393C700A37BEE /* NSURLSession+Promise.swift in Sources */,
 				420229F02233B71500043999 /* PangaeaClient.swift in Sources */,
 				42022A492233BE8400043999 /* PMTechnicalInfo.swift in Sources */,
 				42022A3D2233BCC500043999 /* PangaeaDefaults.swift in Sources */,
@@ -775,11 +1022,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42D7572F2243A02A00A37BEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42D757362243A05200A37BEE /* NSURLSession+Promise.swift in Sources */,
+				42D757372243A05200A37BEE /* PangaeaData.swift in Sources */,
+				42D757382243A05200A37BEE /* PMEvent.swift in Sources */,
+				42D757392243A05200A37BEE /* PMLicense.swift in Sources */,
+				42D7573A2243A05200A37BEE /* PMProject.swift in Sources */,
+				42D7573B2243A05200A37BEE /* PMCitation.swift in Sources */,
+				42D7573C2243A05200A37BEE /* PMKeywords.swift in Sources */,
+				42D7573D2243A05200A37BEE /* PMMatrixColumn.swift in Sources */,
+				42D7573E2243A05200A37BEE /* PMExtent.swift in Sources */,
+				42D7573F2243A05200A37BEE /* PangaeaBaseURL.swift in Sources */,
+				42D757402243A05200A37BEE /* PMTechnicalInfo.swift in Sources */,
+				42D757412243A05200A37BEE /* PangaeaError.swift in Sources */,
+				42D757422243A05200A37BEE /* PangaeaCache.swift in Sources */,
+				42D757432243A05200A37BEE /* ZStandard.swift in Sources */,
+				42D757442243A05200A37BEE /* VendorLicenses.swift in Sources */,
+				42D757452243A05200A37BEE /* PangaeaClient.swift in Sources */,
+				42D757462243A05200A37BEE /* PangaeaDefaults.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42E6C5EB223550FF00F0AF2B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42D756212243856C00A37BEE /* StringExtensions.swift in Sources */,
 				42E6C5F2223550FF00F0AF2B /* main.swift in Sources */,
+				42D756202243856C00A37BEE /* Option.swift in Sources */,
+				42D75637224387C700A37BEE /* CommandLineProcessing.swift in Sources */,
+				42D75639224388BF00A37BEE /* licenses.swift in Sources */,
+				42D756232243863300A37BEE /* Utilities.swift in Sources */,
+				42D7561F2243856C00A37BEE /* CommandLine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -791,35 +1068,55 @@
 			target = 420229BB2233B64400043999 /* PangaeaClient */;
 			targetProxy = 420229C72233B64400043999 /* PBXContainerItemProxy */;
 		};
-		42022A2F2233B75300043999 /* PBXTargetDependency */ = {
+		42D756332243869F00A37BEE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = XMLCoder;
-			targetProxy = 42022A2E2233B75300043999 /* PBXContainerItemProxy */;
+			name = "Rainbow-static";
+			targetProxy = 42D756322243869F00A37BEE /* PBXContainerItemProxy */;
 		};
-		42022A312233B75300043999 /* PBXTargetDependency */ = {
+		42D757482243A07500A37BEE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = PromiseKit;
-			targetProxy = 42022A302233B75300043999 /* PBXContainerItemProxy */;
+			name = "Zstandard-static";
+			targetProxy = 42D757472243A07500A37BEE /* PBXContainerItemProxy */;
 		};
-		42022A332233B75300043999 /* PBXTargetDependency */ = {
+		42D7574A2243A07500A37BEE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Cache-Mac";
-			targetProxy = 42022A322233B75300043999 /* PBXContainerItemProxy */;
+			name = "XMLCoder-static";
+			targetProxy = 42D757492243A07500A37BEE /* PBXContainerItemProxy */;
 		};
-		42022A562233C0C200043999 /* PBXTargetDependency */ = {
+		42D7574C2243A07500A37BEE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = PMKFoundation;
-			targetProxy = 42022A552233C0C200043999 /* PBXContainerItemProxy */;
+			name = "PromiseKit-static";
+			targetProxy = 42D7574B2243A07500A37BEE /* PBXContainerItemProxy */;
 		};
-		422DE9362242885900AD3B07 /* PBXTargetDependency */ = {
+		42D7574E2243A07500A37BEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Cache-static";
+			targetProxy = 42D7574D2243A07500A37BEE /* PBXContainerItemProxy */;
+		};
+		42D757602243CA6A00A37BEE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Zstandard;
-			targetProxy = 422DE9352242885900AD3B07 /* PBXContainerItemProxy */;
+			targetProxy = 42D7575F2243CA6A00A37BEE /* PBXContainerItemProxy */;
 		};
-		42E6C6012235510D00F0AF2B /* PBXTargetDependency */ = {
+		42D757622243CA6A00A37BEE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 420229BB2233B64400043999 /* PangaeaClient */;
-			targetProxy = 42E6C6002235510D00F0AF2B /* PBXContainerItemProxy */;
+			name = XMLCoder;
+			targetProxy = 42D757612243CA6A00A37BEE /* PBXContainerItemProxy */;
+		};
+		42D757642243CA6A00A37BEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PromiseKit;
+			targetProxy = 42D757632243CA6A00A37BEE /* PBXContainerItemProxy */;
+		};
+		42D757682243CA6A00A37BEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Cache-Mac";
+			targetProxy = 42D757672243CA6A00A37BEE /* PBXContainerItemProxy */;
+		};
+		42D757762243CBC000A37BEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42D757312243A02A00A37BEE /* PangaeaClient-static */;
+			targetProxy = 42D757752243CBC000A37BEE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -958,6 +1255,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Vendor/Zstandard/Zstandard";
 				INFOPLIST_FILE = PangaeaClient/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -988,6 +1286,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Vendor/Zstandard/Zstandard";
 				INFOPLIST_FILE = PangaeaClient/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1038,6 +1337,30 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.palaeowiggles.PangaeaClientTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		42D757342243A02A00A37BEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QW4597S5KD;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		42D757352243A02A00A37BEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QW4597S5KD;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -1118,6 +1441,15 @@
 			buildConfigurations = (
 				420229D42233B64400043999 /* Debug */,
 				420229D52233B64400043999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42D757332243A02A00A37BEE /* Build configuration list for PBXNativeTarget "PangaeaClient-static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42D757342243A02A00A37BEE /* Debug */,
+				42D757352243A02A00A37BEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

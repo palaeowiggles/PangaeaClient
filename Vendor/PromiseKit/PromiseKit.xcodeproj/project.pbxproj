@@ -11,6 +11,23 @@
 		085B96BF21A9B37C00E5E22F /* LogEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085B96BE21A9B37C00E5E22F /* LogEvent.swift */; };
 		0C42F31B1FCF86320051309C /* HangTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C42F3191FCF86240051309C /* HangTests.swift */; };
 		0CC3AF2B1FCF84F7000E98C9 /* hang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC3AF2A1FCF84F7000E98C9 /* hang.swift */; };
+		42D756DE2243916700A37BEE /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636A29191F1C156B001229C2 /* Promise.swift */; };
+		42D756DF2243916700A37BEE /* Guarantee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636A29221F1C17A6001229C2 /* Guarantee.swift */; };
+		42D756E02243916700A37BEE /* Thenable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636A29201F1C1716001229C2 /* Thenable.swift */; };
+		42D756E12243916700A37BEE /* Catchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FBBE21F33B273008F8FBB /* Catchable.swift */; };
+		42D756E22243916700A37BEE /* hang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC3AF2A1FCF84F7000E98C9 /* hang.swift */; };
+		42D756E32243916700A37BEE /* after.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B0AC621D595E6300FA21D9 /* after.swift */; };
+		42D756E42243916700A37BEE /* firstly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B912A91F1D7B1300D49110 /* firstly.swift */; };
+		42D756E52243916700A37BEE /* race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636A29241F1C3089001229C2 /* race.swift */; };
+		42D756E62243916700A37BEE /* when.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B0AC7D1D595E6300FA21D9 /* when.swift */; };
+		42D756E72243916700A37BEE /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B0AC691D595E6300FA21D9 /* Error.swift */; };
+		42D756E82243916700A37BEE /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636A29261F1C3927001229C2 /* Resolver.swift */; };
+		42D756E92243916700A37BEE /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636A291E1F1C16FF001229C2 /* Box.swift */; };
+		42D756EA2243916700A37BEE /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6330B5E01F2E991200D60528 /* Configuration.swift */; };
+		42D756EB2243916700A37BEE /* CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B18AEB1F2D205C00B79E37 /* CustomStringConvertible.swift */; };
+		42D756EC2243916700A37BEE /* Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D9B2F020338D5D0075C00B /* Deprecations.swift */; };
+		42D756ED2243916700A37BEE /* LogEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085B96BE21A9B37C00E5E22F /* LogEvent.swift */; };
+		42D757742243CAD300A37BEE /* CustomStringConvertible2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D757732243CAD300A37BEE /* CustomStringConvertible2.swift */; };
 		49A5584D1DC5185900E4D01B /* ResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A5584B1DC5172F00E4D01B /* ResolverTests.swift */; };
 		630A8056203CEF6800D25F23 /* AnyPromiseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A8051203CEF6800D25F23 /* AnyPromiseTests.m */; settings = {COMPILER_FLAGS = "-fobjc-arc-exceptions"; }; };
 		630A8057203CEF6800D25F23 /* PMKManifoldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 630A8052203CEF6800D25F23 /* PMKManifoldTests.m */; };
@@ -143,6 +160,8 @@
 		085B96BE21A9B37C00E5E22F /* LogEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogEvent.swift; path = Sources/LogEvent.swift; sourceTree = "<group>"; };
 		0C42F3191FCF86240051309C /* HangTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HangTests.swift; sourceTree = "<group>"; };
 		0CC3AF2A1FCF84F7000E98C9 /* hang.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = hang.swift; path = Sources/hang.swift; sourceTree = "<group>"; };
+		42D756DA2243913C00A37BEE /* libPromiseKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPromiseKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		42D757732243CAD300A37BEE /* CustomStringConvertible2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStringConvertible2.swift; sourceTree = "<group>"; };
 		49A5584B1DC5172F00E4D01B /* ResolverTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResolverTests.swift; sourceTree = "<group>"; };
 		630019221D596292003B4E30 /* PMKCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PMKCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		630A8051203CEF6800D25F23 /* AnyPromiseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnyPromiseTests.m; sourceTree = "<group>"; };
@@ -232,6 +251,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		42D756D82243913C00A37BEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		630019181D596292003B4E30 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -424,6 +450,7 @@
 				6314113C1D59795700E24B9E /* PMKBridgeTests.xctest */,
 				633027EA203CC0060037E136 /* PMKDeprecatedTests.xctest */,
 				C0244E622047A6CB00ACB4AC /* PMKJSA+Tests.xctest */,
+				42D756DA2243913C00A37BEE /* libPromiseKit.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -441,6 +468,7 @@
 				636A291E1F1C16FF001229C2 /* Box.swift */,
 				6330B5E01F2E991200D60528 /* Configuration.swift */,
 				63B18AEB1F2D205C00B79E37 /* CustomStringConvertible.swift */,
+				42D757732243CAD300A37BEE /* CustomStringConvertible2.swift */,
 				63D9B2F020338D5D0075C00B /* Deprecations.swift */,
 				085B96BE21A9B37C00E5E22F /* LogEvent.swift */,
 			);
@@ -497,6 +525,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		42D756D62243913C00A37BEE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63B0AC541D595E1B00FA21D9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -511,6 +546,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		42D756D92243913C00A37BEE /* PromiseKit-static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42D756DD2243913C00A37BEE /* Build configuration list for PBXNativeTarget "PromiseKit-static" */;
+			buildPhases = (
+				42D756D62243913C00A37BEE /* Headers */,
+				42D756D72243913C00A37BEE /* Sources */,
+				42D756D82243913C00A37BEE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PromiseKit-static";
+			productName = "PromiseKit-static";
+			productReference = 42D756DA2243913C00A37BEE /* libPromiseKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		630019011D596292003B4E30 /* PMKCoreTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6300191F1D596292003B4E30 /* Build configuration list for PBXNativeTarget "PMKCoreTests" */;
@@ -622,6 +674,11 @@
 			attributes = {
 				LastUpgradeCheck = 1020;
 				TargetAttributes = {
+					42D756D92243913C00A37BEE = {
+						CreatedOnToolsVersion = 10.2;
+						DevelopmentTeam = QW4597S5KD;
+						ProvisioningStyle = Automatic;
+					};
 					630019011D596292003B4E30 = {
 						LastSwiftMigration = 0920;
 					};
@@ -664,11 +721,35 @@
 				630019011D596292003B4E30 /* PMKCoreTests */,
 				633027E0203CC0060037E136 /* PMKDeprecatedTests */,
 				C0244E4E2047A6CB00ACB4AC /* PMKJSA+Tests */,
+				42D756D92243913C00A37BEE /* PromiseKit-static */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		42D756D72243913C00A37BEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42D756DE2243916700A37BEE /* Promise.swift in Sources */,
+				42D756DF2243916700A37BEE /* Guarantee.swift in Sources */,
+				42D756E02243916700A37BEE /* Thenable.swift in Sources */,
+				42D756E12243916700A37BEE /* Catchable.swift in Sources */,
+				42D756E22243916700A37BEE /* hang.swift in Sources */,
+				42D756E32243916700A37BEE /* after.swift in Sources */,
+				42D756E42243916700A37BEE /* firstly.swift in Sources */,
+				42D756E52243916700A37BEE /* race.swift in Sources */,
+				42D756E62243916700A37BEE /* when.swift in Sources */,
+				42D756E72243916700A37BEE /* Error.swift in Sources */,
+				42D756E82243916700A37BEE /* Resolver.swift in Sources */,
+				42D756E92243916700A37BEE /* Box.swift in Sources */,
+				42D756EA2243916700A37BEE /* Configuration.swift in Sources */,
+				42D756EB2243916700A37BEE /* CustomStringConvertible.swift in Sources */,
+				42D756EC2243916700A37BEE /* Deprecations.swift in Sources */,
+				42D756ED2243916700A37BEE /* LogEvent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		630019021D596292003B4E30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -757,6 +838,7 @@
 				63B0AC851D595E6300FA21D9 /* dispatch_promise.m in Sources */,
 				636A291F1F1C16FF001229C2 /* Box.swift in Sources */,
 				63B0AC821D595E6300FA21D9 /* AnyPromise.m in Sources */,
+				42D757742243CAD300A37BEE /* CustomStringConvertible2.swift in Sources */,
 				636A29231F1C17A6001229C2 /* Guarantee.swift in Sources */,
 				636A291A1F1C156B001229C2 /* Promise.swift in Sources */,
 				63B0AC8B1D595E6300FA21D9 /* join.m in Sources */,
@@ -812,6 +894,63 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		42D756DB2243913C00A37BEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QW4597S5KD;
+				ENABLE_HARDENED_RUNTIME = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = PromiseKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		42D756DC2243913C00A37BEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QW4597S5KD;
+				ENABLE_HARDENED_RUNTIME = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = PromiseKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		630019201D596292003B4E30 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1159,6 +1298,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		42D756DD2243913C00A37BEE /* Build configuration list for PBXNativeTarget "PromiseKit-static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42D756DB2243913C00A37BEE /* Debug */,
+				42D756DC2243913C00A37BEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6300191F1D596292003B4E30 /* Build configuration list for PBXNativeTarget "PMKCoreTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -8,13 +8,22 @@
 
 import Foundation
 import PangaeaClient
+import Rainbow
+
+let (id, outputFilePath, verbosity, jsonOutput) = processCommandLine()
+
+
+let fileStream = FileHandlerOutputStream(outputFilePath)
 
 var runRunLoop = true // necessary to keep runloop going
 let runloop = RunLoop.current
 let dateFormatter = ISO8601DateFormatter()
+let jsonEncoder = JSONEncoder()
+jsonEncoder.dateEncodingStrategy = .iso8601
+jsonEncoder.nonConformingFloatEncodingStrategy = .convertToString(positiveInfinity: "Inf", negativeInfinity: "-Inf", nan: "")
 
 let client = PangaeaClient()
-let id = "PANGAEA.547797" // Dataset
+//let id = "PANGAEA.547797" // Dataset
 //let id = "PANGAEA.547942" // Parent
 //let id = "PANGAEA.871273" // unpub Dataset Parent
 //let id = "PANGAEA.871271"  // unpub Dataset
@@ -24,20 +33,29 @@ let id = "PANGAEA.547797" // Dataset
 client.fetch(pangaeaID: id, completionHandler: {result in
 	switch result {
 	case let .success(.dataset(meta: meta, data: data, rowCount: rowCount)):
-		print("⇾ Results for id: \(id)")
-		print("\n-⇾ META citation")
+		hpLog( "⇾ Results for id: \(id)", messageKind: .info, verbosity: verbosity)
+
+
 		if let citation = meta.citation {
-			print("\(citation.author.compactMap({$0.authorDetails}).joined(separator: ", "))")
-			print("\((citation.dateTime != nil) ? citation.dateTime!.description : "")")
-			print("\(citation.title)")
-			print(citation.parentURI ?? "")
-			print(citation.sources.compactMap({$0.value}).joined(separator: ", "))
-			print(citation.supplementTo ?? "")
+			hpLog( "\n-⇾ META citation", messageKind: .info, verbosity: verbosity)
+
+			var citationStrings = [String]()
+			citationStrings.append("\(citation.author.compactMap({$0.authorDetails}).joined(separator: ", "))")
+			citationStrings.append("\(citation.author.compactMap({$0.authorDetails}).joined(separator: ", "))")
+			citationStrings.append("\((citation.dateTime != nil) ? citation.dateTime!.description : "")")
+			citationStrings.append("\(citation.title)")
+			citationStrings.append(citation.parentURI ?? "")
+			citationStrings.append(citation.sources.compactMap({$0.value}).joined(separator: ", "))
+			citationStrings.append("\(citation.supplementTo.debugDescription)")
+			hpLog( "\(citationStrings.joined(separator: "\n"))", messageKind: .info, verbosity: verbosity)
+
 		}
+		hpLog("\n-⇾ DATA column excerpt", messageKind: .info, verbosity: verbosity)
+//		print("\n-⇾ DATA column excerpt")
 		
-		print("\n-⇾ DATA column excerpt")
-		
-		print(data.map{$0.caption}.joined(separator: "\t"))
+		var output = ""
+
+		print(data.map{$0.caption}.joined(separator: "\t").bold, to: &output)
 		var result = [[String]]()
 		let columnCount = data.count
 		for i in 0..<columnCount {
@@ -59,15 +77,27 @@ client.fetch(pangaeaID: id, completionHandler: {result in
 			}
 		}
 		let maxOutputLines = 20
-		let maxRows = min(rowCount, maxOutputLines)
+		//let maxRows = min(rowCount, maxOutputLines)
+		let maxRows = rowCount
 		for i in 0..<maxRows {
 			var line = [String]()
 			for j in 0..<columnCount {
 				line.append(result[j][i])
 			}
-			print(line.joined(separator: "\t"))
+			print(line.joined(separator: "\t"), to: &output)
 		}
-		print("……………… \((result.first?.count ?? maxOutputLines)-maxOutputLines) more rows omitted")
+		
+		switch jsonOutput {
+		case false:
+			outputToStream(output)
+		case true:
+			if let jsonOut = try? jsonEncoder.encode(PangaeaMeta.dataset(meta: meta, data: data, rowCount: rowCount)),
+			let outString = String(data: jsonOut, encoding: .utf8) {
+				outputToStream(outString)
+			}
+		}
+
+		//print("……………… \((result.first?.count ?? maxOutputLines)-maxOutputLines) more rows omitted")
 	//print(result)
 	case let .success(.dataParent(meta: meta, childrenURLs: childrenURLs)):
 		print("This is a Parent record for multiple datasets with IDs: \(childrenURLs.map{$0.relativeString}). Please re-run query for cited dataset.")

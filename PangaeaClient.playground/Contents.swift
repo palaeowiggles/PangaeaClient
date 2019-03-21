@@ -11,6 +11,7 @@ the first 10 lines.
 
 import Foundation
 import PlaygroundSupport
+import Zstandard
 import PangaeaClient
 
 PlaygroundPage.current.needsIndefiniteExecution
@@ -25,7 +26,7 @@ let id = "PANGAEA.547797" // Dataset
 //let id = "PANGAEA.893044" //login required
 
 let dateFormatter = ISO8601DateFormatter()
-//client.clearAllCaches() // to clear PangaeaClient caches for meta and data
+client.clearAllCaches() // to clear PangaeaClient caches for meta and data
 //client.clearCaches(pangaeaID: id)
 client.fetch(pangaeaID: id, completionHandler: {result in
 	switch result {

@@ -70,12 +70,19 @@
 			remoteGlobalIDString = C0244E622047A6CB00ACB4AC;
 			remoteInfo = "PMKJSA+Tests";
 		};
-		42022A6C2233C0F300043999 /* PBXContainerItemProxy */ = {
+		42D756F42243931600A37BEE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 42022A572233C0EB00043999 /* PromiseKit.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 63B0AC561D595E1B00FA21D9;
-			remoteInfo = PromiseKit;
+			remoteGlobalIDString = 42D756D92243913C00A37BEE;
+			remoteInfo = "PromiseKit-static";
+		};
+		42D756FC2243931600A37BEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42022A572233C0EB00043999 /* PromiseKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42D756DA2243913C00A37BEE;
+			remoteInfo = "PromiseKit-static";
 		};
 		63C7FFF81D5C020D003BAE60 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -141,6 +148,7 @@
 				42022A672233C0EB00043999 /* PMKCoreTests.xctest */,
 				42022A692233C0EB00043999 /* PMKDeprecatedTests.xctest */,
 				42022A6B2233C0EB00043999 /* PMKJSA+Tests.xctest */,
+				42D756FD2243931600A37BEE /* libPromiseKit.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -227,7 +235,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				42022A6D2233C0F300043999 /* PBXTargetDependency */,
+				42D756F52243931600A37BEE /* PBXTargetDependency */,
 			);
 			name = PMKFoundation;
 			productName = "PMK+UIKit";
@@ -343,6 +351,13 @@
 			remoteRef = 42022A6A2233C0EB00043999 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		42D756FD2243931600A37BEE /* libPromiseKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPromiseKit.a;
+			remoteRef = 42D756FC2243931600A37BEE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -395,10 +410,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		42022A6D2233C0F300043999 /* PBXTargetDependency */ = {
+		42D756F52243931600A37BEE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = PromiseKit;
-			targetProxy = 42022A6C2233C0F300043999 /* PBXContainerItemProxy */;
+			name = "PromiseKit-static";
+			targetProxy = 42D756F42243931600A37BEE /* PBXContainerItemProxy */;
 		};
 		63C7FFF91D5C020D003BAE60 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

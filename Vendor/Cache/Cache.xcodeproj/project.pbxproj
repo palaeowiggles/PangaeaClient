@@ -7,6 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42D757102243986600A37BEE /* DiskConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF984D1F694FFA00CE8F68 /* DiskConfig.swift */; };
+		42D757112243986600A37BEE /* MemoryConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF984E1F694FFA00CE8F68 /* MemoryConfig.swift */; };
+		42D757122243986700A37BEE /* JSONDecoder+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28897041F8B79B300C61DEE /* JSONDecoder+Extensions.swift */; };
+		42D757132243986700A37BEE /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF98501F694FFA00CE8F68 /* Date+Extensions.swift */; };
+		42D757142243986700A37BEE /* DataSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF98531F694FFA00CE8F68 /* DataSerializer.swift */; };
+		42D757152243986700A37BEE /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF98541F694FFA00CE8F68 /* Entry.swift */; };
+		42D757162243986700A37BEE /* ExpirationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF98551F694FFA00CE8F68 /* ExpirationMode.swift */; };
+		42D757172243986700A37BEE /* Expiry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF98561F694FFA00CE8F68 /* Expiry.swift */; };
+		42D757192243986700A37BEE /* StorageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF98591F694FFA00CE8F68 /* StorageError.swift */; };
+		42D7571A2243986700A37BEE /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF98861F695B8F00CE8F68 /* Types.swift */; };
+		42D7571B2243986700A37BEE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D292DAFC1F6A970B0060F614 /* Result.swift */; };
+		42D7571C2243986700A37BEE /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D4CC151FA3145000E4A2D5 /* MD5.swift */; };
+		42D7571D2243986700A37BEE /* JSONDictionaryWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D4CC1F1FA3411300E4A2D5 /* JSONDictionaryWrapper.swift */; };
+		42D7571E2243986700A37BEE /* JSONArrayWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D4CC231FA3426B00E4A2D5 /* JSONArrayWrapper.swift */; };
+		42D7571F2243986700A37BEE /* DiskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF985B1F694FFA00CE8F68 /* DiskStorage.swift */; };
+		42D757202243986700A37BEE /* HybridStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF985C1F694FFA00CE8F68 /* HybridStorage.swift */; };
+		42D757212243986700A37BEE /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF985D1F694FFA00CE8F68 /* MemoryStorage.swift */; };
+		42D757222243986700A37BEE /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF985E1F694FFA00CE8F68 /* Storage.swift */; };
+		42D757232243986700A37BEE /* StorageAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF985F1F694FFA00CE8F68 /* StorageAware.swift */; };
+		42D757242243986700A37BEE /* TypeWrapperStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF98841F69598900CE8F68 /* TypeWrapperStorage.swift */; };
+		42D757252243986700A37BEE /* SyncStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D292DAF01F6A85F30060F614 /* SyncStorage.swift */; };
+		42D757262243986700A37BEE /* AsyncStorageAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D292DAF41F6A94000060F614 /* AsyncStorageAware.swift */; };
+		42D757272243986700A37BEE /* AsyncStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D292DAF81F6A962D0060F614 /* AsyncStorage.swift */; };
 		D21B667C1F6A723C00125DE1 /* DataSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF98531F694FFA00CE8F68 /* DataSerializer.swift */; };
 		D21B667D1F6A723C00125DE1 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF98541F694FFA00CE8F68 /* Entry.swift */; };
 		D21B667E1F6A723C00125DE1 /* ExpirationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF98551F694FFA00CE8F68 /* ExpirationMode.swift */; };
@@ -55,6 +78,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42D7570C2243984800A37BEE /* libCache-static.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libCache-static.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D236F3191F6BEF73004EE01F /* StorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageTests.swift; sourceTree = "<group>"; };
 		D285143E1F6FFE1F00C674D1 /* ObjectConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectConverterTests.swift; sourceTree = "<group>"; };
 		D28897041F8B79B300C61DEE /* JSONDecoder+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extensions.swift"; sourceTree = "<group>"; };
@@ -112,6 +136,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		42D7570A2243984800A37BEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5291D5C1C283B5300B702C9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -336,6 +367,7 @@
 			children = (
 				D5291D601C283B5300B702C9 /* Cache.framework */,
 				D5291D691C283B5400B702C9 /* Cache-Mac-Tests.xctest */,
+				42D7570C2243984800A37BEE /* libCache-static.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -353,6 +385,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		42D757082243984800A37BEE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5291D5D1C283B5300B702C9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -363,6 +402,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		42D7570B2243984800A37BEE /* Cache-static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42D7570F2243984800A37BEE /* Build configuration list for PBXNativeTarget "Cache-static" */;
+			buildPhases = (
+				42D757082243984800A37BEE /* Headers */,
+				42D757092243984800A37BEE /* Sources */,
+				42D7570A2243984800A37BEE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cache-static";
+			productName = "Cache-static";
+			productReference = 42D7570C2243984800A37BEE /* libCache-static.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		D5291D5F1C283B5300B702C9 /* Cache-Mac */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5291D711C283B5400B702C9 /* Build configuration list for PBXNativeTarget "Cache-Mac" */;
@@ -410,6 +466,11 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Hyper Interaktiv AS";
 				TargetAttributes = {
+					42D7570B2243984800A37BEE = {
+						CreatedOnToolsVersion = 10.2;
+						DevelopmentTeam = QW4597S5KD;
+						ProvisioningStyle = Automatic;
+					};
 					D5291D5F1C283B5300B702C9 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = QW4597S5KD;
@@ -438,6 +499,7 @@
 			targets = (
 				D5291D5F1C283B5300B702C9 /* Cache-Mac */,
 				D5291D681C283B5400B702C9 /* Cache-Mac-Tests */,
+				42D7570B2243984800A37BEE /* Cache-static */,
 			);
 		};
 /* End PBXProject section */
@@ -477,6 +539,36 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		42D757092243984800A37BEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42D757102243986600A37BEE /* DiskConfig.swift in Sources */,
+				42D757112243986600A37BEE /* MemoryConfig.swift in Sources */,
+				42D757122243986700A37BEE /* JSONDecoder+Extensions.swift in Sources */,
+				42D757132243986700A37BEE /* Date+Extensions.swift in Sources */,
+				42D757142243986700A37BEE /* DataSerializer.swift in Sources */,
+				42D757152243986700A37BEE /* Entry.swift in Sources */,
+				42D757162243986700A37BEE /* ExpirationMode.swift in Sources */,
+				42D757172243986700A37BEE /* Expiry.swift in Sources */,
+				42D757192243986700A37BEE /* StorageError.swift in Sources */,
+				42D7571A2243986700A37BEE /* Types.swift in Sources */,
+				42D7571B2243986700A37BEE /* Result.swift in Sources */,
+				42D7571C2243986700A37BEE /* MD5.swift in Sources */,
+				42D7571D2243986700A37BEE /* JSONDictionaryWrapper.swift in Sources */,
+				42D7571E2243986700A37BEE /* JSONArrayWrapper.swift in Sources */,
+				42D7571F2243986700A37BEE /* DiskStorage.swift in Sources */,
+				42D757202243986700A37BEE /* HybridStorage.swift in Sources */,
+				42D757212243986700A37BEE /* MemoryStorage.swift in Sources */,
+				42D757222243986700A37BEE /* Storage.swift in Sources */,
+				42D757232243986700A37BEE /* StorageAware.swift in Sources */,
+				42D757242243986700A37BEE /* TypeWrapperStorage.swift in Sources */,
+				42D757252243986700A37BEE /* SyncStorage.swift in Sources */,
+				42D757262243986700A37BEE /* AsyncStorageAware.swift in Sources */,
+				42D757272243986700A37BEE /* AsyncStorage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5291D5B1C283B5300B702C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -536,10 +628,57 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		42D7570D2243984800A37BEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QW4597S5KD;
+				ENABLE_HARDENED_RUNTIME = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		42D7570E2243984800A37BEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QW4597S5KD;
+				ENABLE_HARDENED_RUNTIME = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		D5291D721C283B5400B702C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -567,7 +706,7 @@
 		D5291D731C283B5400B702C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -747,6 +886,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		42D7570F2243984800A37BEE /* Build configuration list for PBXNativeTarget "Cache-static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42D7570D2243984800A37BEE /* Debug */,
+				42D7570E2243984800A37BEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D5291D711C283B5400B702C9 /* Build configuration list for PBXNativeTarget "Cache-Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

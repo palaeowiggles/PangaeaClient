@@ -82,12 +82,12 @@ extension Resolver where T == Void {
 }
 #endif
 
-public enum Result<T> {
+public enum PromiseResult<T> {
     case fulfilled(T)
     case rejected(Error)
 }
-
-public extension PromiseKit.Result {
+public typealias Result = PromiseResult
+public extension Result {
     var isFulfilled: Bool {
         switch self {
         case .fulfilled:

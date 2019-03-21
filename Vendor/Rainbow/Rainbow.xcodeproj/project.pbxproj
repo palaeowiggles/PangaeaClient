@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		420ECF5220B7F25B000F70AC /* Rainbow-BridgingHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 420ECF5120B7F25B000F70AC /* Rainbow-BridgingHeader.h */; };
+		420ECF5320B7F5C9000F70AC /* CodesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C5D8DB1C2ACA1D001CB619 /* CodesParser.swift */; };
+		420ECF5420B7F5C9000F70AC /* ModesExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C5D8DD1C2ACA7A001CB619 /* ModesExtractor.swift */; };
+		420ECF5520B7F5C9000F70AC /* StringGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C5D8DF1C2AD38A001CB619 /* StringGenerator.swift */; };
+		420ECF5620B7F5C9000F70AC /* Rainbow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA75FA91C2939EC00B1037A /* Rainbow.swift */; };
+		420ECF5720B7F5C9000F70AC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC026E81C2929E7009FD2FD /* Color.swift */; };
+		420ECF5820B7F5C9000F70AC /* BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC026EC1C292F5C009FD2FD /* BackgroundColor.swift */; };
+		420ECF5920B7F5C9000F70AC /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC026EE1C292F70009FD2FD /* Style.swift */; };
+		420ECF5A20B7F5C9000F70AC /* ControlCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC026EA1C292B25009FD2FD /* ControlCode.swift */; };
+		420ECF5B20B7F5C9000F70AC /* Rainbow.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BC821AA1C2928CF00F68E70 /* Rainbow.h */; };
+		420ECF5C20B7F5C9000F70AC /* String+Rainbow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A98FAE1C299D63000DDF20 /* String+Rainbow.swift */; };
+		420ECF5D20B7F5C9000F70AC /* OutputTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B37C31C2A2F76001A5D35 /* OutputTarget.swift */; };
+		420ECF5E20B7F5C9000F70AC /* XcodeColorsSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11AECD21C2A796E00014175 /* XcodeColorsSupport.swift */; };
+		420ECF6020B7F778000F70AC /* Rainbow_static.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420ECF5F20B7F778000F70AC /* Rainbow_static.swift */; };
+		4BA75FAA1C2939EC00B1037A /* Rainbow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA75FA91C2939EC00B1037A /* Rainbow.swift */; };
+		4BC026E91C2929E7009FD2FD /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC026E81C2929E7009FD2FD /* Color.swift */; };
+		4BC026EB1C292B25009FD2FD /* ControlCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC026EA1C292B25009FD2FD /* ControlCode.swift */; };
+		4BC026ED1C292F5C009FD2FD /* BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC026EC1C292F5C009FD2FD /* BackgroundColor.swift */; };
+		4BC026EF1C292F70009FD2FD /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC026EE1C292F70009FD2FD /* Style.swift */; };
+		4BC821811C29254C00F68E70 /* Rainbow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC821761C29254C00F68E70 /* Rainbow.framework */; };
+		4BC821A11C29276C00F68E70 /* RainbowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC8219F1C29276C00F68E70 /* RainbowTests.swift */; };
+		4BC821AB1C2928CF00F68E70 /* Rainbow.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BC821AA1C2928CF00F68E70 /* Rainbow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D11AECD31C2A796E00014175 /* XcodeColorsSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11AECD21C2A796E00014175 /* XcodeColorsSupport.swift */; };
+		D16B37C41C2A2F76001A5D35 /* OutputTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16B37C31C2A2F76001A5D35 /* OutputTarget.swift */; };
+		D1A98FAF1C299D64000DDF20 /* String+Rainbow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A98FAE1C299D63000DDF20 /* String+Rainbow.swift */; };
+		D1A98FB11C299DF0000DDF20 /* ConsoleStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A98FB01C299DF0000DDF20 /* ConsoleStringTests.swift */; };
+		D1C5D8DC1C2ACA1D001CB619 /* CodesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C5D8DB1C2ACA1D001CB619 /* CodesParser.swift */; };
+		D1C5D8DE1C2ACA7A001CB619 /* ModesExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C5D8DD1C2ACA7A001CB619 /* ModesExtractor.swift */; };
+		D1C5D8E01C2AD38A001CB619 /* StringGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C5D8DF1C2AD38A001CB619 /* StringGenerator.swift */; };
+		D1C5D8E21C2ADFA7001CB619 /* XcodeColorsStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C5D8E11C2ADFA7001CB619 /* XcodeColorsStringTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4BC821821C29254C00F68E70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BC8216D1C29254C00F68E70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BC821751C29254C00F68E70;
+			remoteInfo = Rainbow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		420ECF3C20B7F0E8000F70AC /* libRainbow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRainbow.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		420ECF5120B7F25B000F70AC /* Rainbow-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rainbow-BridgingHeader.h"; sourceTree = "<group>"; };
+		420ECF5F20B7F778000F70AC /* Rainbow_static.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rainbow_static.swift; sourceTree = "<group>"; };
+		4BA75FA91C2939EC00B1037A /* Rainbow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rainbow.swift; sourceTree = "<group>"; };
+		4BC026E81C2929E7009FD2FD /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		4BC026EA1C292B25009FD2FD /* ControlCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlCode.swift; sourceTree = "<group>"; };
+		4BC026EC1C292F5C009FD2FD /* BackgroundColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColor.swift; sourceTree = "<group>"; };
+		4BC026EE1C292F70009FD2FD /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		4BC821761C29254C00F68E70 /* Rainbow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rainbow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BC821801C29254C00F68E70 /* RainbowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RainbowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BC8219C1C29276100F68E70 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Support/Info.plist; sourceTree = SOURCE_ROOT; };
+		4BC8219E1C29276C00F68E70 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/Info.plist; sourceTree = SOURCE_ROOT; };
+		4BC8219F1C29276C00F68E70 /* RainbowTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RainbowTests.swift; path = Tests/RainbowTests/RainbowTests.swift; sourceTree = SOURCE_ROOT; };
+		4BC821AA1C2928CF00F68E70 /* Rainbow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rainbow.h; sourceTree = "<group>"; };
+		D11AECD21C2A796E00014175 /* XcodeColorsSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XcodeColorsSupport.swift; sourceTree = "<group>"; };
+		D16B37C31C2A2F76001A5D35 /* OutputTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutputTarget.swift; sourceTree = "<group>"; };
+		D1A98FAE1C299D63000DDF20 /* String+Rainbow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Rainbow.swift"; sourceTree = "<group>"; };
+		D1A98FB01C299DF0000DDF20 /* ConsoleStringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsoleStringTests.swift; path = Tests/RainbowTests/ConsoleStringTests.swift; sourceTree = SOURCE_ROOT; };
+		D1C5D8DB1C2ACA1D001CB619 /* CodesParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodesParser.swift; sourceTree = "<group>"; };
+		D1C5D8DD1C2ACA7A001CB619 /* ModesExtractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModesExtractor.swift; sourceTree = "<group>"; };
+		D1C5D8DF1C2AD38A001CB619 /* StringGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringGenerator.swift; sourceTree = "<group>"; };
+		D1C5D8E11C2ADFA7001CB619 /* XcodeColorsStringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XcodeColorsStringTests.swift; path = Tests/RainbowTests/XcodeColorsStringTests.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		420ECF3920B7F0E8000F70AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BC821721C29254C00F68E70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BC8217D1C29254C00F68E70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BC821811C29254C00F68E70 /* Rainbow.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		420ECF3D20B7F0E8000F70AC /* Rainbow-static */ = {
+			isa = PBXGroup;
+			children = (
+				420ECF5F20B7F778000F70AC /* Rainbow_static.swift */,
+			);
+			path = "Rainbow-static";
+			sourceTree = "<group>";
+		};
+		4BC8216C1C29254C00F68E70 = {
+			isa = PBXGroup;
+			children = (
+				420ECF5120B7F25B000F70AC /* Rainbow-BridgingHeader.h */,
+				4BC821A91C2928CF00F68E70 /* Sources */,
+				4BC821A41C29289900F68E70 /* Support */,
+				4BC821841C29254C00F68E70 /* Tests */,
+				420ECF3D20B7F0E8000F70AC /* Rainbow-static */,
+				4BC821771C29254C00F68E70 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4BC821771C29254C00F68E70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BC821761C29254C00F68E70 /* Rainbow.framework */,
+				4BC821801C29254C00F68E70 /* RainbowTests.xctest */,
+				420ECF3C20B7F0E8000F70AC /* libRainbow.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BC821841C29254C00F68E70 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4BC8219E1C29276C00F68E70 /* Info.plist */,
+				4BC8219F1C29276C00F68E70 /* RainbowTests.swift */,
+				D1A98FB01C299DF0000DDF20 /* ConsoleStringTests.swift */,
+				D1C5D8E11C2ADFA7001CB619 /* XcodeColorsStringTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		4BC821A41C29289900F68E70 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				4BC8219C1C29276100F68E70 /* Info.plist */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		4BC821A91C2928CF00F68E70 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D1C5D8DB1C2ACA1D001CB619 /* CodesParser.swift */,
+				D1C5D8DD1C2ACA7A001CB619 /* ModesExtractor.swift */,
+				D1C5D8DF1C2AD38A001CB619 /* StringGenerator.swift */,
+				4BA75FA91C2939EC00B1037A /* Rainbow.swift */,
+				4BC026E81C2929E7009FD2FD /* Color.swift */,
+				4BC026EC1C292F5C009FD2FD /* BackgroundColor.swift */,
+				4BC026EE1C292F70009FD2FD /* Style.swift */,
+				4BC026EA1C292B25009FD2FD /* ControlCode.swift */,
+				4BC821AA1C2928CF00F68E70 /* Rainbow.h */,
+				D1A98FAE1C299D63000DDF20 /* String+Rainbow.swift */,
+				D16B37C31C2A2F76001A5D35 /* OutputTarget.swift */,
+				D11AECD21C2A796E00014175 /* XcodeColorsSupport.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		420ECF3A20B7F0E8000F70AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420ECF5220B7F25B000F70AC /* Rainbow-BridgingHeader.h in Headers */,
+				420ECF5B20B7F5C9000F70AC /* Rainbow.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BC821731C29254C00F68E70 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BC821AB1C2928CF00F68E70 /* Rainbow.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		420ECF3B20B7F0E8000F70AC /* Rainbow-static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 420ECF4420B7F0E8000F70AC /* Build configuration list for PBXNativeTarget "Rainbow-static" */;
+			buildPhases = (
+				420ECF3820B7F0E8000F70AC /* Sources */,
+				420ECF3920B7F0E8000F70AC /* Frameworks */,
+				420ECF3A20B7F0E8000F70AC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rainbow-static";
+			productName = "Rainbow-static";
+			productReference = 420ECF3C20B7F0E8000F70AC /* libRainbow.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4BC821751C29254C00F68E70 /* Rainbow(OSX) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BC8218A1C29254C00F68E70 /* Build configuration list for PBXNativeTarget "Rainbow(OSX)" */;
+			buildPhases = (
+				4BC821711C29254C00F68E70 /* Sources */,
+				4BC821721C29254C00F68E70 /* Frameworks */,
+				4BC821731C29254C00F68E70 /* Headers */,
+				4BC821741C29254C00F68E70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rainbow(OSX)";
+			productName = Rainbow;
+			productReference = 4BC821761C29254C00F68E70 /* Rainbow.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4BC8217F1C29254C00F68E70 /* RainbowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BC8218D1C29254C00F68E70 /* Build configuration list for PBXNativeTarget "RainbowTests" */;
+			buildPhases = (
+				4BC8217C1C29254C00F68E70 /* Sources */,
+				4BC8217D1C29254C00F68E70 /* Frameworks */,
+				4BC8217E1C29254C00F68E70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BC821831C29254C00F68E70 /* PBXTargetDependency */,
+			);
+			name = RainbowTests;
+			productName = RainbowTests;
+			productReference = 4BC821801C29254C00F68E70 /* RainbowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BC8216D1C29254C00F68E70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "OneV's Den";
+				TargetAttributes = {
+					420ECF3B20B7F0E8000F70AC = {
+						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+					};
+					4BC821751C29254C00F68E70 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = QW4597S5KD;
+						LastSwiftMigration = 0940;
+					};
+					4BC8217F1C29254C00F68E70 = {
+						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0900;
+					};
+				};
+			};
+			buildConfigurationList = 4BC821701C29254C00F68E70 /* Build configuration list for PBXProject "Rainbow" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 4BC8216C1C29254C00F68E70;
+			productRefGroup = 4BC821771C29254C00F68E70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BC821751C29254C00F68E70 /* Rainbow(OSX) */,
+				4BC8217F1C29254C00F68E70 /* RainbowTests */,
+				420ECF3B20B7F0E8000F70AC /* Rainbow-static */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BC821741C29254C00F68E70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BC8217E1C29254C00F68E70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		420ECF3820B7F0E8000F70AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420ECF5420B7F5C9000F70AC /* ModesExtractor.swift in Sources */,
+				420ECF5520B7F5C9000F70AC /* StringGenerator.swift in Sources */,
+				420ECF5620B7F5C9000F70AC /* Rainbow.swift in Sources */,
+				420ECF5320B7F5C9000F70AC /* CodesParser.swift in Sources */,
+				420ECF5C20B7F5C9000F70AC /* String+Rainbow.swift in Sources */,
+				420ECF5720B7F5C9000F70AC /* Color.swift in Sources */,
+				420ECF5A20B7F5C9000F70AC /* ControlCode.swift in Sources */,
+				420ECF5820B7F5C9000F70AC /* BackgroundColor.swift in Sources */,
+				420ECF5E20B7F5C9000F70AC /* XcodeColorsSupport.swift in Sources */,
+				420ECF6020B7F778000F70AC /* Rainbow_static.swift in Sources */,
+				420ECF5920B7F5C9000F70AC /* Style.swift in Sources */,
+				420ECF5D20B7F5C9000F70AC /* OutputTarget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BC821711C29254C00F68E70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BC026EB1C292B25009FD2FD /* ControlCode.swift in Sources */,
+				4BC026ED1C292F5C009FD2FD /* BackgroundColor.swift in Sources */,
+				4BC026E91C2929E7009FD2FD /* Color.swift in Sources */,
+				D1A98FAF1C299D64000DDF20 /* String+Rainbow.swift in Sources */,
+				D1C5D8E01C2AD38A001CB619 /* StringGenerator.swift in Sources */,
+				D16B37C41C2A2F76001A5D35 /* OutputTarget.swift in Sources */,
+				D1C5D8DC1C2ACA1D001CB619 /* CodesParser.swift in Sources */,
+				D11AECD31C2A796E00014175 /* XcodeColorsSupport.swift in Sources */,
+				D1C5D8DE1C2ACA7A001CB619 /* ModesExtractor.swift in Sources */,
+				4BA75FAA1C2939EC00B1037A /* Rainbow.swift in Sources */,
+				4BC026EF1C292F70009FD2FD /* Style.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BC8217C1C29254C00F68E70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1A98FB11C299DF0000DDF20 /* ConsoleStringTests.swift in Sources */,
+				4BC821A11C29276C00F68E70 /* RainbowTests.swift in Sources */,
+				D1C5D8E21C2ADFA7001CB619 /* XcodeColorsStringTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4BC821831C29254C00F68E70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BC821751C29254C00F68E70 /* Rainbow(OSX) */;
+			targetProxy = 4BC821821C29254C00F68E70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		420ECF4220B7F0E8000F70AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = QW4597S5KD;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = Rainbow;
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = debugging;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		420ECF4320B7F0E8000F70AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = QW4597S5KD;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = Rainbow;
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = debugging;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		4BC821881C29254C00F68E70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 118;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				STRIP_STYLE = all;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BC821891C29254C00F68E70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 118;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				STRIP_STYLE = all;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 4.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BC8218B1C29254C00F68E70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = QW4597S5KD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 118;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Support/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onevcat.Rainbow.OSX;
+				PRODUCT_NAME = Rainbow;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		4BC8218C1C29254C00F68E70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 118;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Support/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onevcat.Rainbow.OSX;
+				PRODUCT_NAME = Rainbow;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		4BC8218E1C29254C00F68E70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onevcat.RainbowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		4BC8218F1C29254C00F68E70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onevcat.RainbowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		420ECF4420B7F0E8000F70AC /* Build configuration list for PBXNativeTarget "Rainbow-static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				420ECF4220B7F0E8000F70AC /* Debug */,
+				420ECF4320B7F0E8000F70AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BC821701C29254C00F68E70 /* Build configuration list for PBXProject "Rainbow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC821881C29254C00F68E70 /* Debug */,
+				4BC821891C29254C00F68E70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BC8218A1C29254C00F68E70 /* Build configuration list for PBXNativeTarget "Rainbow(OSX)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC8218B1C29254C00F68E70 /* Debug */,
+				4BC8218C1C29254C00F68E70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BC8218D1C29254C00F68E70 /* Build configuration list for PBXNativeTarget "RainbowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC8218E1C29254C00F68E70 /* Debug */,
+				4BC8218F1C29254C00F68E70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BC8216D1C29254C00F68E70 /* Project object */;
+}

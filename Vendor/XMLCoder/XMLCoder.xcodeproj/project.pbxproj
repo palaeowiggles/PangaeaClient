@@ -169,7 +169,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		42D756A722438F2600A37BEE /* libXMLCoder-static.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libXMLCoder-static.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42D756A722438F2600A37BEE /* libXMLCoder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libXMLCoder.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A61DCCD621DF8DB300C0A19D /* ClassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTests.swift; sourceTree = "<group>"; };
 		A61FE03721E4D4F10015D993 /* UnkeyedIntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnkeyedIntTests.swift; sourceTree = "<group>"; };
 		A61FE03A21E4EA8B0015D993 /* KeyedIntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyedIntTests.swift; sourceTree = "<group>"; };
@@ -442,7 +442,7 @@
 			children = (
 				"XMLCoder::XMLCoderTests::Product" /* XMLCoderTests.xctest */,
 				"XMLCoder::XMLCoder::Product" /* XMLCoder.framework */,
-				42D756A722438F2600A37BEE /* libXMLCoder-static.a */,
+				42D756A722438F2600A37BEE /* libXMLCoder.a */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -508,9 +508,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		42D756A622438F2600A37BEE /* XMLCoder-static */ = {
+		42D756A622438F2600A37BEE /* XMLCoderStatic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 42D756AA22438F2600A37BEE /* Build configuration list for PBXNativeTarget "XMLCoder-static" */;
+			buildConfigurationList = 42D756AA22438F2600A37BEE /* Build configuration list for PBXNativeTarget "XMLCoderStatic" */;
 			buildPhases = (
 				42D756A322438F2600A37BEE /* Headers */,
 				42D756A422438F2600A37BEE /* Sources */,
@@ -520,9 +520,9 @@
 			);
 			dependencies = (
 			);
-			name = "XMLCoder-static";
+			name = XMLCoderStatic;
 			productName = "XMLCoder-static";
-			productReference = 42D756A722438F2600A37BEE /* libXMLCoder-static.a */;
+			productReference = 42D756A722438F2600A37BEE /* libXMLCoder.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		"XMLCoder::SwiftPMPackageDescription" /* XMLCoderPackageDescription */ = {
@@ -613,7 +613,7 @@
 				"XMLCoder::SwiftPMPackageDescription" /* XMLCoderPackageDescription */,
 				"XMLCoder::XMLCoderPackageTests::ProductTarget" /* XMLCoderPackageTests */,
 				"XMLCoder::XMLCoderTests" /* XMLCoderTests */,
-				42D756A622438F2600A37BEE /* XMLCoder-static */,
+				42D756A622438F2600A37BEE /* XMLCoderStatic */,
 			);
 		};
 /* End PBXProject section */
@@ -836,7 +836,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = XMLCoder;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -869,7 +869,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = XMLCoder;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1111,7 +1111,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		42D756AA22438F2600A37BEE /* Build configuration list for PBXNativeTarget "XMLCoder-static" */ = {
+		42D756AA22438F2600A37BEE /* Build configuration list for PBXNativeTarget "XMLCoderStatic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42D756A822438F2600A37BEE /* Debug */,

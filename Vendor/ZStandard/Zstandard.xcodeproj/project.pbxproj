@@ -183,7 +183,7 @@
 		42B595731D7ED3F500F076B2 /* zdict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zdict.c; sourceTree = "<group>"; };
 		42B595741D7ED3F500F076B2 /* zdict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zdict.h; sourceTree = "<group>"; };
 		42B5958E1D7ED40800F076B2 /* zstd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zstd.h; sourceTree = "<group>"; };
-		42D7568222438EBA00A37BEE /* libZstandard-static.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libZstandard-static.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42D7568222438EBA00A37BEE /* libZstandard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZstandard.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D75702224395D000A37BEE /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -228,7 +228,7 @@
 			children = (
 				42B5953D1D7ED3A700F076B2 /* Zstandard.framework */,
 				42B595461D7ED3A700F076B2 /* ZstandardTests.xctest */,
-				42D7568222438EBA00A37BEE /* libZstandard-static.a */,
+				42D7568222438EBA00A37BEE /* libZstandard.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -445,7 +445,7 @@
 			);
 			name = "Zstandard-static";
 			productName = "Zstandard-static";
-			productReference = 42D7568222438EBA00A37BEE /* libZstandard-static.a */;
+			productReference = 42D7568222438EBA00A37BEE /* libZstandard.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -834,7 +834,7 @@
 				MODULEMAP_FILE = module.modulemap;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Zstandard;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -864,7 +864,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MODULEMAP_FILE = module.modulemap;
 				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Zstandard;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

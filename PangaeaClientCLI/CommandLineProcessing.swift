@@ -8,7 +8,7 @@
 
 import Foundation
 import Rainbow
-import PangaeaClient
+import PangaeaClientStatic
 
 func processCommandLine() -> (pangaeaID: String, outputFilePath: String?, verbosity: Int, jsonOutput: Bool) {
 	let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "unknown"

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import PangaeaClient
+import PangaeaClientStatic
 import Rainbow
 
 let (id, outputFilePath, verbosity, jsonOutput) = processCommandLine()

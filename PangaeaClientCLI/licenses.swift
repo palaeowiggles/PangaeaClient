@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import PangaeaClient
+import PangaeaClientStatic
 
 let vendorLicenses = PangaeaClient.vendorLicenses
 let license = PangaeaClient.license

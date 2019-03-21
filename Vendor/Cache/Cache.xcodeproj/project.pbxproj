@@ -78,7 +78,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		42D7570C2243984800A37BEE /* libCache-static.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libCache-static.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42D7570C2243984800A37BEE /* libCache.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCache.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D236F3191F6BEF73004EE01F /* StorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageTests.swift; sourceTree = "<group>"; };
 		D285143E1F6FFE1F00C674D1 /* ObjectConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectConverterTests.swift; sourceTree = "<group>"; };
 		D28897041F8B79B300C61DEE /* JSONDecoder+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extensions.swift"; sourceTree = "<group>"; };
@@ -367,7 +367,7 @@
 			children = (
 				D5291D601C283B5300B702C9 /* Cache.framework */,
 				D5291D691C283B5400B702C9 /* Cache-Mac-Tests.xctest */,
-				42D7570C2243984800A37BEE /* libCache-static.a */,
+				42D7570C2243984800A37BEE /* libCache.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -416,7 +416,7 @@
 			);
 			name = "Cache-static";
 			productName = "Cache-static";
-			productReference = 42D7570C2243984800A37BEE /* libCache-static.a */;
+			productReference = 42D7570C2243984800A37BEE /* libCache.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		D5291D5F1C283B5300B702C9 /* Cache-Mac */ = {
@@ -646,7 +646,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Cache;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -669,7 +669,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Cache;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};

@@ -677,6 +677,7 @@
 					42D756D92243913C00A37BEE = {
 						CreatedOnToolsVersion = 10.2;
 						DevelopmentTeam = QW4597S5KD;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					630019011D596292003B4E30 = {
@@ -922,6 +923,7 @@
 				PRODUCT_NAME = PromiseKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -948,6 +950,7 @@
 				PRODUCT_NAME = PromiseKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

@@ -469,6 +469,7 @@
 					42D7570B2243984800A37BEE = {
 						CreatedOnToolsVersion = 10.2;
 						DevelopmentTeam = QW4597S5KD;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					D5291D5F1C283B5300B702C9 = {
@@ -643,12 +644,13 @@
 				ENABLE_HARDENED_RUNTIME = NO;
 				EXECUTABLE_PREFIX = lib;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = Cache;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -667,11 +669,12 @@
 				ENABLE_HARDENED_RUNTIME = NO;
 				EXECUTABLE_PREFIX = lib;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = Cache;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

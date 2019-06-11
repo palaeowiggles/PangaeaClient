@@ -30,7 +30,7 @@
 		421FA478223FDD6200AB713D /* VendorLicenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FA477223FDD6200AB713D /* VendorLicenses.swift */; };
 		422DE9342242884700AD3B07 /* ZStandard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422DE9332242884700AD3B07 /* ZStandard.swift */; };
 		4273FD6E223F882A003B6AE3 /* PangaeaCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4273FD63223F882A003B6AE3 /* PangaeaCache.swift */; };
-		4279A08A2243E2B50015CB96 /* libXMLCoder-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D756D422438F6E00A37BEE /* libXMLCoder-static.a */; };
+		4279A08A2243E2B50015CB96 /* libXMLCoder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D756D422438F6E00A37BEE /* libXMLCoder.a */; };
 		429ED41322422E6400BF28EB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 429ED40722422C2400BF28EB /* README.md */; };
 		429ED41522422E6A00BF28EB /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 421FA479223FDFB000AB713D /* LICENSE.md */; };
 		42D7561F2243856C00A37BEE /* CommandLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D7560E2243856500A37BEE /* CommandLine.swift */; };
@@ -58,9 +58,9 @@
 		42D757442243A05200A37BEE /* VendorLicenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FA477223FDD6200AB713D /* VendorLicenses.swift */; };
 		42D757452243A05200A37BEE /* PangaeaClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420229EF2233B71500043999 /* PangaeaClient.swift */; };
 		42D757462243A05200A37BEE /* PangaeaDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42022A3C2233BCC500043999 /* PangaeaDefaults.swift */; };
-		42D7574F2243A07E00A37BEE /* libCache-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D7572C224398A800A37BEE /* libCache-static.a */; };
+		42D7574F2243A07E00A37BEE /* libCache.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D7572C224398A800A37BEE /* libCache.a */; };
 		42D757502243A07E00A37BEE /* libPromiseKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D756F22243917500A37BEE /* libPromiseKit.a */; };
-		42D757522243A07E00A37BEE /* libZstandard-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D7567C22438E6300A37BEE /* libZstandard-static.a */; };
+		42D757522243A07E00A37BEE /* libZstandard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D7567C22438E6300A37BEE /* libZstandard.a */; };
 		42D757552243A09300A37BEE /* libPangaeaClientStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D757322243A02A00A37BEE /* libPangaeaClientStatic.a */; };
 		42D757692243CA7B00A37BEE /* Cache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420229F72233B72E00043999 /* Cache.framework */; };
 		42D7576B2243CA7B00A37BEE /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42022A182233B73C00043999 /* PromiseKit.framework */; };
@@ -387,10 +387,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4279A08A2243E2B50015CB96 /* libXMLCoder-static.a in Frameworks */,
-				42D7574F2243A07E00A37BEE /* libCache-static.a in Frameworks */,
+				4279A08A2243E2B50015CB96 /* libXMLCoder.a in Frameworks */,
+				42D7574F2243A07E00A37BEE /* libCache.a in Frameworks */,
 				42D757502243A07E00A37BEE /* libPromiseKit.a in Frameworks */,
-				42D757522243A07E00A37BEE /* libZstandard-static.a in Frameworks */,
+				42D757522243A07E00A37BEE /* libZstandard.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,7 +504,7 @@
 			children = (
 				420229F72233B72E00043999 /* Cache.framework */,
 				420229F92233B72E00043999 /* Cache-Mac-Tests.xctest */,
-				42D7572C224398A800A37BEE /* libCache-static.a */,
+				42D7572C224398A800A37BEE /* libCache.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -528,7 +528,7 @@
 			children = (
 				42022A2B2233B74300043999 /* XMLCoder.framework */,
 				42022A2D2233B74300043999 /* XMLCoderTests.xctest */,
-				42D756D422438F6E00A37BEE /* libXMLCoder-static.a */,
+				42D756D422438F6E00A37BEE /* libXMLCoder.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -547,7 +547,7 @@
 			children = (
 				422DE92E2242883700AD3B07 /* Zstandard.framework */,
 				422DE9302242883700AD3B07 /* ZstandardTests.xctest */,
-				42D7567C22438E6300A37BEE /* libZstandard-static.a */,
+				42D7567C22438E6300A37BEE /* libZstandard.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -872,17 +872,17 @@
 			remoteRef = 42D7562E2243867600A37BEE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		42D7567C22438E6300A37BEE /* libZstandard-static.a */ = {
+		42D7567C22438E6300A37BEE /* libZstandard.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = "libZstandard-static.a";
+			path = libZstandard.a;
 			remoteRef = 42D7567B22438E6300A37BEE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		42D756D422438F6E00A37BEE /* libXMLCoder-static.a */ = {
+		42D756D422438F6E00A37BEE /* libXMLCoder.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = "libXMLCoder-static.a";
+			path = libXMLCoder.a;
 			remoteRef = 42D756D322438F6E00A37BEE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -893,10 +893,10 @@
 			remoteRef = 42D756F12243917500A37BEE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		42D7572C224398A800A37BEE /* libCache-static.a */ = {
+		42D7572C224398A800A37BEE /* libCache.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = "libCache-static.a";
+			path = libCache.a;
 			remoteRef = 42D7572B224398A800A37BEE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -1301,9 +1301,11 @@
 		42D757342243A02A00A37BEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_LINK_OBJC_RUNTIME = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QW4597S5KD;
 				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1313,9 +1315,11 @@
 		42D757352243A02A00A37BEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_LINK_OBJC_RUNTIME = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QW4597S5KD;
 				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1343,6 +1347,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.palaeowiggles.PangaeaClientCLI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1368,6 +1373,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.palaeowiggles.PangaeaClientCLI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

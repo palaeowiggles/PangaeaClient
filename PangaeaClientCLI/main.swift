@@ -76,7 +76,7 @@ client.fetch(pangaeaID: id, completionHandler: {result in
 				result.append(urls.map{$0.absoluteString})
 			}
 		}
-		let maxOutputLines = 20
+		//let maxOutputLines = 20
 		//let maxRows = min(rowCount, maxOutputLines)
 		let maxRows = rowCount
 		for i in 0..<maxRows {
@@ -101,10 +101,37 @@ client.fetch(pangaeaID: id, completionHandler: {result in
 	//print(result)
 	case let .success(.dataParent(meta: meta, childrenURLs: childrenURLs)):
 		print("This is a Parent record for multiple datasets with IDs: \(childrenURLs.map{$0.relativeString}). Please re-run query for cited dataset.")
+        switch jsonOutput {
+        case false:
+            break
+        case true:
+            if let jsonOut = try? jsonEncoder.encode(meta),
+                let outString = String(data: jsonOut, encoding: .utf8) {
+                outputToStream(outString)
+            }
+        }
 	case let .success(.dataLink(meta: meta)):
 		print("This Pangaea ID \(id) represents a link to binary data. Citation: \(String(describing: meta.citation)). Not implemented.")
+        switch jsonOutput {
+        case false:
+            break
+        case true:
+            if let jsonOut = try? jsonEncoder.encode(meta),
+                let outString = String(data: jsonOut, encoding: .utf8) {
+                outputToStream(outString)
+            }
+        }
 	case let .success(.loginRequired(meta: meta)):
 		print("Login is required for Pangaea ID \(id). Citation: \(String(describing: meta.citation?.title)). Not implemented.")
+        switch jsonOutput {
+        case false:
+            break
+        case true:
+            if let jsonOut = try? jsonEncoder.encode(meta),
+                let outString = String(data: jsonOut, encoding: .utf8) {
+                outputToStream(outString)
+            }
+        }
 	case let .success(.error(pangaeaError: pangaeaError)):
 		print("could not receive Pangaea ID \(id), error: \(pangaeaError)")
 	case let .failure(error: error):

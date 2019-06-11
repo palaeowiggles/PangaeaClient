@@ -256,7 +256,7 @@
 				TargetAttributes = {
 					420ECF3B20B7F0E8000F70AC = {
 						CreatedOnToolsVersion = 9.4;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					4BC821751C29254C00F68E70 = {
@@ -386,7 +386,7 @@
 				PRODUCT_NAME = Rainbow;
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = debugging;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -411,7 +411,7 @@
 				PRODUCT_NAME = Rainbow;
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = debugging;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

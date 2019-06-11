@@ -106,10 +106,10 @@ extension String {
         let current = Rainbow.extractModes(for: self)
         if let styles = current.styles {
             var s = styles
-            var index = s.index(of: style)
+            var index = s.firstIndex(of: style)
             while index != nil {
                 s.remove(at: index!)
-                index = s.index(of: style)
+                index = s.firstIndex(of: style)
             }
             return Rainbow.generateString(
                 forColor: current.color,
@@ -189,73 +189,73 @@ extension String {
 // MARK: - Colors Shorthand
 public extension String {
     /// String with black text.
-    public var black: String { return applyingColor(.black) }
+    var black: String { return applyingColor(.black) }
     /// String with red text.
-    public var red: String { return applyingColor(.red)   }
+    var red: String { return applyingColor(.red)   }
     /// String with green text.
-    public var green: String { return applyingColor(.green) }
+    var green: String { return applyingColor(.green) }
     /// String with yellow text.
-    public var yellow: String { return applyingColor(.yellow) }
+    var yellow: String { return applyingColor(.yellow) }
     /// String with blue text.
-    public var blue: String { return applyingColor(.blue) }
+    var blue: String { return applyingColor(.blue) }
     /// String with magenta text.
-    public var magenta: String { return applyingColor(.magenta) }
+    var magenta: String { return applyingColor(.magenta) }
     /// String with cyan text.
-    public var cyan: String { return applyingColor(.cyan) }
+    var cyan: String { return applyingColor(.cyan) }
     /// String with white text.
-    public var white: String { return applyingColor(.white) }
+    var white: String { return applyingColor(.white) }
     /// String with light black text. Generally speaking, it means dark grey in some consoles.
-    public var lightBlack: String { return applyingColor(.lightBlack) }
+    var lightBlack: String { return applyingColor(.lightBlack) }
     /// String with light red text.
-    public var lightRed: String { return applyingColor(.lightRed) }
+    var lightRed: String { return applyingColor(.lightRed) }
     /// String with light green text.
-    public var lightGreen: String { return applyingColor(.lightGreen) }
+    var lightGreen: String { return applyingColor(.lightGreen) }
     /// String with light yellow text.
-    public var lightYellow: String { return applyingColor(.lightYellow) }
+    var lightYellow: String { return applyingColor(.lightYellow) }
     /// String with light blue text.
-    public var lightBlue: String { return applyingColor(.lightBlue) }
+    var lightBlue: String { return applyingColor(.lightBlue) }
     /// String with light magenta text.
-    public var lightMagenta: String { return applyingColor(.lightMagenta) }
+    var lightMagenta: String { return applyingColor(.lightMagenta) }
     /// String with light cyan text.
-    public var lightCyan: String { return applyingColor(.lightCyan) }
+    var lightCyan: String { return applyingColor(.lightCyan) }
     /// String with light white text. Generally speaking, it means light grey in some consoles.
-    public var lightWhite: String { return applyingColor(.lightWhite) }
+    var lightWhite: String { return applyingColor(.lightWhite) }
 }
 
 // MARK: - Background Colors Shorthand
 public extension String {
     /// String with black background.
-    public var onBlack: String { return applyingBackgroundColor(.black) }
+    var onBlack: String { return applyingBackgroundColor(.black) }
     /// String with red background.
-    public var onRed: String { return applyingBackgroundColor(.red) }
+    var onRed: String { return applyingBackgroundColor(.red) }
     /// String with green background.
-    public var onGreen: String { return applyingBackgroundColor(.green) }
+    var onGreen: String { return applyingBackgroundColor(.green) }
     /// String with yellow background.
-    public var onYellow: String { return applyingBackgroundColor(.yellow) }
+    var onYellow: String { return applyingBackgroundColor(.yellow) }
     /// String with blue background.
-    public var onBlue: String { return applyingBackgroundColor(.blue) }
+    var onBlue: String { return applyingBackgroundColor(.blue) }
     /// String with magenta background.
-    public var onMagenta: String { return applyingBackgroundColor(.magenta) }
+    var onMagenta: String { return applyingBackgroundColor(.magenta) }
     /// String with cyan background.
-    public var onCyan: String { return applyingBackgroundColor(.cyan) }
+    var onCyan: String { return applyingBackgroundColor(.cyan) }
     /// String with white background.
-    public var onWhite: String { return applyingBackgroundColor(.white) }
+    var onWhite: String { return applyingBackgroundColor(.white) }
 }
 
 // MARK: - Styles Shorthand
 public extension String {
     /// String with bold style.
-    public var bold: String { return applyingStyle(.bold) }
+    var bold: String { return applyingStyle(.bold) }
     /// String with dim style. This is not widely supported in all terminals. Use it carefully.
-    public var dim: String { return applyingStyle(.dim) }
+    var dim: String { return applyingStyle(.dim) }
     /// String with italic style. This depends on whether a italic existing for the font family of terminals.
-    public var italic: String { return applyingStyle(.italic) }
+    var italic: String { return applyingStyle(.italic) }
     /// String with underline style.
-    public var underline: String { return applyingStyle(.underline) }
+    var underline: String { return applyingStyle(.underline) }
     /// String with blink style. This is not widely supported in all terminals, or need additional setting. Use it carefully.
-    public var blink: String { return applyingStyle(.blink) }
+    var blink: String { return applyingStyle(.blink) }
     /// String with text color and background color swapped.
-    public var swap: String { return applyingStyle(.swap) }
+    var swap: String { return applyingStyle(.swap) }
 }
 
 // MARK: - Clear Modes Shorthand

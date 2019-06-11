@@ -14,6 +14,8 @@ public struct PMParameter {
     public let unit: String?
     public let group: String?
     public let URI: String?
+    public let id: String?
+    public let relatedTermIds: String?
 }
 
 extension PMParameter : Codable {
@@ -23,6 +25,8 @@ extension PMParameter : Codable {
         case unit = "md:unit"
         case group = "md:group"
         case URI = "md:URI"
+        case id = "id"
+        case relatedTermIds = "relatedTermIds"
     }
 }
 
@@ -30,6 +34,7 @@ public struct PMMethod {
     public let name: String
     public let optionalName : String?
     public let URI: String?
+    public let id: String?
 }
 
 extension PMMethod : Codable {
@@ -37,6 +42,7 @@ extension PMMethod : Codable {
         case name = "md:name"
         case optionalName = "md:optionalName"
         case URI = "md:URI"
+        case id = "id"
     }
 }
 
@@ -84,11 +90,13 @@ public struct PMMatrixColumn {
     public let Method: PMMethod?
     public let PI: PMPI?
     public let Behaviour: String?
-    public let Col: String
+    public let Column: Int
     public let Format: String?
     public let Label: String
     public let Source: String?
     public let TypeType: PMColumnType
+    public let Comment: String?
+    public let id: String?
 }
 
 extension PMMatrixColumn : Codable {
@@ -99,11 +107,13 @@ extension PMMatrixColumn : Codable {
         case Method = "md:method"
         case PI = "md:PI"
         case Behaviour = "behaviour"
-        case Col = "col"
+        case Column = "col"
         case Format = "format"
         case Label = "label"
         case Source = "source"
         case TypeType = "type"
+        case Comment = "md:comment"
+        case id = "id"
     }
 }
 

@@ -10,14 +10,14 @@ import Foundation
 import XMLCoder
 
 public struct PMCitation {
-	public 	let title : String
+	public let title: String
 	public let author: [PMAuthor]
 	public let sources: [PMSource]
 	public let volume: String?
 	public let URI: String?
 	public let parentURI: String?
 	public let supplementTo: PMSupplement?
-	public let dateTime : Date?
+	public let dateTime: Date?
 	public let year: String?
 	public let prepubStatus: String?
 	

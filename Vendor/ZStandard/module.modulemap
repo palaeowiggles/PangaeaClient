@@ -1,4 +1,0 @@
-module Zstandard {
-    umbrella header "Zstandard.h"    
-    export *
-}

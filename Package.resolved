@@ -1,0 +1,79 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Cache",
+        "repositoryURL": "https://github.com/hyperoslo/Cache",
+        "state": {
+          "branch": null,
+          "revision": "c7f4d633049c3bd649a353bad36f6c17e9df085f",
+          "version": "6.0.0"
+        }
+      },
+      {
+        "package": "Elva",
+        "repositoryURL": "https://github.com/L1MeN9Yu/Elva",
+        "state": {
+          "branch": null,
+          "revision": "90d1f8a1ff07378a01b94b5619c806b489ee6a48",
+          "version": "1.5.2"
+        }
+      },
+      {
+        "package": "PMKFoundation",
+        "repositoryURL": "https://github.com/astrotuna201/Foundation",
+        "state": {
+          "branch": null,
+          "revision": "7de96c26fc070ecffade89d38e903dd3487f6784",
+          "version": "3.3.7"
+        }
+      },
+      {
+        "package": "PromiseKit",
+        "repositoryURL": "https://github.com/mxcl/PromiseKit",
+        "state": {
+          "branch": null,
+          "revision": "cd1a9b83ab2c65965d97af964b9f661fb9f84375",
+          "version": "7.0.0-alpha3"
+        }
+      },
+      {
+        "package": "Rainbow",
+        "repositoryURL": "https://github.com/onevcat/Rainbow",
+        "state": {
+          "branch": null,
+          "revision": "7c3dad0e918534c6d19dd1048bde734c246d05fe",
+          "version": "4.0.0"
+        }
+      },
+      {
+        "package": "swift-argument-parser",
+        "repositoryURL": "https://github.com/apple/swift-argument-parser",
+        "state": {
+          "branch": null,
+          "revision": "986d191f94cec88f6350056da59c2e59e83d1229",
+          "version": "0.4.3"
+        }
+      },
+      {
+        "package": "swift-log",
+        "repositoryURL": "https://github.com/apple/swift-log",
+        "state": {
+          "branch": null,
+          "revision": "5d66f7ba25daf4f94100e7022febf3c75e37a6c7",
+          "version": "1.4.2"
+        }
+      },
+      {
+        "package": "XMLCoder",
+        "repositoryURL": "https://github.com/MaxDesiatov/XMLCoder",
+        "state": {
+          "branch": null,
+          "revision": "b8fa7fe4c0849f8a64cc246e71c5d976809222e4",
+          "version": "0.12.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

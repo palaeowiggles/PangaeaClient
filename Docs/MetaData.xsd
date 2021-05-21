@@ -1,0 +1,390 @@
+<!--
+ edited with XMLSpy v2010 rel. 2 (x64) (http://www.altova.com) by Uwe Schindler (Apache Software Foundation)
+ -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:md="http://www.pangaea.de/MetaData" targetNamespace="http://www.pangaea.de/MetaData" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:element name="MetaData" type="md:MetaDataType">
+      <xs:annotation>
+        <xs:documentation>root element for MetaData</xs:documentation>
+      </xs:annotation>
+  </xs:element>
+  <xs:complexType name="MetaDataType">
+      <xs:sequence>
+        <xs:element name="citation" type="md:DataSetCitationType"/>
+        <xs:element name="abstract" type="xs:string" minOccurs="0"/>
+        <xs:element name="reference" type="md:ReferenceType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="extent" type="md:ExtentType" minOccurs="0"/>
+        <xs:element name="project" type="md:ProjectType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="event" type="md:EventType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="attribute" type="md:AttributeType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="size">
+            <xs:complexType>
+              <xs:simpleContent>
+                  <xs:extension base="xs:string">
+                    <xs:attribute name="unit" type="xs:string" use="optional"/>
+                  </xs:extension>
+              </xs:simpleContent>
+            </xs:complexType>
+        </xs:element>
+        <xs:element name="license" type="md:LinkedLabelNameType" minOccurs="0"/>
+        <xs:element name="comment" type="xs:string" minOccurs="0"/>
+        <xs:element name="matrixColumn" type="md:ColumnType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="additionalSearchableContent" type="xs:string" minOccurs="0"/>
+        <xs:element name="keywords" type="md:KeywordsType" minOccurs="0"/>
+        <xs:element name="technicalInfo" type="md:TechnicalInfoType"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="md:VersionAttrGroup"/>
+  </xs:complexType>
+  <xs:complexType name="DataSetCitationType">
+      <xs:complexContent>
+        <xs:extension base="md:CitationType">
+            <xs:sequence>
+              <xs:element name="dateTime" type="xs:dateTime" minOccurs="0"/>
+              <xs:element name="parentURI" type="xs:anyURI" minOccurs="0"/>
+              <xs:element name="supplementTo" type="md:ReferenceType" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute name="authorsAreEditors" type="xs:boolean" use="optional" default="false"/>
+        </xs:extension>
+      </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CitationType">
+      <xs:sequence>
+        <xs:element name="author" type="md:ResponsiblePartyType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:choice minOccurs="0">
+            <xs:element name="year" type="xs:gYear"/>
+            <xs:element name="prepubStatus" type="xs:string"/>
+        </xs:choice>
+        <xs:element name="title" type="xs:string"/>
+        <xs:element name="source" minOccurs="0" maxOccurs="unbounded">
+            <xs:complexType>
+              <xs:simpleContent>
+                  <xs:extension base="xs:string">
+                    <xs:attributeGroup ref="md:IdAttrGroup"/>
+                  </xs:extension>
+              </xs:simpleContent>
+            </xs:complexType>
+        </xs:element>
+        <xs:element name="volume" type="xs:string" minOccurs="0"/>
+        <xs:element name="URI" type="xs:anyURI" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="md:IdAttrGroup"/>
+      <xs:attribute name="relationTypeId" type="xs:int" use="optional"/>
+      <xs:attribute name="relationType" type="xs:string" use="optional"/>
+      <xs:attribute name="comment" type="xs:string" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="ExtentType">
+      <xs:sequence>
+        <xs:element name="geographic" minOccurs="0">
+            <xs:complexType>
+              <xs:sequence>
+                  <xs:element name="westBoundLongitude" type="xs:double"/>
+                  <xs:element name="eastBoundLongitude" type="xs:double"/>
+                  <xs:element name="southBoundLatitude" type="xs:double"/>
+                  <xs:element name="northBoundLatitude" type="xs:double"/>
+                  <xs:element name="meanLongitude" type="xs:double"/>
+                  <xs:element name="meanLatitude" type="xs:double"/>
+                  <xs:element name="location" type="md:LinkedNameType" minOccurs="0"/>
+              </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+        <xs:element name="temporal" minOccurs="0">
+            <xs:complexType>
+              <xs:sequence>
+                  <xs:sequence minOccurs="0">
+                    <xs:element name="minDateTime" type="xs:dateTime"/>
+                    <xs:element name="maxDateTime" type="xs:dateTime"/>
+                  </xs:sequence>
+              </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+        <xs:element name="elevation" minOccurs="0">
+            <xs:complexType>
+              <xs:sequence>
+                  <xs:element name="min" type="xs:double"/>
+                  <xs:element name="max" type="xs:double"/>
+              </xs:sequence>
+              <xs:attribute name="name" type="xs:string" use="required"/>
+              <xs:attribute name="unit" use="optional"/>
+              <xs:attribute name="geocodeId" type="xs:ID" use="optional"/>
+            </xs:complexType>
+        </xs:element>
+        <xs:element name="topoType" minOccurs="0">
+            <xs:complexType>
+              <xs:simpleContent>
+                  <xs:extension base="xs:string">
+                    <xs:attributeGroup ref="md:IdAttrGroup"/>
+                  </xs:extension>
+              </xs:simpleContent>
+            </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EventType">
+      <xs:sequence>
+        <xs:element name="label" type="xs:string"/>
+        <xs:element name="optionalLabel" type="xs:string" minOccurs="0"/>
+        <xs:element name="URI" type="xs:anyURI" minOccurs="0"/>
+        <xs:element name="latitude" type="xs:double" minOccurs="0"/>
+        <xs:element name="longitude" type="xs:double" minOccurs="0"/>
+        <xs:element name="elevation" type="xs:double" minOccurs="0"/>
+        <xs:element name="dateTime" type="xs:dateTime" minOccurs="0"/>
+        <xs:element name="latitude2" type="xs:double" minOccurs="0"/>
+        <xs:element name="longitude2" type="xs:double" minOccurs="0"/>
+        <xs:element name="elevation2" type="xs:double" minOccurs="0"/>
+        <xs:element name="dateTime2" type="xs:dateTime" minOccurs="0"/>
+        <xs:element name="attribute" type="md:AttributeType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="location" type="md:LinkedNameType" minOccurs="0"/>
+        <xs:element name="campaign" type="md:LinkedNameWithAttributesType" minOccurs="0"/>
+        <xs:element name="basis" type="md:LinkedNameType" minOccurs="0"/>
+        <xs:element name="device" type="md:LinkedNameType" minOccurs="0"/>
+        <xs:element name="comment" type="xs:string" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="md:IdAttrGroup"/>
+  </xs:complexType>
+  <xs:complexType name="LinkedLabelNameType">
+      <xs:sequence>
+        <xs:element name="label" type="xs:string"/>
+        <xs:element name="name" type="xs:string" minOccurs="0"/>
+        <xs:element name="URI" type="xs:anyURI" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="md:IdAttrGroup"/>
+  </xs:complexType>
+  <xs:complexType name="ProjectType">
+      <xs:complexContent>
+        <xs:extension base="md:LinkedLabelNameType">
+            <xs:sequence>
+              <xs:element name="award" type="md:AwardType" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="type" type="xs:string"/>
+        </xs:extension>
+      </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="AwardType">
+      <xs:sequence>
+        <xs:element name="funder" type="md:LinkedNameType"/>
+        <xs:element name="number" type="xs:string"/>
+        <xs:element name="subtitle" type="xs:string" minOccurs="0"/>
+        <xs:element name="URI" type="xs:anyURI" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="md:IdAttrGroup"/>
+  </xs:complexType>
+  <xs:complexType name="ReferenceType">
+      <xs:complexContent>
+        <xs:extension base="md:CitationType">
+            <xs:sequence>
+              <xs:element name="pages" type="xs:string" minOccurs="0"/>
+            </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ResponsiblePartyType">
+      <xs:sequence>
+        <xs:element name="lastName" type="xs:string"/>
+        <xs:element name="firstName" type="xs:string" minOccurs="0"/>
+        <xs:element name="eMail" type="xs:anyURI" minOccurs="0"/>
+        <xs:element name="URI" type="xs:anyURI" minOccurs="0"/>
+        <xs:element name="orcid" type="xs:string" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="md:IdAttrGroup"/>
+  </xs:complexType>
+  <xs:complexType name="KeywordsType">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="techKeyword" type="md:KeywordType"/>
+        <xs:element name="keyword" type="md:KeywordType"/>
+      </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="KeywordType">
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+            <xs:attribute name="type" use="required">
+              <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="fromDatabase"/>
+                    <xs:enumeration value="autoGenerated"/>
+                  </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+            <xs:attributeGroup ref="md:IdAttrGroup"/>
+        </xs:extension>
+      </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TechnicalInfoType">
+      <xs:sequence>
+        <xs:element name="entry" minOccurs="0" maxOccurs="unbounded">
+            <xs:complexType>
+              <xs:attribute name="key" type="xs:string" use="required"/>
+              <xs:attribute name="value" type="xs:anySimpleType" use="required"/>
+            </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ColumnType">
+      <xs:sequence>
+        <xs:element name="parameter" type="md:ParameterType"/>
+        <xs:element name="method" type="md:LinkedNameType" minOccurs="0"/>
+        <xs:element name="PI" type="md:ResponsiblePartyType" minOccurs="0"/>
+        <xs:element name="comment" type="xs:string" minOccurs="0"/>
+        <xs:element name="caption" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="col" type="xs:int" use="required"/>
+      <xs:attribute name="type" type="md:ColumnTypeType" use="required"/>
+      <xs:attribute name="source" type="md:ColumnSourceType" use="required"/>
+      <xs:attribute name="format" type="xs:string" use="optional"/>
+      <xs:attributeGroup ref="md:IdAttrGroup"/>
+      <xs:attribute name="label" type="xs:string" use="optional"/>
+      <xs:attribute name="behaviour" type="xs:int" use="optional"/>
+  </xs:complexType>
+  <xs:simpleType name="ColumnTypeType">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="numeric"/>
+        <xs:enumeration value="string"/>
+        <xs:enumeration value="datetime"/>
+        <xs:enumeration value="uri"/>
+        <xs:enumeration value="unknown"/>
+      </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ColumnSourceType">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="event"/>
+        <xs:enumeration value="geocode"/>
+        <xs:enumeration value="data"/>
+      </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="ParameterType">
+      <xs:sequence>
+        <xs:element name="name" type="xs:string"/>
+        <xs:element name="shortName" type="xs:string"/>
+        <xs:element name="unit" type="xs:string" minOccurs="0"/>
+        <xs:element name="group" minOccurs="0">
+            <xs:complexType>
+              <xs:simpleContent>
+                  <xs:extension base="xs:string"/>
+              </xs:simpleContent>
+            </xs:complexType>
+        </xs:element>
+        <xs:element name="URI" type="xs:anyURI" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="md:IdAttrGroup"/>
+  </xs:complexType>
+  <xs:complexType name="GeocodeType">
+      <xs:sequence>
+        <xs:element name="name" type="xs:string"/>
+        <xs:element name="shortName" type="xs:string"/>
+        <xs:element name="unit" type="xs:string" minOccurs="0"/>
+        <xs:element name="URI" type="xs:anyURI" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="md:IdAttrGroup"/>
+      <xs:attribute name="behaviour" type="xs:int" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="LinkedNameType">
+      <xs:sequence>
+        <xs:element name="name" type="xs:string"/>
+        <xs:element name="optionalName" type="xs:string" minOccurs="0"/>
+        <xs:element name="URI" type="xs:anyURI" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="md:IdAttrGroup"/>
+  </xs:complexType>
+  <xs:complexType name="LinkedNameWithAttributesType">
+      <xs:complexContent>
+        <xs:extension base="md:LinkedNameType">
+            <xs:sequence>
+              <xs:element name="attribute" type="md:AttributeType" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="AttributeType">
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+            <xs:attribute name="attid" type="xs:int" use="required"/>
+            <xs:attribute name="name" type="xs:string" use="required"/>
+        </xs:extension>
+      </xs:simpleContent>
+  </xs:complexType>
+  <xs:attributeGroup name="VersionAttrGroup">
+      <xs:attribute name="version" type="xs:date" use="required" fixed="2019-02-13"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="IdAttrGroup">
+      <xs:attribute name="id" type="xs:ID" use="optional"/>
+      <xs:attribute name="semanticURI" type="xs:anyURI" use="optional"/>
+      <xs:attribute name="relatedTermIds" type="xs:string" use="optional"/>
+  </xs:attributeGroup>
+  <xs:element name="SearchResult" type="md:SearchResultType">
+      <xs:annotation>
+        <xs:documentation>root element for SearchResult</xs:documentation>
+      </xs:annotation>
+  </xs:element>
+  <xs:complexType name="SearchResultType">
+      <xs:sequence>
+        <xs:element name="citation" type="md:ShortCitationType"/>
+        <xs:element name="reference" type="md:ShortCitationType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="extent" type="md:ShortExtentType" minOccurs="0"/>
+        <xs:element name="size">
+            <xs:complexType>
+              <xs:simpleContent>
+                  <xs:extension base="xs:string">
+                    <xs:attribute name="unit" type="xs:string" use="optional"/>
+                  </xs:extension>
+              </xs:simpleContent>
+            </xs:complexType>
+        </xs:element>
+        <xs:element name="technicalInfo" type="md:TechnicalInfoType" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="md:VersionAttrGroup"/>
+  </xs:complexType>
+  <xs:complexType name="ShortCitationType">
+      <xs:sequence>
+        <xs:element name="author" type="xs:string" minOccurs="0"/>
+        <xs:choice minOccurs="0">
+            <xs:element name="year" type="xs:gYear"/>
+            <xs:element name="prepubStatus" type="xs:string"/>
+        </xs:choice>
+        <xs:element name="title" type="xs:string"/>
+        <xs:element name="source" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="URI" type="xs:anyURI" minOccurs="0"/>
+        <xs:element name="datetime" type="xs:dateTime" minOccurs="0"/>
+        <xs:element name="parentURI" type="xs:anyURI" minOccurs="0"/>
+        <xs:element name="volume" type="xs:string" minOccurs="0"/>
+        <xs:element name="pages" type="xs:string" minOccurs="0"/>
+        <xs:element name="supplementTo" type="md:ShortCitationType" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:ID" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="ShortExtentType">
+      <xs:sequence>
+        <xs:element name="geographic">
+            <xs:complexType>
+              <xs:sequence>
+                  <xs:element name="westBoundLongitude" type="xs:double"/>
+                  <xs:element name="eastBoundLongitude" type="xs:double"/>
+                  <xs:element name="southBoundLatitude" type="xs:double"/>
+                  <xs:element name="northBoundLatitude" type="xs:double"/>
+                  <xs:element name="meanLongitude" type="xs:double"/>
+                  <xs:element name="meanLatitude" type="xs:double"/>
+                  <xs:element name="location" minOccurs="0">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                              <xs:attribute name="id" type="xs:ID" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                  </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DeletedMetaData" type="md:DeletedMetaDataType">
+      <xs:annotation>
+        <xs:documentation>root element for MetaData</xs:documentation>
+      </xs:annotation>
+  </xs:element>
+  <xs:complexType name="DeletedMetaDataType">
+      <xs:sequence>
+        <xs:element name="citation" type="md:DataSetCitationType"/>
+        <xs:element name="reference" type="md:ReferenceType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="technicalInfo" type="md:TechnicalInfoType"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="md:VersionAttrGroup"/>
+  </xs:complexType>
+</xs:schema>

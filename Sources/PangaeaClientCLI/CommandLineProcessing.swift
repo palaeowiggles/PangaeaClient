@@ -9,7 +9,10 @@
 import Foundation
 import Rainbow
 import PangaeaClient
+import ArgumentParser
+import Logging
 
+/*
 func processCommandLine() -> (pangaeaID: String, outputFilePath: String?, verbosity: Int, jsonOutput: Bool) {
 	let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "unknown"
 	let version2 = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "unknown"
@@ -96,4 +99,77 @@ func processCommandLine() -> (pangaeaID: String, outputFilePath: String?, verbos
 	
 	return (pangaeaID: pangaeaID, outputFilePath: outputFileOption.value, verbosity.value, jsonOutput: json)
 	
+}*/
+
+
+struct PangaeaClientCLIParser: ParsableCommand {
+    static let configuration =
+      CommandConfiguration(
+        commandName: "PangaeaClientCLI",
+        abstract:
+"""
+A command-line tool to access remote datasets from the PANGAEA service.
+""".bold,
+        discussion:
+"""
+This tool downloads and parses structured data records from the PANGAEA
+database service (https://pangaea.de). Currently only textual and numeric
+datasets are supported. Output can be in ASCII table format, or JSON.
+
+
+There are various options to:
+
+""",
+        version: "0.1.0",
+        shouldDisplay: false,
+        subcommands: [ParsableCommand.Type](),
+        defaultSubcommand: nil,
+        helpNames: nil)
+  
+
+  @Flag(name: [.customShort("j"), .long],
+        help: "Outputs all parsed Pangaea metadata and data as JSON.")
+  var json: Bool = false
+
+  @Flag(name: [.customShort("c"), .long],
+        help: "Clears out all existing caches.")
+  var clearCaches: Bool = false
+
+  @Flag(name: .long,
+        help: "Show license for this project, and licenses of projects used.")
+  var licenses: Bool = false
+  
+  @Flag(name: .long,
+        help: "Show version for this tool.")
+  var versions: Bool = false
+
+  @Flag(name: .shortAndLong,
+        help: "Verbose output. Multiple counts increase verbosity.")
+  var verbosity: Int
+  
+  @Option(name: [.customShort("o"), .long],
+          help: "Output filepath. (Default: stdout)")
+  var outputFilePath: String?
+  
+  @Argument(help: "The PangaeaID to be retrieved (e.g. PANGAEA.547797)")
+  var pangaeaID: String
+
+  mutating func run() throws {
+    logger.logLevel = Logger.Level(verbosity: verbosity, defaultLevel: defaultLogLevel)
+    
+    if licenses {
+      print(PangaeaClient.license)
+      print(PangaeaClient.vendorLicenses)
+
+      PangaeaClientCLIParser.exit()
+    }
+    
+    if versions {
+      print("PangaeaClientCLI (version \(version.red), build \(version2.red)) ©2021 Heiko Pälike.")
+      PangaeaClientCLIParser.exit()
+    }
+    logger.info("requested to load Pangaea dataset with ID: \(pangaeaID)")
+
+  }
 }
+

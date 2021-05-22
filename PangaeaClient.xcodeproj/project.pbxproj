@@ -1,0 +1,3786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"PangaeaClient::PangaeaClientPackageTests::ProductTarget" /* PangaeaClientPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_579 /* Build configuration list for PBXAggregateTarget "PangaeaClientPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_582 /* PBXTargetDependency */,
+			);
+			name = PangaeaClientPackageTests;
+			productName = PangaeaClientPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		301741332659571100595AB5 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301741322659571100595AB5 /* Logging.swift */; };
+		301741352659571400595AB5 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301741342659571400595AB5 /* Logging.swift */; };
+		OBJ_311 /* BashCompletionsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_247 /* BashCompletionsGenerator.swift */; };
+		OBJ_312 /* CompletionsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_248 /* CompletionsGenerator.swift */; };
+		OBJ_313 /* FishCompletionsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_249 /* FishCompletionsGenerator.swift */; };
+		OBJ_314 /* ZshCompletionsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_250 /* ZshCompletionsGenerator.swift */; };
+		OBJ_315 /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_252 /* Argument.swift */; };
+		OBJ_316 /* ArgumentHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_253 /* ArgumentHelp.swift */; };
+		OBJ_317 /* CompletionKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_254 /* CompletionKind.swift */; };
+		OBJ_318 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_255 /* Errors.swift */; };
+		OBJ_319 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_256 /* Flag.swift */; };
+		OBJ_320 /* NameSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_257 /* NameSpecification.swift */; };
+		OBJ_321 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_258 /* Option.swift */; };
+		OBJ_322 /* OptionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_259 /* OptionGroup.swift */; };
+		OBJ_323 /* CommandConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_261 /* CommandConfiguration.swift */; };
+		OBJ_324 /* EnumerableFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_262 /* EnumerableFlag.swift */; };
+		OBJ_325 /* ExpressibleByArgument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_263 /* ExpressibleByArgument.swift */; };
+		OBJ_326 /* ParsableArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_264 /* ParsableArguments.swift */; };
+		OBJ_327 /* ParsableArgumentsValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_265 /* ParsableArgumentsValidation.swift */; };
+		OBJ_328 /* ParsableCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_266 /* ParsableCommand.swift */; };
+		OBJ_329 /* ArgumentDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_268 /* ArgumentDecoder.swift */; };
+		OBJ_330 /* ArgumentDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_269 /* ArgumentDefinition.swift */; };
+		OBJ_331 /* ArgumentSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_270 /* ArgumentSet.swift */; };
+		OBJ_332 /* CommandParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_271 /* CommandParser.swift */; };
+		OBJ_333 /* InputOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_272 /* InputOrigin.swift */; };
+		OBJ_334 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_273 /* Name.swift */; };
+		OBJ_335 /* Parsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_274 /* Parsed.swift */; };
+		OBJ_336 /* ParsedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_275 /* ParsedValues.swift */; };
+		OBJ_337 /* ParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_276 /* ParserError.swift */; };
+		OBJ_338 /* SplitArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_277 /* SplitArguments.swift */; };
+		OBJ_339 /* HelpCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_279 /* HelpCommand.swift */; };
+		OBJ_340 /* HelpGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_280 /* HelpGenerator.swift */; };
+		OBJ_341 /* MessageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_281 /* MessageInfo.swift */; };
+		OBJ_342 /* UsageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_282 /* UsageGenerator.swift */; };
+		OBJ_343 /* SequenceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_284 /* SequenceExtensions.swift */; };
+		OBJ_344 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_285 /* StringExtensions.swift */; };
+		OBJ_345 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_286 /* Tree.swift */; };
+		OBJ_352 /* NSImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* NSImage+Extensions.swift */; };
+		OBJ_353 /* DiskConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* DiskConfig.swift */; };
+		OBJ_354 /* MemoryConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* MemoryConfig.swift */; };
+		OBJ_355 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* Date+Extensions.swift */; };
+		OBJ_356 /* Hasher+constantAccrossExecutions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* Hasher+constantAccrossExecutions.swift */; };
+		OBJ_357 /* JSONDecoder+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* JSONDecoder+Extensions.swift */; };
+		OBJ_358 /* DataSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* DataSerializer.swift */; };
+		OBJ_359 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* Entry.swift */; };
+		OBJ_360 /* ExpirationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* ExpirationMode.swift */; };
+		OBJ_361 /* Expiry.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* Expiry.swift */; };
+		OBJ_362 /* ImageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* ImageWrapper.swift */; };
+		OBJ_363 /* JSONArrayWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* JSONArrayWrapper.swift */; };
+		OBJ_364 /* JSONDictionaryWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* JSONDictionaryWrapper.swift */; };
+		OBJ_365 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* MD5.swift */; };
+		OBJ_366 /* MemoryCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* MemoryCapsule.swift */; };
+		OBJ_367 /* ObservationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* ObservationToken.swift */; };
+		OBJ_368 /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* Optional+Extension.swift */; };
+		OBJ_369 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* Result.swift */; };
+		OBJ_370 /* StorageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* StorageError.swift */; };
+		OBJ_371 /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* Transformer.swift */; };
+		OBJ_372 /* TransformerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* TransformerFactory.swift */; };
+		OBJ_373 /* TypeWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* TypeWrapper.swift */; };
+		OBJ_374 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* Types.swift */; };
+		OBJ_375 /* AsyncStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* AsyncStorage.swift */; };
+		OBJ_376 /* DiskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* DiskStorage.swift */; };
+		OBJ_377 /* HybridStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* HybridStorage.swift */; };
+		OBJ_378 /* KeyObservationRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* KeyObservationRegistry.swift */; };
+		OBJ_379 /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* MemoryStorage.swift */; };
+		OBJ_380 /* Storage+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* Storage+Transform.swift */; };
+		OBJ_381 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* Storage.swift */; };
+		OBJ_382 /* StorageAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* StorageAware.swift */; };
+		OBJ_383 /* StorageObservationRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* StorageObservationRegistry.swift */; };
+		OBJ_384 /* SyncStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* SyncStorage.swift */; };
+		OBJ_385 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* UIImage+Extensions.swift */; };
+		OBJ_392 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* Package.swift */; };
+		OBJ_398 /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_87 /* debug.c */; };
+		OBJ_399 /* entropy_common.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_88 /* entropy_common.c */; };
+		OBJ_400 /* error_private.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_89 /* error_private.c */; };
+		OBJ_401 /* fse_decompress.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_90 /* fse_decompress.c */; };
+		OBJ_402 /* pool.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* pool.c */; };
+		OBJ_403 /* threading.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_92 /* threading.c */; };
+		OBJ_404 /* xxhash.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_93 /* xxhash.c */; };
+		OBJ_405 /* zstd_common.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_94 /* zstd_common.c */; };
+		OBJ_406 /* fse_compress.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_96 /* fse_compress.c */; };
+		OBJ_407 /* hist.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_97 /* hist.c */; };
+		OBJ_408 /* huf_compress.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_98 /* huf_compress.c */; };
+		OBJ_409 /* zstd_compress.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_99 /* zstd_compress.c */; };
+		OBJ_410 /* zstd_compress_literals.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_100 /* zstd_compress_literals.c */; };
+		OBJ_411 /* zstd_compress_sequences.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_101 /* zstd_compress_sequences.c */; };
+		OBJ_412 /* zstd_compress_superblock.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_102 /* zstd_compress_superblock.c */; };
+		OBJ_413 /* zstd_double_fast.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_103 /* zstd_double_fast.c */; };
+		OBJ_414 /* zstd_fast.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_104 /* zstd_fast.c */; };
+		OBJ_415 /* zstd_lazy.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_105 /* zstd_lazy.c */; };
+		OBJ_416 /* zstd_ldm.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_106 /* zstd_ldm.c */; };
+		OBJ_417 /* zstd_opt.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_107 /* zstd_opt.c */; };
+		OBJ_418 /* zstdmt_compress.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_108 /* zstdmt_compress.c */; };
+		OBJ_419 /* huf_decompress.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_110 /* huf_decompress.c */; };
+		OBJ_420 /* zstd_ddict.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_111 /* zstd_ddict.c */; };
+		OBJ_421 /* zstd_decompress.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_112 /* zstd_decompress.c */; };
+		OBJ_422 /* zstd_decompress_block.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_113 /* zstd_decompress_block.c */; };
+		OBJ_429 /* Data.UnsafePointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_119 /* Data.UnsafePointer.swift */; };
+		OBJ_436 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_124 /* Package.swift */; };
+		OBJ_442 /* Locks.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_240 /* Locks.swift */; };
+		OBJ_443 /* LogHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_241 /* LogHandler.swift */; };
+		OBJ_444 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_242 /* Logging.swift */; };
+		OBJ_451 /* NSNotificationCenter+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_127 /* NSNotificationCenter+Promise.swift */; };
+		OBJ_452 /* NSObject+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_128 /* NSObject+Promise.swift */; };
+		OBJ_453 /* NSURLSession+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_129 /* NSURLSession+Promise.swift */; };
+		OBJ_454 /* Process+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_130 /* Process+Promise.swift */; };
+		OBJ_455 /* afterlife.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_131 /* afterlife.swift */; };
+		OBJ_457 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PromiseKit::PromiseKit::Product" /* PromiseKit.framework */; };
+		OBJ_465 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_126 /* Package.swift */; };
+		OBJ_471 /* PMCitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* PMCitation.swift */; };
+		OBJ_472 /* PMEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* PMEvent.swift */; };
+		OBJ_473 /* PMExtent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* PMExtent.swift */; };
+		OBJ_474 /* PMKeywords.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* PMKeywords.swift */; };
+		OBJ_475 /* PMLicense.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* PMLicense.swift */; };
+		OBJ_476 /* PMMatrixColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* PMMatrixColumn.swift */; };
+		OBJ_477 /* PMProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* PMProject.swift */; };
+		OBJ_478 /* PMTechnicalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* PMTechnicalInfo.swift */; };
+		OBJ_479 /* PangaeaBaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* PangaeaBaseURL.swift */; };
+		OBJ_480 /* PangaeaCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* PangaeaCache.swift */; };
+		OBJ_481 /* PangaeaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* PangaeaData.swift */; };
+		OBJ_482 /* PangaeaError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* PangaeaError.swift */; };
+		OBJ_483 /* ZStandard.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* ZStandard.swift */; };
+		OBJ_484 /* PangaeaClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* PangaeaClient.swift */; };
+		OBJ_485 /* PangaeaDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* PangaeaDefaults.swift */; };
+		OBJ_486 /* VendorLicenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* VendorLicenses.swift */; };
+		OBJ_488 /* Cache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Cache::Cache::Product" /* Cache.framework */; };
+		OBJ_489 /* Logging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-log::Logging::Product" /* Logging.framework */; };
+		OBJ_490 /* ZSTD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Elva::ZSTD::Product" /* ZSTD.framework */; };
+		OBJ_491 /* ElvaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Elva::ElvaCore::Product" /* ElvaCore.framework */; };
+		OBJ_492 /* Elva_zstd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Elva::Elva.zstd::Product" /* Elva_zstd.framework */; };
+		OBJ_493 /* PMKFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PMKFoundation::PMKFoundation::Product" /* PMKFoundation.framework */; };
+		OBJ_494 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PromiseKit::PromiseKit::Product" /* PromiseKit.framework */; };
+		OBJ_495 /* XMLCoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "XMLCoder::XMLCoder::Product" /* XMLCoder.framework */; };
+		OBJ_514 /* CommandLineProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* CommandLineProcessing.swift */; };
+		OBJ_515 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* Utilities.swift */; };
+		OBJ_516 /* licenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* licenses.swift */; };
+		OBJ_517 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* main.swift */; };
+		OBJ_519 /* Rainbow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Rainbow::Rainbow::Product" /* Rainbow.framework */; };
+		OBJ_520 /* ArgumentParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */; };
+		OBJ_521 /* PangaeaClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PangaeaClient::PangaeaClient::Product" /* PangaeaClient.framework */; };
+		OBJ_522 /* Cache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Cache::Cache::Product" /* Cache.framework */; };
+		OBJ_523 /* Logging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-log::Logging::Product" /* Logging.framework */; };
+		OBJ_524 /* ZSTD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Elva::ZSTD::Product" /* ZSTD.framework */; };
+		OBJ_525 /* ElvaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Elva::ElvaCore::Product" /* ElvaCore.framework */; };
+		OBJ_526 /* Elva_zstd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Elva::Elva.zstd::Product" /* Elva_zstd.framework */; };
+		OBJ_527 /* PMKFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PMKFoundation::PMKFoundation::Product" /* PMKFoundation.framework */; };
+		OBJ_528 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PromiseKit::PromiseKit::Product" /* PromiseKit.framework */; };
+		OBJ_529 /* XMLCoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "XMLCoder::XMLCoder::Product" /* XMLCoder.framework */; };
+		OBJ_547 /* PangaeaClientCLITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* PangaeaClientCLITests.swift */; };
+		OBJ_549 /* Rainbow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Rainbow::Rainbow::Product" /* Rainbow.framework */; };
+		OBJ_550 /* ArgumentParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */; };
+		OBJ_551 /* PangaeaClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PangaeaClient::PangaeaClient::Product" /* PangaeaClient.framework */; };
+		OBJ_552 /* Cache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Cache::Cache::Product" /* Cache.framework */; };
+		OBJ_553 /* Logging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-log::Logging::Product" /* Logging.framework */; };
+		OBJ_554 /* ZSTD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Elva::ZSTD::Product" /* ZSTD.framework */; };
+		OBJ_555 /* ElvaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Elva::ElvaCore::Product" /* ElvaCore.framework */; };
+		OBJ_556 /* Elva_zstd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Elva::Elva.zstd::Product" /* Elva_zstd.framework */; };
+		OBJ_557 /* PMKFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PMKFoundation::PMKFoundation::Product" /* PMKFoundation.framework */; };
+		OBJ_558 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PromiseKit::PromiseKit::Product" /* PromiseKit.framework */; };
+		OBJ_559 /* XMLCoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "XMLCoder::XMLCoder::Product" /* XMLCoder.framework */; };
+		OBJ_577 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_587 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_134 /* Box.swift */; };
+		OBJ_588 /* CancelContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_136 /* CancelContext.swift */; };
+		OBJ_589 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_137 /* Cancellable.swift */; };
+		OBJ_590 /* CancellableCatchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_138 /* CancellableCatchable.swift */; };
+		OBJ_591 /* CancellablePromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_139 /* CancellablePromise.swift */; };
+		OBJ_592 /* CancellableThenable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_140 /* CancellableThenable.swift */; };
+		OBJ_593 /* Catchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_141 /* Catchable.swift */; };
+		OBJ_594 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_142 /* Configuration.swift */; };
+		OBJ_595 /* CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_143 /* CustomStringConvertible.swift */; };
+		OBJ_596 /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_144 /* Dispatcher.swift */; };
+		OBJ_597 /* ConcurrencyLimitedDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_146 /* ConcurrencyLimitedDispatcher.swift */; };
+		OBJ_598 /* CoreDataDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_147 /* CoreDataDispatcher.swift */; };
+		OBJ_599 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_148 /* Queue.swift */; };
+		OBJ_600 /* RateLimitedDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_149 /* RateLimitedDispatcher.swift */; };
+		OBJ_601 /* RateLimitedDispatcherBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_150 /* RateLimitedDispatcherBase.swift */; };
+		OBJ_602 /* StrictRateLimitedDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_151 /* StrictRateLimitedDispatcher.swift */; };
+		OBJ_603 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_152 /* Error.swift */; };
+		OBJ_604 /* Guarantee.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_153 /* Guarantee.swift */; };
+		OBJ_605 /* LogEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_154 /* LogEvent.swift */; };
+		OBJ_606 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_155 /* Promise.swift */; };
+		OBJ_607 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_156 /* Resolver.swift */; };
+		OBJ_608 /* Thenable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_157 /* Thenable.swift */; };
+		OBJ_609 /* CatchWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_159 /* CatchWrappers.swift */; };
+		OBJ_610 /* EnsureWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_160 /* EnsureWrappers.swift */; };
+		OBJ_611 /* FinallyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_161 /* FinallyWrappers.swift */; };
+		OBJ_612 /* GuaranteeWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_162 /* GuaranteeWrappers.swift */; };
+		OBJ_613 /* RecoverWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_163 /* RecoverWrappers.swift */; };
+		OBJ_614 /* SequenceWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_164 /* SequenceWrappers.swift */; };
+		OBJ_615 /* ThenableWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_165 /* ThenableWrappers.swift */; };
+		OBJ_616 /* WrapperProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_166 /* WrapperProtocols.swift */; };
+		OBJ_617 /* after.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_167 /* after.swift */; };
+		OBJ_618 /* firstly.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_168 /* firstly.swift */; };
+		OBJ_619 /* hang.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_169 /* hang.swift */; };
+		OBJ_620 /* race.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_170 /* race.swift */; };
+		OBJ_621 /* when.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_171 /* when.swift */; };
+		OBJ_628 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_133 /* Package.swift */; };
+		OBJ_633 /* BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_227 /* BackgroundColor.swift */; };
+		OBJ_634 /* CodesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_228 /* CodesParser.swift */; };
+		OBJ_635 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_229 /* Color.swift */; };
+		OBJ_636 /* ColorApproximation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_230 /* ColorApproximation.swift */; };
+		OBJ_637 /* ControlCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_231 /* ControlCode.swift */; };
+		OBJ_638 /* ModesExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_232 /* ModesExtractor.swift */; };
+		OBJ_639 /* OutputTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_233 /* OutputTarget.swift */; };
+		OBJ_640 /* Rainbow.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_234 /* Rainbow.swift */; };
+		OBJ_641 /* String+Rainbow.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_235 /* String+Rainbow.swift */; };
+		OBJ_642 /* StringGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_236 /* StringGenerator.swift */; };
+		OBJ_643 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_237 /* Style.swift */; };
+		OBJ_650 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_226 /* Package.swift */; };
+		OBJ_655 /* BoolBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_176 /* BoolBox.swift */; };
+		OBJ_656 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_177 /* Box.swift */; };
+		OBJ_657 /* ChoiceBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_178 /* ChoiceBox.swift */; };
+		OBJ_658 /* DataBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_179 /* DataBox.swift */; };
+		OBJ_659 /* DateBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_180 /* DateBox.swift */; };
+		OBJ_660 /* DecimalBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_181 /* DecimalBox.swift */; };
+		OBJ_661 /* DoubleBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_182 /* DoubleBox.swift */; };
+		OBJ_662 /* FloatBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_183 /* FloatBox.swift */; };
+		OBJ_663 /* IntBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_184 /* IntBox.swift */; };
+		OBJ_664 /* KeyedBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_185 /* KeyedBox.swift */; };
+		OBJ_665 /* NullBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_186 /* NullBox.swift */; };
+		OBJ_666 /* SharedBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_187 /* SharedBox.swift */; };
+		OBJ_667 /* SingleKeyedBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_188 /* SingleKeyedBox.swift */; };
+		OBJ_668 /* StringBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_189 /* StringBox.swift */; };
+		OBJ_669 /* UIntBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_190 /* UIntBox.swift */; };
+		OBJ_670 /* URLBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_191 /* URLBox.swift */; };
+		OBJ_671 /* UnkeyedBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_192 /* UnkeyedBox.swift */; };
+		OBJ_672 /* ValueBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_193 /* ValueBox.swift */; };
+		OBJ_673 /* ISO8601DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_194 /* ISO8601DateFormatter.swift */; };
+		OBJ_674 /* KeyedStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_195 /* KeyedStorage.swift */; };
+		OBJ_675 /* Metatypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_196 /* Metatypes.swift */; };
+		OBJ_676 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_197 /* String+Extensions.swift */; };
+		OBJ_677 /* XMLChoiceCodingKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_198 /* XMLChoiceCodingKey.swift */; };
+		OBJ_678 /* XMLCoderElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_199 /* XMLCoderElement.swift */; };
+		OBJ_679 /* XMLHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_200 /* XMLHeader.swift */; };
+		OBJ_680 /* XMLKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_201 /* XMLKey.swift */; };
+		OBJ_681 /* XMLStackParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_202 /* XMLStackParser.swift */; };
+		OBJ_682 /* DecodingErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_204 /* DecodingErrorExtension.swift */; };
+		OBJ_683 /* DynamicNodeDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_205 /* DynamicNodeDecoding.swift */; };
+		OBJ_684 /* SingleValueDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_206 /* SingleValueDecodingContainer.swift */; };
+		OBJ_685 /* XMLChoiceDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_207 /* XMLChoiceDecodingContainer.swift */; };
+		OBJ_686 /* XMLDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_208 /* XMLDecoder.swift */; };
+		OBJ_687 /* XMLDecoderImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_209 /* XMLDecoderImplementation.swift */; };
+		OBJ_688 /* XMLDecodingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_210 /* XMLDecodingStorage.swift */; };
+		OBJ_689 /* XMLKeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_211 /* XMLKeyedDecodingContainer.swift */; };
+		OBJ_690 /* XMLUnkeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_212 /* XMLUnkeyedDecodingContainer.swift */; };
+		OBJ_691 /* DynamicNodeEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_214 /* DynamicNodeEncoding.swift */; };
+		OBJ_692 /* EncodingErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_215 /* EncodingErrorExtension.swift */; };
+		OBJ_693 /* SingleValueEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_216 /* SingleValueEncodingContainer.swift */; };
+		OBJ_694 /* XMLChoiceEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_217 /* XMLChoiceEncodingContainer.swift */; };
+		OBJ_695 /* XMLEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_218 /* XMLEncoder.swift */; };
+		OBJ_696 /* XMLEncoderImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_219 /* XMLEncoderImplementation.swift */; };
+		OBJ_697 /* XMLEncodingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_220 /* XMLEncodingStorage.swift */; };
+		OBJ_698 /* XMLKeyedEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_221 /* XMLKeyedEncodingContainer.swift */; };
+		OBJ_699 /* XMLReferencingEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_222 /* XMLReferencingEncoder.swift */; };
+		OBJ_700 /* XMLUnkeyedEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_223 /* XMLUnkeyedEncodingContainer.swift */; };
+		OBJ_707 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_224 /* Package.swift */; };
+		OBJ_712 /* ZSTD.Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_121 /* ZSTD.Error.swift */; };
+		OBJ_713 /* ZSTD.Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_122 /* ZSTD.Level.swift */; };
+		OBJ_714 /* ZSTD.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_123 /* ZSTD.swift */; };
+		OBJ_716 /* ElvaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Elva::ElvaCore::Product" /* ElvaCore.framework */; };
+		OBJ_717 /* Elva_zstd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Elva::Elva.zstd::Product" /* Elva_zstd.framework */; };
+		OBJ_725 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_287 /* Package.swift */; };
+		OBJ_731 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_243 /* Package.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3017410F2659562A00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Cache::Cache";
+			remoteInfo = Cache;
+		};
+		301741102659562A00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "swift-log::Logging";
+			remoteInfo = Logging;
+		};
+		301741112659562A00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Elva::ZSTD";
+			remoteInfo = ZSTD;
+		};
+		301741122659562A00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Elva::ElvaCore";
+			remoteInfo = ElvaCore;
+		};
+		301741132659562A00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Elva::Elva.zstd";
+			remoteInfo = Elva.zstd;
+		};
+		301741142659562A00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Elva::ElvaCore";
+			remoteInfo = ElvaCore;
+		};
+		301741152659562A00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Elva::Elva.zstd";
+			remoteInfo = Elva.zstd;
+		};
+		301741162659562A00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "PMKFoundation::PMKFoundation";
+			remoteInfo = PMKFoundation;
+		};
+		301741172659562A00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "PromiseKit::PromiseKit";
+			remoteInfo = PromiseKit;
+		};
+		301741182659562A00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "PromiseKit::PromiseKit";
+			remoteInfo = PromiseKit;
+		};
+		301741192659562A00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "XMLCoder::XMLCoder";
+			remoteInfo = XMLCoder;
+		};
+		3017411A2659562A00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Rainbow::Rainbow";
+			remoteInfo = Rainbow;
+		};
+		3017411B2659562A00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "swift-argument-parser::ArgumentParser";
+			remoteInfo = ArgumentParser;
+		};
+		3017411C2659562A00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "PangaeaClient::PangaeaClient";
+			remoteInfo = PangaeaClient;
+		};
+		3017411D2659562A00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Cache::Cache";
+			remoteInfo = Cache;
+		};
+		3017411E2659562A00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "swift-log::Logging";
+			remoteInfo = Logging;
+		};
+		3017411F2659562A00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Elva::ZSTD";
+			remoteInfo = ZSTD;
+		};
+		301741202659562A00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Elva::ElvaCore";
+			remoteInfo = ElvaCore;
+		};
+		301741212659562A00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Elva::Elva.zstd";
+			remoteInfo = Elva.zstd;
+		};
+		301741222659562A00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "PMKFoundation::PMKFoundation";
+			remoteInfo = PMKFoundation;
+		};
+		301741232659562A00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "PromiseKit::PromiseKit";
+			remoteInfo = PromiseKit;
+		};
+		301741242659562A00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "XMLCoder::XMLCoder";
+			remoteInfo = XMLCoder;
+		};
+		301741252659562B00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "PangaeaClient::PangaeaClientCLI";
+			remoteInfo = PangaeaClientCLI;
+		};
+		301741262659562B00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Rainbow::Rainbow";
+			remoteInfo = Rainbow;
+		};
+		301741272659562B00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "swift-argument-parser::ArgumentParser";
+			remoteInfo = ArgumentParser;
+		};
+		301741282659562B00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "PangaeaClient::PangaeaClient";
+			remoteInfo = PangaeaClient;
+		};
+		301741292659562B00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Cache::Cache";
+			remoteInfo = Cache;
+		};
+		3017412A2659562B00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "swift-log::Logging";
+			remoteInfo = Logging;
+		};
+		3017412B2659562B00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Elva::ZSTD";
+			remoteInfo = ZSTD;
+		};
+		3017412C2659562B00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Elva::ElvaCore";
+			remoteInfo = ElvaCore;
+		};
+		3017412D2659562B00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Elva::Elva.zstd";
+			remoteInfo = Elva.zstd;
+		};
+		3017412E2659562B00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "PMKFoundation::PMKFoundation";
+			remoteInfo = PMKFoundation;
+		};
+		3017412F2659562B00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "PromiseKit::PromiseKit";
+			remoteInfo = PromiseKit;
+		};
+		301741302659562B00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "XMLCoder::XMLCoder";
+			remoteInfo = XMLCoder;
+		};
+		301741312659562C00595AB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "PangaeaClient::PangaeaClientCLITests";
+			remoteInfo = PangaeaClientCLITests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		301741322659571100595AB5 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		301741342659571400595AB5 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		"Cache::Cache::Product" /* Cache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Elva::Elva.zstd::Product" /* Elva_zstd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Elva_zstd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Elva::ElvaCore::Product" /* ElvaCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ElvaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Elva::ZSTD::Product" /* ZSTD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZSTD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_10 /* PMCitation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMCitation.swift; sourceTree = "<group>"; };
+		OBJ_100 /* zstd_compress_literals.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstd_compress_literals.c; sourceTree = "<group>"; };
+		OBJ_101 /* zstd_compress_sequences.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstd_compress_sequences.c; sourceTree = "<group>"; };
+		OBJ_102 /* zstd_compress_superblock.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstd_compress_superblock.c; sourceTree = "<group>"; };
+		OBJ_103 /* zstd_double_fast.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstd_double_fast.c; sourceTree = "<group>"; };
+		OBJ_104 /* zstd_fast.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstd_fast.c; sourceTree = "<group>"; };
+		OBJ_105 /* zstd_lazy.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstd_lazy.c; sourceTree = "<group>"; };
+		OBJ_106 /* zstd_ldm.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstd_ldm.c; sourceTree = "<group>"; };
+		OBJ_107 /* zstd_opt.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstd_opt.c; sourceTree = "<group>"; };
+		OBJ_108 /* zstdmt_compress.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstdmt_compress.c; sourceTree = "<group>"; };
+		OBJ_11 /* PMEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMEvent.swift; sourceTree = "<group>"; };
+		OBJ_110 /* huf_decompress.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = huf_decompress.c; sourceTree = "<group>"; };
+		OBJ_111 /* zstd_ddict.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstd_ddict.c; sourceTree = "<group>"; };
+		OBJ_112 /* zstd_decompress.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstd_decompress.c; sourceTree = "<group>"; };
+		OBJ_113 /* zstd_decompress_block.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstd_decompress_block.c; sourceTree = "<group>"; };
+		OBJ_115 /* zstd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zstd.h; sourceTree = "<group>"; };
+		OBJ_116 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = /Users/wiggles/Developer_Disk/nonApple/PangaeaClient/PangaeaClient.xcodeproj/GeneratedModuleMap/Elva_zstd/module.modulemap; sourceTree = "<group>"; };
+		OBJ_119 /* Data.UnsafePointer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.UnsafePointer.swift; sourceTree = "<group>"; };
+		OBJ_12 /* PMExtent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMExtent.swift; sourceTree = "<group>"; };
+		OBJ_121 /* ZSTD.Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZSTD.Error.swift; sourceTree = "<group>"; };
+		OBJ_122 /* ZSTD.Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZSTD.Level.swift; sourceTree = "<group>"; };
+		OBJ_123 /* ZSTD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZSTD.swift; sourceTree = "<group>"; };
+		OBJ_124 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/wiggles/Developer_Disk/nonApple/PangaeaClient/.build/checkouts/Elva/Package.swift; sourceTree = "<group>"; };
+		OBJ_126 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/wiggles/Developer_Disk/nonApple/PangaeaClient/.build/checkouts/Foundation/Package.swift; sourceTree = "<group>"; };
+		OBJ_127 /* NSNotificationCenter+Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotificationCenter+Promise.swift"; sourceTree = "<group>"; };
+		OBJ_128 /* NSObject+Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Promise.swift"; sourceTree = "<group>"; };
+		OBJ_129 /* NSURLSession+Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSURLSession+Promise.swift"; sourceTree = "<group>"; };
+		OBJ_13 /* PMKeywords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMKeywords.swift; sourceTree = "<group>"; };
+		OBJ_130 /* Process+Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Process+Promise.swift"; sourceTree = "<group>"; };
+		OBJ_131 /* afterlife.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = afterlife.swift; sourceTree = "<group>"; };
+		OBJ_133 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/wiggles/Developer_Disk/nonApple/PangaeaClient/.build/checkouts/PromiseKit/Package.swift; sourceTree = "<group>"; };
+		OBJ_134 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		OBJ_136 /* CancelContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelContext.swift; sourceTree = "<group>"; };
+		OBJ_137 /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
+		OBJ_138 /* CancellableCatchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellableCatchable.swift; sourceTree = "<group>"; };
+		OBJ_139 /* CancellablePromise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellablePromise.swift; sourceTree = "<group>"; };
+		OBJ_14 /* PMLicense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMLicense.swift; sourceTree = "<group>"; };
+		OBJ_140 /* CancellableThenable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellableThenable.swift; sourceTree = "<group>"; };
+		OBJ_141 /* Catchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catchable.swift; sourceTree = "<group>"; };
+		OBJ_142 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		OBJ_143 /* CustomStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStringConvertible.swift; sourceTree = "<group>"; };
+		OBJ_144 /* Dispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
+		OBJ_146 /* ConcurrencyLimitedDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyLimitedDispatcher.swift; sourceTree = "<group>"; };
+		OBJ_147 /* CoreDataDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDispatcher.swift; sourceTree = "<group>"; };
+		OBJ_148 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		OBJ_149 /* RateLimitedDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateLimitedDispatcher.swift; sourceTree = "<group>"; };
+		OBJ_15 /* PMMatrixColumn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMMatrixColumn.swift; sourceTree = "<group>"; };
+		OBJ_150 /* RateLimitedDispatcherBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateLimitedDispatcherBase.swift; sourceTree = "<group>"; };
+		OBJ_151 /* StrictRateLimitedDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrictRateLimitedDispatcher.swift; sourceTree = "<group>"; };
+		OBJ_152 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		OBJ_153 /* Guarantee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guarantee.swift; sourceTree = "<group>"; };
+		OBJ_154 /* LogEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEvent.swift; sourceTree = "<group>"; };
+		OBJ_155 /* Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
+		OBJ_156 /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
+		OBJ_157 /* Thenable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thenable.swift; sourceTree = "<group>"; };
+		OBJ_159 /* CatchWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchWrappers.swift; sourceTree = "<group>"; };
+		OBJ_16 /* PMProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMProject.swift; sourceTree = "<group>"; };
+		OBJ_160 /* EnsureWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnsureWrappers.swift; sourceTree = "<group>"; };
+		OBJ_161 /* FinallyWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinallyWrappers.swift; sourceTree = "<group>"; };
+		OBJ_162 /* GuaranteeWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuaranteeWrappers.swift; sourceTree = "<group>"; };
+		OBJ_163 /* RecoverWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverWrappers.swift; sourceTree = "<group>"; };
+		OBJ_164 /* SequenceWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceWrappers.swift; sourceTree = "<group>"; };
+		OBJ_165 /* ThenableWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThenableWrappers.swift; sourceTree = "<group>"; };
+		OBJ_166 /* WrapperProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapperProtocols.swift; sourceTree = "<group>"; };
+		OBJ_167 /* after.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = after.swift; sourceTree = "<group>"; };
+		OBJ_168 /* firstly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstly.swift; sourceTree = "<group>"; };
+		OBJ_169 /* hang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hang.swift; sourceTree = "<group>"; };
+		OBJ_17 /* PMTechnicalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMTechnicalInfo.swift; sourceTree = "<group>"; };
+		OBJ_170 /* race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = race.swift; sourceTree = "<group>"; };
+		OBJ_171 /* when.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = when.swift; sourceTree = "<group>"; };
+		OBJ_176 /* BoolBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolBox.swift; sourceTree = "<group>"; };
+		OBJ_177 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		OBJ_178 /* ChoiceBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceBox.swift; sourceTree = "<group>"; };
+		OBJ_179 /* DataBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBox.swift; sourceTree = "<group>"; };
+		OBJ_18 /* PangaeaBaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PangaeaBaseURL.swift; sourceTree = "<group>"; };
+		OBJ_180 /* DateBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateBox.swift; sourceTree = "<group>"; };
+		OBJ_181 /* DecimalBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalBox.swift; sourceTree = "<group>"; };
+		OBJ_182 /* DoubleBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleBox.swift; sourceTree = "<group>"; };
+		OBJ_183 /* FloatBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatBox.swift; sourceTree = "<group>"; };
+		OBJ_184 /* IntBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntBox.swift; sourceTree = "<group>"; };
+		OBJ_185 /* KeyedBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyedBox.swift; sourceTree = "<group>"; };
+		OBJ_186 /* NullBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NullBox.swift; sourceTree = "<group>"; };
+		OBJ_187 /* SharedBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedBox.swift; sourceTree = "<group>"; };
+		OBJ_188 /* SingleKeyedBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleKeyedBox.swift; sourceTree = "<group>"; };
+		OBJ_189 /* StringBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringBox.swift; sourceTree = "<group>"; };
+		OBJ_19 /* PangaeaCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PangaeaCache.swift; sourceTree = "<group>"; };
+		OBJ_190 /* UIntBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIntBox.swift; sourceTree = "<group>"; };
+		OBJ_191 /* URLBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBox.swift; sourceTree = "<group>"; };
+		OBJ_192 /* UnkeyedBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnkeyedBox.swift; sourceTree = "<group>"; };
+		OBJ_193 /* ValueBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueBox.swift; sourceTree = "<group>"; };
+		OBJ_194 /* ISO8601DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO8601DateFormatter.swift; sourceTree = "<group>"; };
+		OBJ_195 /* KeyedStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyedStorage.swift; sourceTree = "<group>"; };
+		OBJ_196 /* Metatypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metatypes.swift; sourceTree = "<group>"; };
+		OBJ_197 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_198 /* XMLChoiceCodingKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLChoiceCodingKey.swift; sourceTree = "<group>"; };
+		OBJ_199 /* XMLCoderElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLCoderElement.swift; sourceTree = "<group>"; };
+		OBJ_20 /* PangaeaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PangaeaData.swift; sourceTree = "<group>"; };
+		OBJ_200 /* XMLHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLHeader.swift; sourceTree = "<group>"; };
+		OBJ_201 /* XMLKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLKey.swift; sourceTree = "<group>"; };
+		OBJ_202 /* XMLStackParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLStackParser.swift; sourceTree = "<group>"; };
+		OBJ_204 /* DecodingErrorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodingErrorExtension.swift; sourceTree = "<group>"; };
+		OBJ_205 /* DynamicNodeDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicNodeDecoding.swift; sourceTree = "<group>"; };
+		OBJ_206 /* SingleValueDecodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleValueDecodingContainer.swift; sourceTree = "<group>"; };
+		OBJ_207 /* XMLChoiceDecodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLChoiceDecodingContainer.swift; sourceTree = "<group>"; };
+		OBJ_208 /* XMLDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLDecoder.swift; sourceTree = "<group>"; };
+		OBJ_209 /* XMLDecoderImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLDecoderImplementation.swift; sourceTree = "<group>"; };
+		OBJ_21 /* PangaeaError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PangaeaError.swift; sourceTree = "<group>"; };
+		OBJ_210 /* XMLDecodingStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLDecodingStorage.swift; sourceTree = "<group>"; };
+		OBJ_211 /* XMLKeyedDecodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLKeyedDecodingContainer.swift; sourceTree = "<group>"; };
+		OBJ_212 /* XMLUnkeyedDecodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLUnkeyedDecodingContainer.swift; sourceTree = "<group>"; };
+		OBJ_214 /* DynamicNodeEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicNodeEncoding.swift; sourceTree = "<group>"; };
+		OBJ_215 /* EncodingErrorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodingErrorExtension.swift; sourceTree = "<group>"; };
+		OBJ_216 /* SingleValueEncodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleValueEncodingContainer.swift; sourceTree = "<group>"; };
+		OBJ_217 /* XMLChoiceEncodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLChoiceEncodingContainer.swift; sourceTree = "<group>"; };
+		OBJ_218 /* XMLEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLEncoder.swift; sourceTree = "<group>"; };
+		OBJ_219 /* XMLEncoderImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLEncoderImplementation.swift; sourceTree = "<group>"; };
+		OBJ_22 /* ZStandard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStandard.swift; sourceTree = "<group>"; };
+		OBJ_220 /* XMLEncodingStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLEncodingStorage.swift; sourceTree = "<group>"; };
+		OBJ_221 /* XMLKeyedEncodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLKeyedEncodingContainer.swift; sourceTree = "<group>"; };
+		OBJ_222 /* XMLReferencingEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLReferencingEncoder.swift; sourceTree = "<group>"; };
+		OBJ_223 /* XMLUnkeyedEncodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLUnkeyedEncodingContainer.swift; sourceTree = "<group>"; };
+		OBJ_224 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/wiggles/Developer_Disk/nonApple/PangaeaClient/.build/checkouts/XMLCoder/Package.swift; sourceTree = "<group>"; };
+		OBJ_226 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/wiggles/Developer_Disk/nonApple/PangaeaClient/.build/checkouts/Rainbow/Package.swift; sourceTree = "<group>"; };
+		OBJ_227 /* BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColor.swift; sourceTree = "<group>"; };
+		OBJ_228 /* CodesParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodesParser.swift; sourceTree = "<group>"; };
+		OBJ_229 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		OBJ_23 /* PangaeaClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PangaeaClient.swift; sourceTree = "<group>"; };
+		OBJ_230 /* ColorApproximation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorApproximation.swift; sourceTree = "<group>"; };
+		OBJ_231 /* ControlCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlCode.swift; sourceTree = "<group>"; };
+		OBJ_232 /* ModesExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModesExtractor.swift; sourceTree = "<group>"; };
+		OBJ_233 /* OutputTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputTarget.swift; sourceTree = "<group>"; };
+		OBJ_234 /* Rainbow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rainbow.swift; sourceTree = "<group>"; };
+		OBJ_235 /* String+Rainbow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Rainbow.swift"; sourceTree = "<group>"; };
+		OBJ_236 /* StringGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringGenerator.swift; sourceTree = "<group>"; };
+		OBJ_237 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		OBJ_24 /* PangaeaDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PangaeaDefaults.swift; sourceTree = "<group>"; };
+		OBJ_240 /* Locks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locks.swift; sourceTree = "<group>"; };
+		OBJ_241 /* LogHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogHandler.swift; sourceTree = "<group>"; };
+		OBJ_242 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		OBJ_243 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/wiggles/Developer_Disk/nonApple/PangaeaClient/.build/checkouts/swift-log/Package.swift"; sourceTree = "<group>"; };
+		OBJ_247 /* BashCompletionsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BashCompletionsGenerator.swift; sourceTree = "<group>"; };
+		OBJ_248 /* CompletionsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionsGenerator.swift; sourceTree = "<group>"; };
+		OBJ_249 /* FishCompletionsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishCompletionsGenerator.swift; sourceTree = "<group>"; };
+		OBJ_25 /* VendorLicenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorLicenses.swift; sourceTree = "<group>"; };
+		OBJ_250 /* ZshCompletionsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZshCompletionsGenerator.swift; sourceTree = "<group>"; };
+		OBJ_252 /* Argument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argument.swift; sourceTree = "<group>"; };
+		OBJ_253 /* ArgumentHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentHelp.swift; sourceTree = "<group>"; };
+		OBJ_254 /* CompletionKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionKind.swift; sourceTree = "<group>"; };
+		OBJ_255 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		OBJ_256 /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
+		OBJ_257 /* NameSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpecification.swift; sourceTree = "<group>"; };
+		OBJ_258 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		OBJ_259 /* OptionGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionGroup.swift; sourceTree = "<group>"; };
+		OBJ_261 /* CommandConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandConfiguration.swift; sourceTree = "<group>"; };
+		OBJ_262 /* EnumerableFlag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumerableFlag.swift; sourceTree = "<group>"; };
+		OBJ_263 /* ExpressibleByArgument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressibleByArgument.swift; sourceTree = "<group>"; };
+		OBJ_264 /* ParsableArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsableArguments.swift; sourceTree = "<group>"; };
+		OBJ_265 /* ParsableArgumentsValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsableArgumentsValidation.swift; sourceTree = "<group>"; };
+		OBJ_266 /* ParsableCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsableCommand.swift; sourceTree = "<group>"; };
+		OBJ_268 /* ArgumentDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentDecoder.swift; sourceTree = "<group>"; };
+		OBJ_269 /* ArgumentDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentDefinition.swift; sourceTree = "<group>"; };
+		OBJ_270 /* ArgumentSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentSet.swift; sourceTree = "<group>"; };
+		OBJ_271 /* CommandParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandParser.swift; sourceTree = "<group>"; };
+		OBJ_272 /* InputOrigin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputOrigin.swift; sourceTree = "<group>"; };
+		OBJ_273 /* Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
+		OBJ_274 /* Parsed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsed.swift; sourceTree = "<group>"; };
+		OBJ_275 /* ParsedValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsedValues.swift; sourceTree = "<group>"; };
+		OBJ_276 /* ParserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserError.swift; sourceTree = "<group>"; };
+		OBJ_277 /* SplitArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitArguments.swift; sourceTree = "<group>"; };
+		OBJ_279 /* HelpCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCommand.swift; sourceTree = "<group>"; };
+		OBJ_280 /* HelpGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpGenerator.swift; sourceTree = "<group>"; };
+		OBJ_281 /* MessageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInfo.swift; sourceTree = "<group>"; };
+		OBJ_282 /* UsageGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageGenerator.swift; sourceTree = "<group>"; };
+		OBJ_284 /* SequenceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceExtensions.swift; sourceTree = "<group>"; };
+		OBJ_285 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		OBJ_286 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		OBJ_287 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/wiggles/Developer_Disk/nonApple/PangaeaClient/.build/checkouts/swift-argument-parser/Package.swift"; sourceTree = "<group>"; };
+		OBJ_302 /* Docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Docs; sourceTree = SOURCE_ROOT; };
+		OBJ_303 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		OBJ_304 /* set_build_number.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = set_build_number.sh; sourceTree = "<group>"; };
+		OBJ_305 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_31 /* CommandLineProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLineProcessing.swift; sourceTree = "<group>"; };
+		OBJ_32 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		OBJ_33 /* licenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = licenses.swift; sourceTree = "<group>"; };
+		OBJ_34 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		OBJ_37 /* PangaeaClientCLITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PangaeaClientCLITests.swift; sourceTree = "<group>"; };
+		OBJ_40 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/wiggles/Developer_Disk/nonApple/PangaeaClient/.build/checkouts/Cache/Package.swift; sourceTree = "<group>"; };
+		OBJ_42 /* NSImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_45 /* DiskConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskConfig.swift; sourceTree = "<group>"; };
+		OBJ_46 /* MemoryConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryConfig.swift; sourceTree = "<group>"; };
+		OBJ_48 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_49 /* Hasher+constantAccrossExecutions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hasher+constantAccrossExecutions.swift"; sourceTree = "<group>"; };
+		OBJ_50 /* JSONDecoder+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_52 /* DataSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSerializer.swift; sourceTree = "<group>"; };
+		OBJ_53 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		OBJ_54 /* ExpirationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationMode.swift; sourceTree = "<group>"; };
+		OBJ_55 /* Expiry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expiry.swift; sourceTree = "<group>"; };
+		OBJ_56 /* ImageWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWrapper.swift; sourceTree = "<group>"; };
+		OBJ_57 /* JSONArrayWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONArrayWrapper.swift; sourceTree = "<group>"; };
+		OBJ_58 /* JSONDictionaryWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDictionaryWrapper.swift; sourceTree = "<group>"; };
+		OBJ_59 /* MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_60 /* MemoryCapsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryCapsule.swift; sourceTree = "<group>"; };
+		OBJ_61 /* ObservationToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationToken.swift; sourceTree = "<group>"; };
+		OBJ_62 /* Optional+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extension.swift"; sourceTree = "<group>"; };
+		OBJ_63 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		OBJ_64 /* StorageError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageError.swift; sourceTree = "<group>"; };
+		OBJ_65 /* Transformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transformer.swift; sourceTree = "<group>"; };
+		OBJ_66 /* TransformerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerFactory.swift; sourceTree = "<group>"; };
+		OBJ_67 /* TypeWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeWrapper.swift; sourceTree = "<group>"; };
+		OBJ_68 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		OBJ_70 /* AsyncStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncStorage.swift; sourceTree = "<group>"; };
+		OBJ_71 /* DiskStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskStorage.swift; sourceTree = "<group>"; };
+		OBJ_72 /* HybridStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HybridStorage.swift; sourceTree = "<group>"; };
+		OBJ_73 /* KeyObservationRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyObservationRegistry.swift; sourceTree = "<group>"; };
+		OBJ_74 /* MemoryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryStorage.swift; sourceTree = "<group>"; };
+		OBJ_75 /* Storage+Transform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storage+Transform.swift"; sourceTree = "<group>"; };
+		OBJ_76 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		OBJ_77 /* StorageAware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageAware.swift; sourceTree = "<group>"; };
+		OBJ_78 /* StorageObservationRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageObservationRegistry.swift; sourceTree = "<group>"; };
+		OBJ_79 /* SyncStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncStorage.swift; sourceTree = "<group>"; };
+		OBJ_81 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_87 /* debug.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = debug.c; sourceTree = "<group>"; };
+		OBJ_88 /* entropy_common.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = entropy_common.c; sourceTree = "<group>"; };
+		OBJ_89 /* error_private.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = error_private.c; sourceTree = "<group>"; };
+		OBJ_90 /* fse_decompress.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fse_decompress.c; sourceTree = "<group>"; };
+		OBJ_91 /* pool.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pool.c; sourceTree = "<group>"; };
+		OBJ_92 /* threading.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = threading.c; sourceTree = "<group>"; };
+		OBJ_93 /* xxhash.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xxhash.c; sourceTree = "<group>"; };
+		OBJ_94 /* zstd_common.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstd_common.c; sourceTree = "<group>"; };
+		OBJ_96 /* fse_compress.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fse_compress.c; sourceTree = "<group>"; };
+		OBJ_97 /* hist.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hist.c; sourceTree = "<group>"; };
+		OBJ_98 /* huf_compress.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = huf_compress.c; sourceTree = "<group>"; };
+		OBJ_99 /* zstd_compress.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zstd_compress.c; sourceTree = "<group>"; };
+		"PMKFoundation::PMKFoundation::Product" /* PMKFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PMKFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"PangaeaClient::PangaeaClient::Product" /* PangaeaClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PangaeaClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"PangaeaClient::PangaeaClientCLI::Product" /* PangaeaClientCLI */ = {isa = PBXFileReference; lastKnownFileType = text; path = PangaeaClientCLI; sourceTree = BUILT_PRODUCTS_DIR; };
+		"PangaeaClient::PangaeaClientCLITests::Product" /* PangaeaClientCLITests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = PangaeaClientCLITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"PromiseKit::PromiseKit::Product" /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Rainbow::Rainbow::Product" /* Rainbow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Rainbow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"XMLCoder::XMLCoder::Product" /* XMLCoder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XMLCoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ArgumentParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"swift-log::Logging::Product" /* Logging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Logging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_346 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_423 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_430 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_445 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_456 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_457 /* PromiseKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_487 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_488 /* Cache.framework in Frameworks */,
+				OBJ_489 /* Logging.framework in Frameworks */,
+				OBJ_490 /* ZSTD.framework in Frameworks */,
+				OBJ_491 /* ElvaCore.framework in Frameworks */,
+				OBJ_492 /* Elva_zstd.framework in Frameworks */,
+				OBJ_493 /* PMKFoundation.framework in Frameworks */,
+				OBJ_494 /* PromiseKit.framework in Frameworks */,
+				OBJ_495 /* XMLCoder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_518 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_519 /* Rainbow.framework in Frameworks */,
+				OBJ_520 /* ArgumentParser.framework in Frameworks */,
+				OBJ_521 /* PangaeaClient.framework in Frameworks */,
+				OBJ_522 /* Cache.framework in Frameworks */,
+				OBJ_523 /* Logging.framework in Frameworks */,
+				OBJ_524 /* ZSTD.framework in Frameworks */,
+				OBJ_525 /* ElvaCore.framework in Frameworks */,
+				OBJ_526 /* Elva_zstd.framework in Frameworks */,
+				OBJ_527 /* PMKFoundation.framework in Frameworks */,
+				OBJ_528 /* PromiseKit.framework in Frameworks */,
+				OBJ_529 /* XMLCoder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_548 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_549 /* Rainbow.framework in Frameworks */,
+				OBJ_550 /* ArgumentParser.framework in Frameworks */,
+				OBJ_551 /* PangaeaClient.framework in Frameworks */,
+				OBJ_552 /* Cache.framework in Frameworks */,
+				OBJ_553 /* Logging.framework in Frameworks */,
+				OBJ_554 /* ZSTD.framework in Frameworks */,
+				OBJ_555 /* ElvaCore.framework in Frameworks */,
+				OBJ_556 /* Elva_zstd.framework in Frameworks */,
+				OBJ_557 /* PMKFoundation.framework in Frameworks */,
+				OBJ_558 /* PromiseKit.framework in Frameworks */,
+				OBJ_559 /* XMLCoder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_622 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_644 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_701 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_715 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_716 /* ElvaCore.framework in Frameworks */,
+				OBJ_717 /* Elva_zstd.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_109 /* decompress */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_110 /* huf_decompress.c */,
+				OBJ_111 /* zstd_ddict.c */,
+				OBJ_112 /* zstd_decompress.c */,
+				OBJ_113 /* zstd_decompress_block.c */,
+			);
+			path = decompress;
+			sourceTree = "<group>";
+		};
+		OBJ_114 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_115 /* zstd.h */,
+				OBJ_116 /* module.modulemap */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		OBJ_117 /* ElvaCore */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_118 /* Extension */,
+			);
+			name = ElvaCore;
+			path = .build/checkouts/Elva/Sources/ElvaCore;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_118 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_119 /* Data.UnsafePointer.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		OBJ_120 /* ZSTD */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_121 /* ZSTD.Error.swift */,
+				OBJ_122 /* ZSTD.Level.swift */,
+				OBJ_123 /* ZSTD.swift */,
+			);
+			name = ZSTD;
+			path = .build/checkouts/Elva/Sources/ZSTD;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_125 /* PMKFoundation 3.3.7 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_126 /* Package.swift */,
+				OBJ_127 /* NSNotificationCenter+Promise.swift */,
+				OBJ_128 /* NSObject+Promise.swift */,
+				OBJ_129 /* NSURLSession+Promise.swift */,
+				OBJ_130 /* Process+Promise.swift */,
+				OBJ_131 /* afterlife.swift */,
+			);
+			name = "PMKFoundation 3.3.7";
+			path = .build/checkouts/Foundation/Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_132 /* PromiseKit 7.0.0-alpha3 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_133 /* Package.swift */,
+				OBJ_134 /* Box.swift */,
+				OBJ_135 /* Cancellation */,
+				OBJ_141 /* Catchable.swift */,
+				OBJ_142 /* Configuration.swift */,
+				OBJ_143 /* CustomStringConvertible.swift */,
+				OBJ_144 /* Dispatcher.swift */,
+				OBJ_145 /* Dispatchers */,
+				OBJ_152 /* Error.swift */,
+				OBJ_153 /* Guarantee.swift */,
+				OBJ_154 /* LogEvent.swift */,
+				OBJ_155 /* Promise.swift */,
+				OBJ_156 /* Resolver.swift */,
+				OBJ_157 /* Thenable.swift */,
+				OBJ_158 /* Wrappers */,
+				OBJ_167 /* after.swift */,
+				OBJ_168 /* firstly.swift */,
+				OBJ_169 /* hang.swift */,
+				OBJ_170 /* race.swift */,
+				OBJ_171 /* when.swift */,
+			);
+			name = "PromiseKit 7.0.0-alpha3";
+			path = .build/checkouts/PromiseKit/Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_135 /* Cancellation */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_136 /* CancelContext.swift */,
+				OBJ_137 /* Cancellable.swift */,
+				OBJ_138 /* CancellableCatchable.swift */,
+				OBJ_139 /* CancellablePromise.swift */,
+				OBJ_140 /* CancellableThenable.swift */,
+			);
+			path = Cancellation;
+			sourceTree = "<group>";
+		};
+		OBJ_145 /* Dispatchers */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_146 /* ConcurrencyLimitedDispatcher.swift */,
+				OBJ_147 /* CoreDataDispatcher.swift */,
+				OBJ_148 /* Queue.swift */,
+				OBJ_149 /* RateLimitedDispatcher.swift */,
+				OBJ_150 /* RateLimitedDispatcherBase.swift */,
+				OBJ_151 /* StrictRateLimitedDispatcher.swift */,
+			);
+			path = Dispatchers;
+			sourceTree = "<group>";
+		};
+		OBJ_158 /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_159 /* CatchWrappers.swift */,
+				OBJ_160 /* EnsureWrappers.swift */,
+				OBJ_161 /* FinallyWrappers.swift */,
+				OBJ_162 /* GuaranteeWrappers.swift */,
+				OBJ_163 /* RecoverWrappers.swift */,
+				OBJ_164 /* SequenceWrappers.swift */,
+				OBJ_165 /* ThenableWrappers.swift */,
+				OBJ_166 /* WrapperProtocols.swift */,
+			);
+			path = Wrappers;
+			sourceTree = "<group>";
+		};
+		OBJ_172 /* XMLCoder 0.12.0 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_173 /* XMLCoder */,
+				OBJ_224 /* Package.swift */,
+			);
+			name = "XMLCoder 0.12.0";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_173 /* XMLCoder */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_174 /* Auxiliaries */,
+				OBJ_203 /* Decoder */,
+				OBJ_213 /* Encoder */,
+			);
+			name = XMLCoder;
+			path = .build/checkouts/XMLCoder/Sources/XMLCoder;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_174 /* Auxiliaries */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_175 /* Box */,
+				OBJ_194 /* ISO8601DateFormatter.swift */,
+				OBJ_195 /* KeyedStorage.swift */,
+				OBJ_196 /* Metatypes.swift */,
+				OBJ_197 /* String+Extensions.swift */,
+				OBJ_198 /* XMLChoiceCodingKey.swift */,
+				OBJ_199 /* XMLCoderElement.swift */,
+				OBJ_200 /* XMLHeader.swift */,
+				OBJ_201 /* XMLKey.swift */,
+				OBJ_202 /* XMLStackParser.swift */,
+			);
+			path = Auxiliaries;
+			sourceTree = "<group>";
+		};
+		OBJ_175 /* Box */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_176 /* BoolBox.swift */,
+				OBJ_177 /* Box.swift */,
+				OBJ_178 /* ChoiceBox.swift */,
+				OBJ_179 /* DataBox.swift */,
+				OBJ_180 /* DateBox.swift */,
+				OBJ_181 /* DecimalBox.swift */,
+				OBJ_182 /* DoubleBox.swift */,
+				OBJ_183 /* FloatBox.swift */,
+				OBJ_184 /* IntBox.swift */,
+				OBJ_185 /* KeyedBox.swift */,
+				OBJ_186 /* NullBox.swift */,
+				OBJ_187 /* SharedBox.swift */,
+				OBJ_188 /* SingleKeyedBox.swift */,
+				OBJ_189 /* StringBox.swift */,
+				OBJ_190 /* UIntBox.swift */,
+				OBJ_191 /* URLBox.swift */,
+				OBJ_192 /* UnkeyedBox.swift */,
+				OBJ_193 /* ValueBox.swift */,
+			);
+			path = Box;
+			sourceTree = "<group>";
+		};
+		OBJ_203 /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_204 /* DecodingErrorExtension.swift */,
+				OBJ_205 /* DynamicNodeDecoding.swift */,
+				OBJ_206 /* SingleValueDecodingContainer.swift */,
+				OBJ_207 /* XMLChoiceDecodingContainer.swift */,
+				OBJ_208 /* XMLDecoder.swift */,
+				OBJ_209 /* XMLDecoderImplementation.swift */,
+				OBJ_210 /* XMLDecodingStorage.swift */,
+				OBJ_211 /* XMLKeyedDecodingContainer.swift */,
+				OBJ_212 /* XMLUnkeyedDecodingContainer.swift */,
+			);
+			path = Decoder;
+			sourceTree = "<group>";
+		};
+		OBJ_213 /* Encoder */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_214 /* DynamicNodeEncoding.swift */,
+				OBJ_215 /* EncodingErrorExtension.swift */,
+				OBJ_216 /* SingleValueEncodingContainer.swift */,
+				OBJ_217 /* XMLChoiceEncodingContainer.swift */,
+				OBJ_218 /* XMLEncoder.swift */,
+				OBJ_219 /* XMLEncoderImplementation.swift */,
+				OBJ_220 /* XMLEncodingStorage.swift */,
+				OBJ_221 /* XMLKeyedEncodingContainer.swift */,
+				OBJ_222 /* XMLReferencingEncoder.swift */,
+				OBJ_223 /* XMLUnkeyedEncodingContainer.swift */,
+			);
+			path = Encoder;
+			sourceTree = "<group>";
+		};
+		OBJ_225 /* Rainbow 4.0.0 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_226 /* Package.swift */,
+				OBJ_227 /* BackgroundColor.swift */,
+				OBJ_228 /* CodesParser.swift */,
+				OBJ_229 /* Color.swift */,
+				OBJ_230 /* ColorApproximation.swift */,
+				OBJ_231 /* ControlCode.swift */,
+				OBJ_232 /* ModesExtractor.swift */,
+				OBJ_233 /* OutputTarget.swift */,
+				OBJ_234 /* Rainbow.swift */,
+				OBJ_235 /* String+Rainbow.swift */,
+				OBJ_236 /* StringGenerator.swift */,
+				OBJ_237 /* Style.swift */,
+			);
+			name = "Rainbow 4.0.0";
+			path = .build/checkouts/Rainbow/Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_238 /* swift-log 1.4.2 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_239 /* Logging */,
+				OBJ_243 /* Package.swift */,
+			);
+			name = "swift-log 1.4.2";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_239 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_240 /* Locks.swift */,
+				OBJ_241 /* LogHandler.swift */,
+				OBJ_242 /* Logging.swift */,
+			);
+			name = Logging;
+			path = ".build/checkouts/swift-log/Sources/Logging";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_244 /* swift-argument-parser 0.4.3 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_245 /* ArgumentParser */,
+				OBJ_287 /* Package.swift */,
+			);
+			name = "swift-argument-parser 0.4.3";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_245 /* ArgumentParser */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_246 /* Completions */,
+				OBJ_251 /* Parsable Properties */,
+				OBJ_260 /* Parsable Types */,
+				OBJ_267 /* Parsing */,
+				OBJ_278 /* Usage */,
+				OBJ_283 /* Utilities */,
+			);
+			name = ArgumentParser;
+			path = ".build/checkouts/swift-argument-parser/Sources/ArgumentParser";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_246 /* Completions */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_247 /* BashCompletionsGenerator.swift */,
+				OBJ_248 /* CompletionsGenerator.swift */,
+				OBJ_249 /* FishCompletionsGenerator.swift */,
+				OBJ_250 /* ZshCompletionsGenerator.swift */,
+			);
+			path = Completions;
+			sourceTree = "<group>";
+		};
+		OBJ_251 /* Parsable Properties */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_252 /* Argument.swift */,
+				OBJ_253 /* ArgumentHelp.swift */,
+				OBJ_254 /* CompletionKind.swift */,
+				OBJ_255 /* Errors.swift */,
+				OBJ_256 /* Flag.swift */,
+				OBJ_257 /* NameSpecification.swift */,
+				OBJ_258 /* Option.swift */,
+				OBJ_259 /* OptionGroup.swift */,
+			);
+			path = "Parsable Properties";
+			sourceTree = "<group>";
+		};
+		OBJ_26 /* PangaeaClientCLI */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_31 /* CommandLineProcessing.swift */,
+				OBJ_32 /* Utilities.swift */,
+				301741342659571400595AB5 /* Logging.swift */,
+				OBJ_33 /* licenses.swift */,
+				OBJ_34 /* main.swift */,
+			);
+			name = PangaeaClientCLI;
+			path = Sources/PangaeaClientCLI;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_260 /* Parsable Types */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_261 /* CommandConfiguration.swift */,
+				OBJ_262 /* EnumerableFlag.swift */,
+				OBJ_263 /* ExpressibleByArgument.swift */,
+				OBJ_264 /* ParsableArguments.swift */,
+				OBJ_265 /* ParsableArgumentsValidation.swift */,
+				OBJ_266 /* ParsableCommand.swift */,
+			);
+			path = "Parsable Types";
+			sourceTree = "<group>";
+		};
+		OBJ_267 /* Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_268 /* ArgumentDecoder.swift */,
+				OBJ_269 /* ArgumentDefinition.swift */,
+				OBJ_270 /* ArgumentSet.swift */,
+				OBJ_271 /* CommandParser.swift */,
+				OBJ_272 /* InputOrigin.swift */,
+				OBJ_273 /* Name.swift */,
+				OBJ_274 /* Parsed.swift */,
+				OBJ_275 /* ParsedValues.swift */,
+				OBJ_276 /* ParserError.swift */,
+				OBJ_277 /* SplitArguments.swift */,
+			);
+			path = Parsing;
+			sourceTree = "<group>";
+		};
+		OBJ_278 /* Usage */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_279 /* HelpCommand.swift */,
+				OBJ_280 /* HelpGenerator.swift */,
+				OBJ_281 /* MessageInfo.swift */,
+				OBJ_282 /* UsageGenerator.swift */,
+			);
+			path = Usage;
+			sourceTree = "<group>";
+		};
+		OBJ_283 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_284 /* SequenceExtensions.swift */,
+				OBJ_285 /* StringExtensions.swift */,
+				OBJ_286 /* Tree.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		OBJ_288 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */,
+				"Cache::Cache::Product" /* Cache.framework */,
+				"Elva::Elva.zstd::Product" /* Elva_zstd.framework */,
+				"Elva::ElvaCore::Product" /* ElvaCore.framework */,
+				"swift-log::Logging::Product" /* Logging.framework */,
+				"PMKFoundation::PMKFoundation::Product" /* PMKFoundation.framework */,
+				"PangaeaClient::PangaeaClient::Product" /* PangaeaClient.framework */,
+				"PangaeaClient::PangaeaClientCLI::Product" /* PangaeaClientCLI */,
+				"PangaeaClient::PangaeaClientCLITests::Product" /* PangaeaClientCLITests.xctest */,
+				"PromiseKit::PromiseKit::Product" /* PromiseKit.framework */,
+				"Rainbow::Rainbow::Product" /* Rainbow.framework */,
+				"XMLCoder::XMLCoder::Product" /* XMLCoder.framework */,
+				"Elva::ZSTD::Product" /* ZSTD.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_35 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_36 /* PangaeaClientCLITests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_36 /* PangaeaClientCLITests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_37 /* PangaeaClientCLITests.swift */,
+			);
+			name = PangaeaClientCLITests;
+			path = Tests/PangaeaClientCLITests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_38 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_39 /* Cache 6.0.0 */,
+				OBJ_82 /* Elva 1.5.2 */,
+				OBJ_125 /* PMKFoundation 3.3.7 */,
+				OBJ_132 /* PromiseKit 7.0.0-alpha3 */,
+				OBJ_172 /* XMLCoder 0.12.0 */,
+				OBJ_225 /* Rainbow 4.0.0 */,
+				OBJ_238 /* swift-log 1.4.2 */,
+				OBJ_244 /* swift-argument-parser 0.4.3 */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_39 /* Cache 6.0.0 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_40 /* Package.swift */,
+				OBJ_41 /* Mac */,
+				OBJ_43 /* Shared */,
+				OBJ_80 /* iOS */,
+			);
+			name = "Cache 6.0.0";
+			path = .build/checkouts/Cache/Source;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_41 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_42 /* NSImage+Extensions.swift */,
+			);
+			path = Mac;
+			sourceTree = "<group>";
+		};
+		OBJ_43 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_44 /* Configuration */,
+				OBJ_47 /* Extensions */,
+				OBJ_51 /* Library */,
+				OBJ_69 /* Storage */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		OBJ_44 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_45 /* DiskConfig.swift */,
+				OBJ_46 /* MemoryConfig.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		OBJ_47 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_48 /* Date+Extensions.swift */,
+				OBJ_49 /* Hasher+constantAccrossExecutions.swift */,
+				OBJ_50 /* JSONDecoder+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_35 /* Tests */,
+				OBJ_38 /* Dependencies */,
+				OBJ_288 /* Products */,
+				OBJ_302 /* Docs */,
+				OBJ_303 /* LICENSE.md */,
+				OBJ_304 /* set_build_number.sh */,
+				OBJ_305 /* README.md */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_51 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_52 /* DataSerializer.swift */,
+				OBJ_53 /* Entry.swift */,
+				OBJ_54 /* ExpirationMode.swift */,
+				OBJ_55 /* Expiry.swift */,
+				OBJ_56 /* ImageWrapper.swift */,
+				OBJ_57 /* JSONArrayWrapper.swift */,
+				OBJ_58 /* JSONDictionaryWrapper.swift */,
+				OBJ_59 /* MD5.swift */,
+				OBJ_60 /* MemoryCapsule.swift */,
+				OBJ_61 /* ObservationToken.swift */,
+				OBJ_62 /* Optional+Extension.swift */,
+				OBJ_63 /* Result.swift */,
+				OBJ_64 /* StorageError.swift */,
+				OBJ_65 /* Transformer.swift */,
+				OBJ_66 /* TransformerFactory.swift */,
+				OBJ_67 /* TypeWrapper.swift */,
+				OBJ_68 /* Types.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		OBJ_69 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_70 /* AsyncStorage.swift */,
+				OBJ_71 /* DiskStorage.swift */,
+				OBJ_72 /* HybridStorage.swift */,
+				OBJ_73 /* KeyObservationRegistry.swift */,
+				OBJ_74 /* MemoryStorage.swift */,
+				OBJ_75 /* Storage+Transform.swift */,
+				OBJ_76 /* Storage.swift */,
+				OBJ_77 /* StorageAware.swift */,
+				OBJ_78 /* StorageObservationRegistry.swift */,
+				OBJ_79 /* SyncStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* PangaeaClient */,
+				OBJ_26 /* PangaeaClientCLI */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* PangaeaClient */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* Model */,
+				OBJ_23 /* PangaeaClient.swift */,
+				OBJ_24 /* PangaeaDefaults.swift */,
+				301741322659571100595AB5 /* Logging.swift */,
+				OBJ_25 /* VendorLicenses.swift */,
+			);
+			name = PangaeaClient;
+			path = Sources/PangaeaClient;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_80 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_81 /* UIImage+Extensions.swift */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		OBJ_82 /* Elva 1.5.2 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_83 /* Brotli */,
+				OBJ_84 /* Elva.Brotli */,
+				OBJ_85 /* Elva.zstd */,
+				OBJ_117 /* ElvaCore */,
+				OBJ_120 /* ZSTD */,
+				OBJ_124 /* Package.swift */,
+			);
+			name = "Elva 1.5.2";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_83 /* Brotli */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Brotli;
+			path = .build/checkouts/Elva/Sources/Brotli;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_84 /* Elva.Brotli */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Elva.Brotli;
+			path = .build/checkouts/Elva/Sources/Elva.Brotli;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_85 /* Elva.zstd */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_86 /* common */,
+				OBJ_95 /* compress */,
+				OBJ_109 /* decompress */,
+				OBJ_114 /* include */,
+			);
+			name = Elva.zstd;
+			path = .build/checkouts/Elva/Sources/Elva.zstd;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_86 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_87 /* debug.c */,
+				OBJ_88 /* entropy_common.c */,
+				OBJ_89 /* error_private.c */,
+				OBJ_90 /* fse_decompress.c */,
+				OBJ_91 /* pool.c */,
+				OBJ_92 /* threading.c */,
+				OBJ_93 /* xxhash.c */,
+				OBJ_94 /* zstd_common.c */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		OBJ_9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_10 /* PMCitation.swift */,
+				OBJ_11 /* PMEvent.swift */,
+				OBJ_12 /* PMExtent.swift */,
+				OBJ_13 /* PMKeywords.swift */,
+				OBJ_14 /* PMLicense.swift */,
+				OBJ_15 /* PMMatrixColumn.swift */,
+				OBJ_16 /* PMProject.swift */,
+				OBJ_17 /* PMTechnicalInfo.swift */,
+				OBJ_18 /* PangaeaBaseURL.swift */,
+				OBJ_19 /* PangaeaCache.swift */,
+				OBJ_20 /* PangaeaData.swift */,
+				OBJ_21 /* PangaeaError.swift */,
+				OBJ_22 /* ZStandard.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		OBJ_95 /* compress */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_96 /* fse_compress.c */,
+				OBJ_97 /* hist.c */,
+				OBJ_98 /* huf_compress.c */,
+				OBJ_99 /* zstd_compress.c */,
+				OBJ_100 /* zstd_compress_literals.c */,
+				OBJ_101 /* zstd_compress_sequences.c */,
+				OBJ_102 /* zstd_compress_superblock.c */,
+				OBJ_103 /* zstd_double_fast.c */,
+				OBJ_104 /* zstd_fast.c */,
+				OBJ_105 /* zstd_lazy.c */,
+				OBJ_106 /* zstd_ldm.c */,
+				OBJ_107 /* zstd_opt.c */,
+				OBJ_108 /* zstdmt_compress.c */,
+			);
+			path = compress;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"Cache::Cache" /* Cache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_348 /* Build configuration list for PBXNativeTarget "Cache" */;
+			buildPhases = (
+				OBJ_351 /* Sources */,
+				OBJ_386 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cache;
+			productName = Cache;
+			productReference = "Cache::Cache::Product" /* Cache.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Cache::SwiftPMPackageDescription" /* CachePackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_388 /* Build configuration list for PBXNativeTarget "CachePackageDescription" */;
+			buildPhases = (
+				OBJ_391 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CachePackageDescription;
+			productName = CachePackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"Elva::Elva.zstd" /* Elva.zstd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_394 /* Build configuration list for PBXNativeTarget "Elva.zstd" */;
+			buildPhases = (
+				OBJ_397 /* Sources */,
+				OBJ_423 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Elva.zstd;
+			productName = Elva_zstd;
+			productReference = "Elva::Elva.zstd::Product" /* Elva_zstd.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Elva::ElvaCore" /* ElvaCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_425 /* Build configuration list for PBXNativeTarget "ElvaCore" */;
+			buildPhases = (
+				OBJ_428 /* Sources */,
+				OBJ_430 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ElvaCore;
+			productName = ElvaCore;
+			productReference = "Elva::ElvaCore::Product" /* ElvaCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Elva::SwiftPMPackageDescription" /* ElvaPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_432 /* Build configuration list for PBXNativeTarget "ElvaPackageDescription" */;
+			buildPhases = (
+				OBJ_435 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ElvaPackageDescription;
+			productName = ElvaPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"Elva::ZSTD" /* ZSTD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_708 /* Build configuration list for PBXNativeTarget "ZSTD" */;
+			buildPhases = (
+				OBJ_711 /* Sources */,
+				OBJ_715 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_718 /* PBXTargetDependency */,
+				OBJ_719 /* PBXTargetDependency */,
+			);
+			name = ZSTD;
+			productName = ZSTD;
+			productReference = "Elva::ZSTD::Product" /* ZSTD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"PMKFoundation::PMKFoundation" /* PMKFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_447 /* Build configuration list for PBXNativeTarget "PMKFoundation" */;
+			buildPhases = (
+				OBJ_450 /* Sources */,
+				OBJ_456 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_458 /* PBXTargetDependency */,
+			);
+			name = PMKFoundation;
+			productName = PMKFoundation;
+			productReference = "PMKFoundation::PMKFoundation::Product" /* PMKFoundation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"PMKFoundation::SwiftPMPackageDescription" /* PMKFoundationPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_461 /* Build configuration list for PBXNativeTarget "PMKFoundationPackageDescription" */;
+			buildPhases = (
+				OBJ_464 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PMKFoundationPackageDescription;
+			productName = PMKFoundationPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"PangaeaClient::PangaeaClient" /* PangaeaClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_467 /* Build configuration list for PBXNativeTarget "PangaeaClient" */;
+			buildPhases = (
+				OBJ_470 /* Sources */,
+				OBJ_487 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_496 /* PBXTargetDependency */,
+				OBJ_497 /* PBXTargetDependency */,
+				OBJ_498 /* PBXTargetDependency */,
+				OBJ_500 /* PBXTargetDependency */,
+				OBJ_501 /* PBXTargetDependency */,
+				OBJ_502 /* PBXTargetDependency */,
+				OBJ_503 /* PBXTargetDependency */,
+				OBJ_504 /* PBXTargetDependency */,
+			);
+			name = PangaeaClient;
+			productName = PangaeaClient;
+			productReference = "PangaeaClient::PangaeaClient::Product" /* PangaeaClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"PangaeaClient::PangaeaClientCLI" /* PangaeaClientCLI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_507 /* Build configuration list for PBXNativeTarget "PangaeaClientCLI" */;
+			buildPhases = (
+				OBJ_510 /* Sources */,
+				OBJ_518 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_530 /* PBXTargetDependency */,
+				OBJ_532 /* PBXTargetDependency */,
+				OBJ_533 /* PBXTargetDependency */,
+				OBJ_534 /* PBXTargetDependency */,
+				OBJ_535 /* PBXTargetDependency */,
+				OBJ_536 /* PBXTargetDependency */,
+				OBJ_537 /* PBXTargetDependency */,
+				OBJ_538 /* PBXTargetDependency */,
+				OBJ_539 /* PBXTargetDependency */,
+				OBJ_540 /* PBXTargetDependency */,
+				OBJ_541 /* PBXTargetDependency */,
+			);
+			name = PangaeaClientCLI;
+			productName = PangaeaClientCLI;
+			productReference = "PangaeaClient::PangaeaClientCLI::Product" /* PangaeaClientCLI */;
+			productType = "com.apple.product-type.tool";
+		};
+		"PangaeaClient::PangaeaClientCLITests" /* PangaeaClientCLITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_543 /* Build configuration list for PBXNativeTarget "PangaeaClientCLITests" */;
+			buildPhases = (
+				OBJ_546 /* Sources */,
+				OBJ_548 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_560 /* PBXTargetDependency */,
+				OBJ_561 /* PBXTargetDependency */,
+				OBJ_562 /* PBXTargetDependency */,
+				OBJ_563 /* PBXTargetDependency */,
+				OBJ_564 /* PBXTargetDependency */,
+				OBJ_565 /* PBXTargetDependency */,
+				OBJ_566 /* PBXTargetDependency */,
+				OBJ_567 /* PBXTargetDependency */,
+				OBJ_568 /* PBXTargetDependency */,
+				OBJ_569 /* PBXTargetDependency */,
+				OBJ_570 /* PBXTargetDependency */,
+				OBJ_571 /* PBXTargetDependency */,
+			);
+			name = PangaeaClientCLITests;
+			productName = PangaeaClientCLITests;
+			productReference = "PangaeaClient::PangaeaClientCLITests::Product" /* PangaeaClientCLITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"PangaeaClient::SwiftPMPackageDescription" /* PangaeaClientPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_573 /* Build configuration list for PBXNativeTarget "PangaeaClientPackageDescription" */;
+			buildPhases = (
+				OBJ_576 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PangaeaClientPackageDescription;
+			productName = PangaeaClientPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"PromiseKit::PromiseKit" /* PromiseKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_583 /* Build configuration list for PBXNativeTarget "PromiseKit" */;
+			buildPhases = (
+				OBJ_586 /* Sources */,
+				OBJ_622 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PromiseKit;
+			productName = PromiseKit;
+			productReference = "PromiseKit::PromiseKit::Product" /* PromiseKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"PromiseKit::SwiftPMPackageDescription" /* PromiseKitPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_624 /* Build configuration list for PBXNativeTarget "PromiseKitPackageDescription" */;
+			buildPhases = (
+				OBJ_627 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PromiseKitPackageDescription;
+			productName = PromiseKitPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"Rainbow::Rainbow" /* Rainbow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_629 /* Build configuration list for PBXNativeTarget "Rainbow" */;
+			buildPhases = (
+				OBJ_632 /* Sources */,
+				OBJ_644 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rainbow;
+			productName = Rainbow;
+			productReference = "Rainbow::Rainbow::Product" /* Rainbow.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Rainbow::SwiftPMPackageDescription" /* RainbowPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_646 /* Build configuration list for PBXNativeTarget "RainbowPackageDescription" */;
+			buildPhases = (
+				OBJ_649 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RainbowPackageDescription;
+			productName = RainbowPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"XMLCoder::SwiftPMPackageDescription" /* XMLCoderPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_703 /* Build configuration list for PBXNativeTarget "XMLCoderPackageDescription" */;
+			buildPhases = (
+				OBJ_706 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XMLCoderPackageDescription;
+			productName = XMLCoderPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"XMLCoder::XMLCoder" /* XMLCoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_651 /* Build configuration list for PBXNativeTarget "XMLCoder" */;
+			buildPhases = (
+				OBJ_654 /* Sources */,
+				OBJ_701 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XMLCoder;
+			productName = XMLCoder;
+			productReference = "XMLCoder::XMLCoder::Product" /* XMLCoder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"swift-argument-parser::ArgumentParser" /* ArgumentParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_307 /* Build configuration list for PBXNativeTarget "ArgumentParser" */;
+			buildPhases = (
+				OBJ_310 /* Sources */,
+				OBJ_346 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArgumentParser;
+			productName = ArgumentParser;
+			productReference = "swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"swift-argument-parser::SwiftPMPackageDescription" /* swift-argument-parserPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_721 /* Build configuration list for PBXNativeTarget "swift-argument-parserPackageDescription" */;
+			buildPhases = (
+				OBJ_724 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swift-argument-parserPackageDescription";
+			productName = "swift-argument-parserPackageDescription";
+			productType = "com.apple.product-type.framework";
+		};
+		"swift-log::Logging" /* Logging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_438 /* Build configuration list for PBXNativeTarget "Logging" */;
+			buildPhases = (
+				OBJ_441 /* Sources */,
+				OBJ_445 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Logging;
+			productName = Logging;
+			productReference = "swift-log::Logging::Product" /* Logging.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"swift-log::SwiftPMPackageDescription" /* swift-logPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_727 /* Build configuration list for PBXNativeTarget "swift-logPackageDescription" */;
+			buildPhases = (
+				OBJ_730 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swift-logPackageDescription";
+			productName = "swift-logPackageDescription";
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "PangaeaClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_288 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"swift-argument-parser::ArgumentParser" /* ArgumentParser */,
+				"Cache::Cache" /* Cache */,
+				"Cache::SwiftPMPackageDescription" /* CachePackageDescription */,
+				"Elva::Elva.zstd" /* Elva.zstd */,
+				"Elva::ElvaCore" /* ElvaCore */,
+				"Elva::SwiftPMPackageDescription" /* ElvaPackageDescription */,
+				"swift-log::Logging" /* Logging */,
+				"PMKFoundation::PMKFoundation" /* PMKFoundation */,
+				"PMKFoundation::SwiftPMPackageDescription" /* PMKFoundationPackageDescription */,
+				"PangaeaClient::PangaeaClient" /* PangaeaClient */,
+				"PangaeaClient::PangaeaClientCLI" /* PangaeaClientCLI */,
+				"PangaeaClient::PangaeaClientCLITests" /* PangaeaClientCLITests */,
+				"PangaeaClient::SwiftPMPackageDescription" /* PangaeaClientPackageDescription */,
+				"PangaeaClient::PangaeaClientPackageTests::ProductTarget" /* PangaeaClientPackageTests */,
+				"PromiseKit::PromiseKit" /* PromiseKit */,
+				"PromiseKit::SwiftPMPackageDescription" /* PromiseKitPackageDescription */,
+				"Rainbow::Rainbow" /* Rainbow */,
+				"Rainbow::SwiftPMPackageDescription" /* RainbowPackageDescription */,
+				"XMLCoder::XMLCoder" /* XMLCoder */,
+				"XMLCoder::SwiftPMPackageDescription" /* XMLCoderPackageDescription */,
+				"Elva::ZSTD" /* ZSTD */,
+				"swift-argument-parser::SwiftPMPackageDescription" /* swift-argument-parserPackageDescription */,
+				"swift-log::SwiftPMPackageDescription" /* swift-logPackageDescription */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_310 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_311 /* BashCompletionsGenerator.swift in Sources */,
+				OBJ_312 /* CompletionsGenerator.swift in Sources */,
+				OBJ_313 /* FishCompletionsGenerator.swift in Sources */,
+				OBJ_314 /* ZshCompletionsGenerator.swift in Sources */,
+				OBJ_315 /* Argument.swift in Sources */,
+				OBJ_316 /* ArgumentHelp.swift in Sources */,
+				OBJ_317 /* CompletionKind.swift in Sources */,
+				OBJ_318 /* Errors.swift in Sources */,
+				OBJ_319 /* Flag.swift in Sources */,
+				OBJ_320 /* NameSpecification.swift in Sources */,
+				OBJ_321 /* Option.swift in Sources */,
+				OBJ_322 /* OptionGroup.swift in Sources */,
+				OBJ_323 /* CommandConfiguration.swift in Sources */,
+				OBJ_324 /* EnumerableFlag.swift in Sources */,
+				OBJ_325 /* ExpressibleByArgument.swift in Sources */,
+				OBJ_326 /* ParsableArguments.swift in Sources */,
+				OBJ_327 /* ParsableArgumentsValidation.swift in Sources */,
+				OBJ_328 /* ParsableCommand.swift in Sources */,
+				OBJ_329 /* ArgumentDecoder.swift in Sources */,
+				OBJ_330 /* ArgumentDefinition.swift in Sources */,
+				OBJ_331 /* ArgumentSet.swift in Sources */,
+				OBJ_332 /* CommandParser.swift in Sources */,
+				OBJ_333 /* InputOrigin.swift in Sources */,
+				OBJ_334 /* Name.swift in Sources */,
+				OBJ_335 /* Parsed.swift in Sources */,
+				OBJ_336 /* ParsedValues.swift in Sources */,
+				OBJ_337 /* ParserError.swift in Sources */,
+				OBJ_338 /* SplitArguments.swift in Sources */,
+				OBJ_339 /* HelpCommand.swift in Sources */,
+				OBJ_340 /* HelpGenerator.swift in Sources */,
+				OBJ_341 /* MessageInfo.swift in Sources */,
+				OBJ_342 /* UsageGenerator.swift in Sources */,
+				OBJ_343 /* SequenceExtensions.swift in Sources */,
+				OBJ_344 /* StringExtensions.swift in Sources */,
+				OBJ_345 /* Tree.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_351 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_352 /* NSImage+Extensions.swift in Sources */,
+				OBJ_353 /* DiskConfig.swift in Sources */,
+				OBJ_354 /* MemoryConfig.swift in Sources */,
+				OBJ_355 /* Date+Extensions.swift in Sources */,
+				OBJ_356 /* Hasher+constantAccrossExecutions.swift in Sources */,
+				OBJ_357 /* JSONDecoder+Extensions.swift in Sources */,
+				OBJ_358 /* DataSerializer.swift in Sources */,
+				OBJ_359 /* Entry.swift in Sources */,
+				OBJ_360 /* ExpirationMode.swift in Sources */,
+				OBJ_361 /* Expiry.swift in Sources */,
+				OBJ_362 /* ImageWrapper.swift in Sources */,
+				OBJ_363 /* JSONArrayWrapper.swift in Sources */,
+				OBJ_364 /* JSONDictionaryWrapper.swift in Sources */,
+				OBJ_365 /* MD5.swift in Sources */,
+				OBJ_366 /* MemoryCapsule.swift in Sources */,
+				OBJ_367 /* ObservationToken.swift in Sources */,
+				OBJ_368 /* Optional+Extension.swift in Sources */,
+				OBJ_369 /* Result.swift in Sources */,
+				OBJ_370 /* StorageError.swift in Sources */,
+				OBJ_371 /* Transformer.swift in Sources */,
+				OBJ_372 /* TransformerFactory.swift in Sources */,
+				OBJ_373 /* TypeWrapper.swift in Sources */,
+				OBJ_374 /* Types.swift in Sources */,
+				OBJ_375 /* AsyncStorage.swift in Sources */,
+				OBJ_376 /* DiskStorage.swift in Sources */,
+				OBJ_377 /* HybridStorage.swift in Sources */,
+				OBJ_378 /* KeyObservationRegistry.swift in Sources */,
+				OBJ_379 /* MemoryStorage.swift in Sources */,
+				OBJ_380 /* Storage+Transform.swift in Sources */,
+				OBJ_381 /* Storage.swift in Sources */,
+				OBJ_382 /* StorageAware.swift in Sources */,
+				OBJ_383 /* StorageObservationRegistry.swift in Sources */,
+				OBJ_384 /* SyncStorage.swift in Sources */,
+				OBJ_385 /* UIImage+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_391 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_392 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_397 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_398 /* debug.c in Sources */,
+				OBJ_399 /* entropy_common.c in Sources */,
+				OBJ_400 /* error_private.c in Sources */,
+				OBJ_401 /* fse_decompress.c in Sources */,
+				OBJ_402 /* pool.c in Sources */,
+				OBJ_403 /* threading.c in Sources */,
+				OBJ_404 /* xxhash.c in Sources */,
+				OBJ_405 /* zstd_common.c in Sources */,
+				OBJ_406 /* fse_compress.c in Sources */,
+				OBJ_407 /* hist.c in Sources */,
+				OBJ_408 /* huf_compress.c in Sources */,
+				OBJ_409 /* zstd_compress.c in Sources */,
+				OBJ_410 /* zstd_compress_literals.c in Sources */,
+				OBJ_411 /* zstd_compress_sequences.c in Sources */,
+				OBJ_412 /* zstd_compress_superblock.c in Sources */,
+				OBJ_413 /* zstd_double_fast.c in Sources */,
+				OBJ_414 /* zstd_fast.c in Sources */,
+				OBJ_415 /* zstd_lazy.c in Sources */,
+				OBJ_416 /* zstd_ldm.c in Sources */,
+				OBJ_417 /* zstd_opt.c in Sources */,
+				OBJ_418 /* zstdmt_compress.c in Sources */,
+				OBJ_419 /* huf_decompress.c in Sources */,
+				OBJ_420 /* zstd_ddict.c in Sources */,
+				OBJ_421 /* zstd_decompress.c in Sources */,
+				OBJ_422 /* zstd_decompress_block.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_428 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_429 /* Data.UnsafePointer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_435 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_436 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_441 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_442 /* Locks.swift in Sources */,
+				OBJ_443 /* LogHandler.swift in Sources */,
+				OBJ_444 /* Logging.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_450 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_451 /* NSNotificationCenter+Promise.swift in Sources */,
+				OBJ_452 /* NSObject+Promise.swift in Sources */,
+				OBJ_453 /* NSURLSession+Promise.swift in Sources */,
+				OBJ_454 /* Process+Promise.swift in Sources */,
+				OBJ_455 /* afterlife.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_464 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_465 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_470 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_471 /* PMCitation.swift in Sources */,
+				OBJ_472 /* PMEvent.swift in Sources */,
+				OBJ_473 /* PMExtent.swift in Sources */,
+				OBJ_474 /* PMKeywords.swift in Sources */,
+				301741332659571100595AB5 /* Logging.swift in Sources */,
+				OBJ_475 /* PMLicense.swift in Sources */,
+				OBJ_476 /* PMMatrixColumn.swift in Sources */,
+				OBJ_477 /* PMProject.swift in Sources */,
+				OBJ_478 /* PMTechnicalInfo.swift in Sources */,
+				OBJ_479 /* PangaeaBaseURL.swift in Sources */,
+				OBJ_480 /* PangaeaCache.swift in Sources */,
+				OBJ_481 /* PangaeaData.swift in Sources */,
+				OBJ_482 /* PangaeaError.swift in Sources */,
+				OBJ_483 /* ZStandard.swift in Sources */,
+				OBJ_484 /* PangaeaClient.swift in Sources */,
+				OBJ_485 /* PangaeaDefaults.swift in Sources */,
+				OBJ_486 /* VendorLicenses.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_510 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_514 /* CommandLineProcessing.swift in Sources */,
+				OBJ_515 /* Utilities.swift in Sources */,
+				OBJ_516 /* licenses.swift in Sources */,
+				OBJ_517 /* main.swift in Sources */,
+				301741352659571400595AB5 /* Logging.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_546 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_547 /* PangaeaClientCLITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_576 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_577 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_586 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_587 /* Box.swift in Sources */,
+				OBJ_588 /* CancelContext.swift in Sources */,
+				OBJ_589 /* Cancellable.swift in Sources */,
+				OBJ_590 /* CancellableCatchable.swift in Sources */,
+				OBJ_591 /* CancellablePromise.swift in Sources */,
+				OBJ_592 /* CancellableThenable.swift in Sources */,
+				OBJ_593 /* Catchable.swift in Sources */,
+				OBJ_594 /* Configuration.swift in Sources */,
+				OBJ_595 /* CustomStringConvertible.swift in Sources */,
+				OBJ_596 /* Dispatcher.swift in Sources */,
+				OBJ_597 /* ConcurrencyLimitedDispatcher.swift in Sources */,
+				OBJ_598 /* CoreDataDispatcher.swift in Sources */,
+				OBJ_599 /* Queue.swift in Sources */,
+				OBJ_600 /* RateLimitedDispatcher.swift in Sources */,
+				OBJ_601 /* RateLimitedDispatcherBase.swift in Sources */,
+				OBJ_602 /* StrictRateLimitedDispatcher.swift in Sources */,
+				OBJ_603 /* Error.swift in Sources */,
+				OBJ_604 /* Guarantee.swift in Sources */,
+				OBJ_605 /* LogEvent.swift in Sources */,
+				OBJ_606 /* Promise.swift in Sources */,
+				OBJ_607 /* Resolver.swift in Sources */,
+				OBJ_608 /* Thenable.swift in Sources */,
+				OBJ_609 /* CatchWrappers.swift in Sources */,
+				OBJ_610 /* EnsureWrappers.swift in Sources */,
+				OBJ_611 /* FinallyWrappers.swift in Sources */,
+				OBJ_612 /* GuaranteeWrappers.swift in Sources */,
+				OBJ_613 /* RecoverWrappers.swift in Sources */,
+				OBJ_614 /* SequenceWrappers.swift in Sources */,
+				OBJ_615 /* ThenableWrappers.swift in Sources */,
+				OBJ_616 /* WrapperProtocols.swift in Sources */,
+				OBJ_617 /* after.swift in Sources */,
+				OBJ_618 /* firstly.swift in Sources */,
+				OBJ_619 /* hang.swift in Sources */,
+				OBJ_620 /* race.swift in Sources */,
+				OBJ_621 /* when.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_627 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_628 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_632 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_633 /* BackgroundColor.swift in Sources */,
+				OBJ_634 /* CodesParser.swift in Sources */,
+				OBJ_635 /* Color.swift in Sources */,
+				OBJ_636 /* ColorApproximation.swift in Sources */,
+				OBJ_637 /* ControlCode.swift in Sources */,
+				OBJ_638 /* ModesExtractor.swift in Sources */,
+				OBJ_639 /* OutputTarget.swift in Sources */,
+				OBJ_640 /* Rainbow.swift in Sources */,
+				OBJ_641 /* String+Rainbow.swift in Sources */,
+				OBJ_642 /* StringGenerator.swift in Sources */,
+				OBJ_643 /* Style.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_649 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_650 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_655 /* BoolBox.swift in Sources */,
+				OBJ_656 /* Box.swift in Sources */,
+				OBJ_657 /* ChoiceBox.swift in Sources */,
+				OBJ_658 /* DataBox.swift in Sources */,
+				OBJ_659 /* DateBox.swift in Sources */,
+				OBJ_660 /* DecimalBox.swift in Sources */,
+				OBJ_661 /* DoubleBox.swift in Sources */,
+				OBJ_662 /* FloatBox.swift in Sources */,
+				OBJ_663 /* IntBox.swift in Sources */,
+				OBJ_664 /* KeyedBox.swift in Sources */,
+				OBJ_665 /* NullBox.swift in Sources */,
+				OBJ_666 /* SharedBox.swift in Sources */,
+				OBJ_667 /* SingleKeyedBox.swift in Sources */,
+				OBJ_668 /* StringBox.swift in Sources */,
+				OBJ_669 /* UIntBox.swift in Sources */,
+				OBJ_670 /* URLBox.swift in Sources */,
+				OBJ_671 /* UnkeyedBox.swift in Sources */,
+				OBJ_672 /* ValueBox.swift in Sources */,
+				OBJ_673 /* ISO8601DateFormatter.swift in Sources */,
+				OBJ_674 /* KeyedStorage.swift in Sources */,
+				OBJ_675 /* Metatypes.swift in Sources */,
+				OBJ_676 /* String+Extensions.swift in Sources */,
+				OBJ_677 /* XMLChoiceCodingKey.swift in Sources */,
+				OBJ_678 /* XMLCoderElement.swift in Sources */,
+				OBJ_679 /* XMLHeader.swift in Sources */,
+				OBJ_680 /* XMLKey.swift in Sources */,
+				OBJ_681 /* XMLStackParser.swift in Sources */,
+				OBJ_682 /* DecodingErrorExtension.swift in Sources */,
+				OBJ_683 /* DynamicNodeDecoding.swift in Sources */,
+				OBJ_684 /* SingleValueDecodingContainer.swift in Sources */,
+				OBJ_685 /* XMLChoiceDecodingContainer.swift in Sources */,
+				OBJ_686 /* XMLDecoder.swift in Sources */,
+				OBJ_687 /* XMLDecoderImplementation.swift in Sources */,
+				OBJ_688 /* XMLDecodingStorage.swift in Sources */,
+				OBJ_689 /* XMLKeyedDecodingContainer.swift in Sources */,
+				OBJ_690 /* XMLUnkeyedDecodingContainer.swift in Sources */,
+				OBJ_691 /* DynamicNodeEncoding.swift in Sources */,
+				OBJ_692 /* EncodingErrorExtension.swift in Sources */,
+				OBJ_693 /* SingleValueEncodingContainer.swift in Sources */,
+				OBJ_694 /* XMLChoiceEncodingContainer.swift in Sources */,
+				OBJ_695 /* XMLEncoder.swift in Sources */,
+				OBJ_696 /* XMLEncoderImplementation.swift in Sources */,
+				OBJ_697 /* XMLEncodingStorage.swift in Sources */,
+				OBJ_698 /* XMLKeyedEncodingContainer.swift in Sources */,
+				OBJ_699 /* XMLReferencingEncoder.swift in Sources */,
+				OBJ_700 /* XMLUnkeyedEncodingContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_706 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_707 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_711 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_712 /* ZSTD.Error.swift in Sources */,
+				OBJ_713 /* ZSTD.Level.swift in Sources */,
+				OBJ_714 /* ZSTD.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_724 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_725 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_730 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_731 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_458 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "PromiseKit::PromiseKit" /* PromiseKit */;
+			targetProxy = 301741172659562A00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_496 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Cache::Cache" /* Cache */;
+			targetProxy = 3017410F2659562A00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_497 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swift-log::Logging" /* Logging */;
+			targetProxy = 301741102659562A00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_498 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Elva::ZSTD" /* ZSTD */;
+			targetProxy = 301741112659562A00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_500 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Elva::ElvaCore" /* ElvaCore */;
+			targetProxy = 301741142659562A00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_501 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Elva::Elva.zstd" /* Elva.zstd */;
+			targetProxy = 301741152659562A00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_502 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "PMKFoundation::PMKFoundation" /* PMKFoundation */;
+			targetProxy = 301741162659562A00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_503 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "PromiseKit::PromiseKit" /* PromiseKit */;
+			targetProxy = 301741182659562A00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_504 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "XMLCoder::XMLCoder" /* XMLCoder */;
+			targetProxy = 301741192659562A00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_530 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Rainbow::Rainbow" /* Rainbow */;
+			targetProxy = 3017411A2659562A00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_532 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swift-argument-parser::ArgumentParser" /* ArgumentParser */;
+			targetProxy = 3017411B2659562A00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_533 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "PangaeaClient::PangaeaClient" /* PangaeaClient */;
+			targetProxy = 3017411C2659562A00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_534 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Cache::Cache" /* Cache */;
+			targetProxy = 3017411D2659562A00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_535 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swift-log::Logging" /* Logging */;
+			targetProxy = 3017411E2659562A00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_536 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Elva::ZSTD" /* ZSTD */;
+			targetProxy = 3017411F2659562A00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_537 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Elva::ElvaCore" /* ElvaCore */;
+			targetProxy = 301741202659562A00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_538 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Elva::Elva.zstd" /* Elva.zstd */;
+			targetProxy = 301741212659562A00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_539 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "PMKFoundation::PMKFoundation" /* PMKFoundation */;
+			targetProxy = 301741222659562A00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_540 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "PromiseKit::PromiseKit" /* PromiseKit */;
+			targetProxy = 301741232659562A00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_541 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "XMLCoder::XMLCoder" /* XMLCoder */;
+			targetProxy = 301741242659562A00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_560 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "PangaeaClient::PangaeaClientCLI" /* PangaeaClientCLI */;
+			targetProxy = 301741252659562B00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_561 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Rainbow::Rainbow" /* Rainbow */;
+			targetProxy = 301741262659562B00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_562 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swift-argument-parser::ArgumentParser" /* ArgumentParser */;
+			targetProxy = 301741272659562B00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_563 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "PangaeaClient::PangaeaClient" /* PangaeaClient */;
+			targetProxy = 301741282659562B00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_564 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Cache::Cache" /* Cache */;
+			targetProxy = 301741292659562B00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_565 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swift-log::Logging" /* Logging */;
+			targetProxy = 3017412A2659562B00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_566 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Elva::ZSTD" /* ZSTD */;
+			targetProxy = 3017412B2659562B00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_567 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Elva::ElvaCore" /* ElvaCore */;
+			targetProxy = 3017412C2659562B00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_568 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Elva::Elva.zstd" /* Elva.zstd */;
+			targetProxy = 3017412D2659562B00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_569 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "PMKFoundation::PMKFoundation" /* PMKFoundation */;
+			targetProxy = 3017412E2659562B00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_570 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "PromiseKit::PromiseKit" /* PromiseKit */;
+			targetProxy = 3017412F2659562B00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_571 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "XMLCoder::XMLCoder" /* XMLCoder */;
+			targetProxy = 301741302659562B00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_582 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "PangaeaClient::PangaeaClientCLITests" /* PangaeaClientCLITests */;
+			targetProxy = 301741312659562C00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_718 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Elva::ElvaCore" /* ElvaCore */;
+			targetProxy = 301741122659562A00595AB5 /* PBXContainerItemProxy */;
+		};
+		OBJ_719 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Elva::Elva.zstd" /* Elva.zstd */;
+			targetProxy = 301741132659562A00595AB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_308 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PangaeaClient.xcodeproj/ArgumentParser_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ArgumentParser;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = ArgumentParser;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PangaeaClient.xcodeproj/ArgumentParser_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ArgumentParser;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = ArgumentParser;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_349 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PangaeaClient.xcodeproj/Cache_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Cache;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Cache;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PangaeaClient.xcodeproj/Cache_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Cache;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Cache;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -package-description-version 5.1.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_390 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -package-description-version 5.1.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Elva/Sources/Elva.zstd/include",
+				);
+				INFOPLIST_FILE = PangaeaClient.xcodeproj/Elva_zstd_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Elva-zstd";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				TARGET_NAME = Elva.zstd;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Elva/Sources/Elva.zstd/include",
+				);
+				INFOPLIST_FILE = PangaeaClient.xcodeproj/Elva_zstd_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Elva-zstd";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				TARGET_NAME = Elva.zstd;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PangaeaClient.xcodeproj/ElvaCore_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ElvaCore;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = ElvaCore;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PangaeaClient.xcodeproj/ElvaCore_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ElvaCore;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = ElvaCore;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_433 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -package-description-version 5.2.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_434 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -package-description-version 5.2.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PangaeaClient.xcodeproj/Logging_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Logging;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Logging;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_440 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PangaeaClient.xcodeproj/Logging_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Logging;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Logging;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PangaeaClient.xcodeproj/PMKFoundation_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = PMKFoundation;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = PMKFoundation;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_449 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PangaeaClient.xcodeproj/PMKFoundation_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = PMKFoundation;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = PMKFoundation;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_462 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -package-description-version 5.3.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_463 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -package-description-version 5.3.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Elva/Sources/Elva.zstd/include",
+					"$(SRCROOT)/PangaeaClient.xcodeproj/GeneratedModuleMap/Elva_zstd",
+				);
+				INFOPLIST_FILE = PangaeaClient.xcodeproj/PangaeaClient_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/PangaeaClient.xcodeproj/GeneratedModuleMap/Elva_zstd/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = PangaeaClient;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = PangaeaClient;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Elva/Sources/Elva.zstd/include",
+					"$(SRCROOT)/PangaeaClient.xcodeproj/GeneratedModuleMap/Elva_zstd",
+				);
+				INFOPLIST_FILE = PangaeaClient.xcodeproj/PangaeaClient_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/PangaeaClient.xcodeproj/GeneratedModuleMap/Elva_zstd/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = PangaeaClient;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = PangaeaClient;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_508 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Elva/Sources/Elva.zstd/include",
+					"$(SRCROOT)/PangaeaClient.xcodeproj/GeneratedModuleMap/Elva_zstd",
+				);
+				INFOPLIST_FILE = PangaeaClient.xcodeproj/PangaeaClientCLI_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/PangaeaClient.xcodeproj/GeneratedModuleMap/Elva_zstd/module.modulemap";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = PangaeaClientCLI;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Elva/Sources/Elva.zstd/include",
+					"$(SRCROOT)/PangaeaClient.xcodeproj/GeneratedModuleMap/Elva_zstd",
+				);
+				INFOPLIST_FILE = PangaeaClient.xcodeproj/PangaeaClientCLI_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/PangaeaClient.xcodeproj/GeneratedModuleMap/Elva_zstd/module.modulemap";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = PangaeaClientCLI;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_544 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Elva/Sources/Elva.zstd/include",
+					"$(SRCROOT)/PangaeaClient.xcodeproj/GeneratedModuleMap/Elva_zstd",
+				);
+				INFOPLIST_FILE = PangaeaClient.xcodeproj/PangaeaClientCLITests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/PangaeaClient.xcodeproj/GeneratedModuleMap/Elva_zstd/module.modulemap";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = PangaeaClientCLITests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		OBJ_545 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Elva/Sources/Elva.zstd/include",
+					"$(SRCROOT)/PangaeaClient.xcodeproj/GeneratedModuleMap/Elva_zstd",
+				);
+				INFOPLIST_FILE = PangaeaClient.xcodeproj/PangaeaClientCLITests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/PangaeaClient.xcodeproj/GeneratedModuleMap/Elva_zstd/module.modulemap";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = PangaeaClientCLITests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		OBJ_574 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -package-description-version 5.4.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_575 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -package-description-version 5.4.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_580 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_581 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_584 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PangaeaClient.xcodeproj/PromiseKit_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = PromiseKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = PromiseKit;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_585 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PangaeaClient.xcodeproj/PromiseKit_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = PromiseKit;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = PromiseKit;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_630 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PangaeaClient.xcodeproj/Rainbow_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Rainbow;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Rainbow;
+			};
+			name = Debug;
+		};
+		OBJ_631 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PangaeaClient.xcodeproj/Rainbow_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Rainbow;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Rainbow;
+			};
+			name = Release;
+		};
+		OBJ_647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -package-description-version 4.0.0";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_648 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -package-description-version 4.0.0";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_652 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PangaeaClient.xcodeproj/XMLCoder_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = XMLCoder;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = XMLCoder;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_653 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PangaeaClient.xcodeproj/XMLCoder_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = XMLCoder;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = XMLCoder;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_704 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_705 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Elva/Sources/Elva.zstd/include",
+					"$(SRCROOT)/PangaeaClient.xcodeproj/GeneratedModuleMap/Elva_zstd",
+				);
+				INFOPLIST_FILE = PangaeaClient.xcodeproj/ZSTD_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/PangaeaClient.xcodeproj/GeneratedModuleMap/Elva_zstd/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = ZSTD;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = ZSTD;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Elva/Sources/Elva.zstd/include",
+					"$(SRCROOT)/PangaeaClient.xcodeproj/GeneratedModuleMap/Elva_zstd",
+				);
+				INFOPLIST_FILE = PangaeaClient.xcodeproj/ZSTD_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/PangaeaClient.xcodeproj/GeneratedModuleMap/Elva_zstd/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = ZSTD;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = ZSTD;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_722 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -package-description-version 5.2.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_723 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -package-description-version 5.2.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_728 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_2 /* Build configuration list for PBXProject "PangaeaClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_307 /* Build configuration list for PBXNativeTarget "ArgumentParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_308 /* Debug */,
+				OBJ_309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_348 /* Build configuration list for PBXNativeTarget "Cache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_349 /* Debug */,
+				OBJ_350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_388 /* Build configuration list for PBXNativeTarget "CachePackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_389 /* Debug */,
+				OBJ_390 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_394 /* Build configuration list for PBXNativeTarget "Elva.zstd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_395 /* Debug */,
+				OBJ_396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_425 /* Build configuration list for PBXNativeTarget "ElvaCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_426 /* Debug */,
+				OBJ_427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_432 /* Build configuration list for PBXNativeTarget "ElvaPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_433 /* Debug */,
+				OBJ_434 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_438 /* Build configuration list for PBXNativeTarget "Logging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_439 /* Debug */,
+				OBJ_440 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_447 /* Build configuration list for PBXNativeTarget "PMKFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_448 /* Debug */,
+				OBJ_449 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_461 /* Build configuration list for PBXNativeTarget "PMKFoundationPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_462 /* Debug */,
+				OBJ_463 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_467 /* Build configuration list for PBXNativeTarget "PangaeaClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_468 /* Debug */,
+				OBJ_469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_507 /* Build configuration list for PBXNativeTarget "PangaeaClientCLI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_508 /* Debug */,
+				OBJ_509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_543 /* Build configuration list for PBXNativeTarget "PangaeaClientCLITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_544 /* Debug */,
+				OBJ_545 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_573 /* Build configuration list for PBXNativeTarget "PangaeaClientPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_574 /* Debug */,
+				OBJ_575 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_579 /* Build configuration list for PBXAggregateTarget "PangaeaClientPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_580 /* Debug */,
+				OBJ_581 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_583 /* Build configuration list for PBXNativeTarget "PromiseKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_584 /* Debug */,
+				OBJ_585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_624 /* Build configuration list for PBXNativeTarget "PromiseKitPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_625 /* Debug */,
+				OBJ_626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_629 /* Build configuration list for PBXNativeTarget "Rainbow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_630 /* Debug */,
+				OBJ_631 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_646 /* Build configuration list for PBXNativeTarget "RainbowPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_647 /* Debug */,
+				OBJ_648 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_651 /* Build configuration list for PBXNativeTarget "XMLCoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_652 /* Debug */,
+				OBJ_653 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_703 /* Build configuration list for PBXNativeTarget "XMLCoderPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_704 /* Debug */,
+				OBJ_705 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_708 /* Build configuration list for PBXNativeTarget "ZSTD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_709 /* Debug */,
+				OBJ_710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_721 /* Build configuration list for PBXNativeTarget "swift-argument-parserPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_722 /* Debug */,
+				OBJ_723 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_727 /* Build configuration list for PBXNativeTarget "swift-logPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_728 /* Debug */,
+				OBJ_729 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}

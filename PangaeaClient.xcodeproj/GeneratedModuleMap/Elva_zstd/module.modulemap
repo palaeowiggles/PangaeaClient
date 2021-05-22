@@ -1,0 +1,4 @@
+module Elva_zstd {
+    umbrella "/Users/wiggles/Developer_Disk/nonApple/PangaeaClient/.build/checkouts/Elva/Sources/Elva.zstd/include"
+    export *
+}

@@ -9,18 +9,47 @@
 import Foundation
 import PangaeaClient
 import Rainbow
+import ArgumentParser
+import Logging
 
-let (id, outputFilePath, verbosity, jsonOutput) = processCommandLine()
+//MARK: Version Info (not yet cross-platform)
+let bundle = Bundle.init(identifier: "PangaeaClient") ?? Bundle.main
+let version = bundle.infoDictionary?["CFBundleShortVersionString"] as? String ?? "unknown"
+let version2 = bundle.infoDictionary?["CFBundleVersion"] as? String ?? "unknown"
+
+//MARK: Logging setup
+let defaultLogLevel: Logger.Level = .info
+LoggingSystem.bootstrap(StreamLogHandler.standardError)
+
+var logger = Logger(label: "org.palaeowiggles.PangaeaClient")
+logger.logLevel = defaultLogLevel
+logger.info(.init(stringLiteral:
+      "PangaeaClientCLI".green.bold +
+      "(version \(version.red), build \(version2.red)).".blue.bold +
+      " ©2021 Heiko Pälike"
+))
 
 
-let fileStream = FileHandlerOutputStream(outputFilePath)
+var parser = PangaeaClientCLIParser.parseOrExit()
+
+logger.logLevel = Logger.Level(verbosity: parser.verbosity,
+                               defaultLevel: defaultLogLevel)
+
+
+let id = parser.pangaeaID
+let outputFilePath = parser.outputFilePath
+let verbosity = parser.verbosity
+let jsonOutput = parser.json
+
+let fileStream = FileHandlerOutputStream(outputFilePath, encoding: .utf8)
 
 var runRunLoop = true // necessary to keep runloop going
 let runloop = RunLoop.current
 let dateFormatter = ISO8601DateFormatter()
 let jsonEncoder = JSONEncoder()
 jsonEncoder.dateEncodingStrategy = .iso8601
-jsonEncoder.nonConformingFloatEncodingStrategy = .convertToString(positiveInfinity: "Inf", negativeInfinity: "-Inf", nan: "")
+jsonEncoder.nonConformingFloatEncodingStrategy =
+  .convertToString(positiveInfinity: "Inf", negativeInfinity: "-Inf", nan: "")
 
 let client = PangaeaClient()
 //let id = "PANGAEA.547797" // Dataset
@@ -33,11 +62,10 @@ let client = PangaeaClient()
 client.fetch(pangaeaID: id, completionHandler: {result in
 	switch result {
 	case let .success(.dataset(meta: meta, data: data, rowCount: rowCount)):
-		hpLog( "⇾ Results for id: \(id)", messageKind: .info, verbosity: verbosity)
-
+    logger.info("⇾ Results for id: \(id)")
 
 		if let citation = meta.citation {
-			hpLog( "\n-⇾ META citation", messageKind: .info, verbosity: verbosity)
+      logger.info( "\n-⇾ META citation")
 
 			var citationStrings = [String]()
 			citationStrings.append("\(citation.author.compactMap({$0.authorDetails}).joined(separator: ", "))")
@@ -47,11 +75,10 @@ client.fetch(pangaeaID: id, completionHandler: {result in
 			citationStrings.append(citation.parentURI ?? "")
 			citationStrings.append(citation.sources.compactMap({$0.value}).joined(separator: ", "))
 			citationStrings.append("\(citation.supplementTo.debugDescription)")
-			hpLog( "\(citationStrings.joined(separator: "\n"))", messageKind: .info, verbosity: verbosity)
+      logger.info( "\(citationStrings.joined(separator: "\n"))")
 
 		}
-		hpLog("\n-⇾ DATA column excerpt", messageKind: .info, verbosity: verbosity)
-//		print("\n-⇾ DATA column excerpt")
+    logger.info( "\n-⇾ DATA column excerpt")
 		
 		var output = ""
 
@@ -70,7 +97,8 @@ client.fetch(pangaeaID: id, completionHandler: {result in
 				result.append(numbers.map{"\($0)"})
 			case let .datetime(dates):
 				result.append(dates.map{ date in
-					if let date = date { return dateFormatter.string(from: date)} else { return ""}
+					if let date = date { return dateFormatter.string(from: date)}
+          else { return ""}
 				})
 			case let .uri(urls):
 				result.append(urls.map{$0.absoluteString})
@@ -91,51 +119,51 @@ client.fetch(pangaeaID: id, completionHandler: {result in
 		case false:
 			outputToStream(output)
 		case true:
-			if let jsonOut = try? jsonEncoder.encode(PangaeaMeta.dataset(meta: meta, data: data, rowCount: rowCount)),
+			if let jsonOut = try? jsonEncoder.encode(
+          PangaeaMeta.dataset(meta: meta, data: data, rowCount: rowCount)
+      ),
 			let outString = String(data: jsonOut, encoding: .utf8) {
 				outputToStream(outString)
 			}
 		}
 
-		//print("……………… \((result.first?.count ?? maxOutputLines)-maxOutputLines) more rows omitted")
-	//print(result)
-	case let .success(.dataParent(meta: meta, childrenURLs: childrenURLs)):
-		print("This is a Parent record for multiple datasets with IDs: \(childrenURLs.map{$0.relativeString}). Please re-run query for cited dataset.")
-      switch jsonOutput {
-      case false:
-        break
-      case true:
-        if let jsonOut = try? jsonEncoder.encode(meta),
-            let outString = String(data: jsonOut, encoding: .utf8) {
-            outputToStream(outString)
+	  case let .success(.dataParent(meta: meta, childrenURLs: childrenURLs)):
+      print("This is a Parent record for multiple datasets with IDs: \(childrenURLs.map{$0.relativeString}). Please re-run query for cited dataset.")
+        switch jsonOutput {
+        case false:
+          break
+        case true:
+          if let jsonOut = try? jsonEncoder.encode(meta),
+              let outString = String(data: jsonOut, encoding: .utf8) {
+              outputToStream(outString)
+          }
         }
-      }
-	case let .success(.dataLink(meta: meta)):
-		print("This Pangaea ID \(id) represents a link to binary data. Citation: \(String(describing: meta.citation)). Not implemented.")
-      switch jsonOutput {
-      case false:
-        break
-      case true:
-        if let jsonOut = try? jsonEncoder.encode(meta),
-            let outString = String(data: jsonOut, encoding: .utf8) {
-            outputToStream(outString)
+	  case let .success(.dataLink(meta: meta)):
+      print("This Pangaea ID \(id) represents a link to binary data. Citation: \(String(describing: meta.citation)). Not implemented.")
+        switch jsonOutput {
+        case false:
+          break
+        case true:
+          if let jsonOut = try? jsonEncoder.encode(meta),
+              let outString = String(data: jsonOut, encoding: .utf8) {
+              outputToStream(outString)
+          }
         }
-      }
-	case let .success(.loginRequired(meta: meta)):
-		print("Login is required for Pangaea ID \(id). Citation: \(String(describing: meta.citation?.title)). Not implemented.")
-      switch jsonOutput {
-      case false:
-        break
-      case true:
-        if let jsonOut = try? jsonEncoder.encode(meta),
-            let outString = String(data: jsonOut, encoding: .utf8) {
-            outputToStream(outString)
+	  case let .success(.loginRequired(meta: meta)):
+      print("Login is required for Pangaea ID \(id). Citation: \(String(describing: meta.citation?.title)). Not implemented.")
+        switch jsonOutput {
+        case false:
+          break
+        case true:
+          if let jsonOut = try? jsonEncoder.encode(meta),
+              let outString = String(data: jsonOut, encoding: .utf8) {
+              outputToStream(outString)
+          }
         }
-      }
-	case let .success(.error(pangaeaError: pangaeaError)):
-		print("could not receive Pangaea ID \(id), error: \(pangaeaError)")
-	case let .failure(error: error):
-		print("could not receive Pangaea ID \(id), error: \(error)")
+	  case let .success(.error(pangaeaError: pangaeaError)):
+		  print("could not receive Pangaea ID \(id), error: \(pangaeaError)")
+    case let .failure(error: error):
+		  print("could not receive Pangaea ID \(id), error: \(error)")
 	}
 	runRunLoop = false
 	exit(0)

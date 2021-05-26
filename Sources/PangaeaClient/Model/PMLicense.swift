@@ -3,7 +3,7 @@
 //  PangaeaXMLTest
 //
 //  Created by Heiko Pälike on 02/03/2019.
-//  Copyright © 2019 Heiko Pälike. All rights reserved.
+//  Copyright © 2021 Heiko Pälike. All rights reserved.
 //
 
 import Foundation

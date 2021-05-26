@@ -2,8 +2,6 @@
 
 #  set_build_number.sh
 #
-#  Created by Heiko Pälike on 25/05/2018.
-#  Copyright © 2021 Heiko Pälike. All rights reserved.
 # http://www.mokacoding.com/blog/automatic-xcode-versioning-with-git/
 git=$(sh /etc/profile; which git)
 number_of_commits=$("$git" rev-list HEAD --count)

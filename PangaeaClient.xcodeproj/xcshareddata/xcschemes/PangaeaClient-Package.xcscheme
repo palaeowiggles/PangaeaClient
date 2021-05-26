@@ -52,6 +52,16 @@
                ReferencedContainer = "container:PangaeaClient.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "PangaeaClient::PangaeaClientTests"
+               BuildableName = "PangaeaClientTests.xctest"
+               BlueprintName = "PangaeaClientTests"
+               ReferencedContainer = "container:PangaeaClient.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

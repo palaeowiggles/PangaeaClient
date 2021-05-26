@@ -3,7 +3,7 @@
 //  PangaeaClientCLI
 //
 //  Created by Heiko Pälike on 10/03/2019.
-//  Copyright © 2019 Heiko Pälike. All rights reserved.
+//  Copyright © 2021 Heiko Pälike. All rights reserved.
 //
 
 import Foundation
@@ -11,6 +11,10 @@ import PangaeaClient
 import Rainbow
 import ArgumentParser
 import Logging
+
+defer {
+  dispatchMain() // necessary to keep runloop going
+}
 
 //MARK: Version Info (not yet cross-platform)
 let bundle = Bundle.init(identifier: "PangaeaClient") ?? Bundle.main
@@ -168,8 +172,6 @@ client.fetch(pangaeaID: id, completionHandler: {result in
 	runRunLoop = false
 	exit(0)
 })
-
-dispatchMain() // necessary to keep runloop going
 
 /*while(runRunLoop == true && runloop.run(mode: .default, before: Date.distantFuture)){}*/
 

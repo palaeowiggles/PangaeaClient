@@ -1,6 +1,6 @@
 #  PangaeaClient
 
-Heiko Pälike (c) 2019
+Heiko Pälike (c) 2021
 
 This code library allows retrieval of data from https://www.pangaea.de, a repository for
 scientific data. The full set of meta-data is parsed from the Pangaea xml representation.
@@ -13,8 +13,7 @@ A Playground is provided to show parts of the capabilities. Data retrievals are 
 for faster subsequent access.
 
 The code and libraries is written in pure swift, and should thus be useable on all platforms
-supporting Swift (macOS, Linux, Windows). However, currently only an Xcode project 
-file is provided … Swift package manager installation to follow.
+supporting Swift (macOS, Linux, Windows). Swift package manager installation is now implemented.
 
 Playground Example: 
 

@@ -9,6 +9,7 @@
 import Foundation
 import Cache
 import PromiseKit
+import ZSTD
 //import PMKFoundation
 
 public enum CacheKey : String {
@@ -62,7 +63,7 @@ struct PangaeaMetaCacheController {
         message: "error in setting cache data for \(id)")
     }
     let compressed = try compress(data: stringData,
-                                  compressionLevel: .init(rawValue: 17)!)
+                                  compressionLevel: ZSTD.Level(rawValue: 17)!)
     return try storage.setObject(compressed, forKey: id)
   }
   
@@ -107,7 +108,7 @@ struct PangaeaDataCacheController {
         message: "error in setting cache data for \(id)")
     }
     let compressed = try compress(data: stringData,
-                                    compressionLevel: .init(rawValue: 17)!)
+                                    compressionLevel: ZSTD.Level(rawValue: 17)!)
     return try storage.setObject(compressed, forKey: id)
 	}
   

@@ -11,7 +11,9 @@ import PromiseKit
 import PMKFoundation
 import Cache
 import XMLCoder
-
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 
 public struct PangaeaClient {

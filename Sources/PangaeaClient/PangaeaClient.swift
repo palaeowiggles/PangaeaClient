@@ -23,15 +23,14 @@ public struct PangaeaClient {
       return dateFormatter
   }()
 	
-	static public let vendorLicenses = vendorlicenses
-	static public let license = pangaeaClientLicense
+  static public let vendorLicenses = vendorlicenses
+  static public let license = pangaeaClientLicense
 	
   private let configuration: PangaeaConfiguration
   let decoder = XMLDecoder()
 	
   var pangaeaMetaCacheController = PangaeaMetaCacheController.shared
   var pangaeaDataCacheController = PangaeaDataCacheController.shared
-
   
   public init(configuration: PangaeaConfiguration = defaultConfiguration){
       self.configuration = configuration

@@ -48,7 +48,7 @@ let package = Package(
         name: "PangaeaClientTests",
         dependencies: ["PangaeaClient"]),
     
-    .executableTarget(
+    .target(
       name: "PangaeaClientCLI",
       dependencies: [
         "PangaeaClient",

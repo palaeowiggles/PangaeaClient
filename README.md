@@ -2,6 +2,8 @@
 
 Heiko Pälike (c) 2021
 
+[![DOI](https://zenodo.org/badge/176691169.svg)](https://zenodo.org/badge/latestdoi/176691169)
+
 This code library allows retrieval of data from https://www.pangaea.de, a repository for
 scientific data. The full set of meta-data is parsed from the Pangaea xml representation.
 It currently retrieves data only for child records. Parent records retrieve the dois of the children.

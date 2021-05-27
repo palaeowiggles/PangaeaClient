@@ -5,20 +5,19 @@ Heiko Pälike (c) 2021
 [![DOI](https://zenodo.org/badge/176691169.svg)](https://zenodo.org/badge/latestdoi/176691169)
 ![Swift](https://github.com/martinjrobins/swift-odeint/workflows/Swift/badge.svg?branch=master)
 
-This code library allows retrieval of data from https://www.pangaea.de, a repository for
+This Swift code library allows retrieval of data from https://www.pangaea.de, a repository for
 scientific data. The full set of meta-data is parsed from the Pangaea xml representation.
 It currently retrieves data only for child records. Parent records retrieve the dois of the children.
+It is licensed under the Apache License, Version 2.0,  and uses a number of third-party libraries 
+(see VendorLicenses.swift for their respective licenses.)
 
-It is written in the Swift language, and uses a number of third-party libraries 
-(see VendorLicenses.swift)
+An example CLI tool is provided to demonstrate use of the library, or direct use.
 
-A Playground is provided to show parts of the capabilities. Data retrievals are cached
-for faster subsequent access.
+The code and libraries hould thus be useable on all platforms supporting Swift 
+(macOS, Linux, Windows). Swift package manager installation is  implemented.
+Data retrievals are cached for faster subsequent access.
 
-The code and libraries is written in pure swift, and should thus be useable on all platforms
-supporting Swift (macOS, Linux, Windows). Swift package manager installation is now implemented.
-
-Playground Example: 
+Playground Example (Or see PangaeaClientTests.swift): 
 
 ```swift
 /*:

@@ -1,6 +1,7 @@
 import Foundation
 @testable import PangaeaClient
 import XCTest
+import CoreFoundation
 
 final class PangaeaClientTests: XCTestCase {
   static var allTests = [

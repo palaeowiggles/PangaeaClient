@@ -3,6 +3,7 @@
 Heiko Pälike (c) 2021
 
 [![DOI](https://zenodo.org/badge/176691169.svg)](https://zenodo.org/badge/latestdoi/176691169)
+![Swift](https://github.com/martinjrobins/swift-odeint/workflows/Swift/badge.svg?branch=master)
 
 This code library allows retrieval of data from https://www.pangaea.de, a repository for
 scientific data. The full set of meta-data is parsed from the Pangaea xml representation.

@@ -27,7 +27,7 @@ let package = Package(
     .package(url: "https://github.com/onevcat/Rainbow", .upToNextMajor(from: "4.0.0")),
     .package(url: "https://github.com/MaxDesiatov/XMLCoder", from: "0.12.0"),
     .package(url: "https://github.com/mxcl/PromiseKit", .exactItem("7.0.0-rc2")),
-    .package(name: "PMKFoundation", url: "https://github.com/astrotuna201/Foundation", from: "3.3.8"),
+    .package(name: "PMKFoundationPackage", url: "https://github.com/astrotuna201/Foundation", from: "3.3.8"),
     .package(url: "https://github.com/L1MeN9Yu/Elva", from: "1.6.0"),
     .package(url: "https://github.com/hyperoslo/Cache", from: "6.0.0"),
   ],
@@ -37,7 +37,7 @@ let package = Package(
       dependencies: [
         "XMLCoder",
         "PromiseKit",
-        .product(name: "PMKFoundation", package: "PMKFoundation"),
+        .product(name: "PMKFoundation", package: "PMKFoundationPackage"),
         .product(name: "ZSTD", package: "Elva"),
         .product(name: "Logging", package: "swift-log"),
         "Cache"

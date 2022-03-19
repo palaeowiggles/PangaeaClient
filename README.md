@@ -1,6 +1,6 @@
 #  PangaeaClient
 
-Heiko Pälike (c) 2021
+(c) 2021
 
 [![DOI](https://zenodo.org/badge/176691169.svg)](https://zenodo.org/badge/latestdoi/176691169)
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)

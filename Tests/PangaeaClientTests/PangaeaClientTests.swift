@@ -91,7 +91,7 @@ final class PangaeaClientTests: XCTestCase {
       }
       
       let expectedHeader =
-  "Depth [m]\tDepth comp [mcd] (Intercore correlation)\tDepth cr [rmcd] (see Paelike etal., 2005)\tSample label (DSDP/ODP/IODP sample designation)\tAge model [ka] (consistent with Cande and Ken...)\tAge model [ka] (calibrated manually to astron...)\tAge model [ka] (calibrated automatically to a...)\tCibicidoides spp.δ13C [‰ PDB] (Isotope ratio mass spectrometry)\tCibicidoides spp.δ18O [‰ PDB] (Isotope ratio mass spectrometry)\tC. grimsdaleiδ13C [‰ PDB] (Isotope ratio mass spectrometry)\tC. grimsdaleiδ18O [‰ PDB] (Isotope ratio mass spectrometry)\tC. havanensisδ13C [‰ PDB] (Isotope ratio mass spectrometry)\tC. havanensisδ18O [‰ PDB] (Isotope ratio mass spectrometry)\tComment\tReference"
+  "Depth [m]\tDepth comp [mcd] (Intercore correlation)\tDepth comp r [rmcd] (see Paelike etal., 2005)\tSample label (DSDP/ODP/IODP sample designation)\tAge model [ka] (consistent with Cande and Ken...)\tAge model [ka] (calibrated manually to astron...)\tAge model [ka] (calibrated automatically to a...)\tCibicidoides spp.δ13C [‰ PDB] (Isotope ratio mass spectrometry)\tCibicidoides spp.δ18O [‰ PDB] (Isotope ratio mass spectrometry)\tC. grimsdaleiδ13C [‰ PDB] (Isotope ratio mass spectrometry)\tC. grimsdaleiδ18O [‰ PDB] (Isotope ratio mass spectrometry)\tC. havanensisδ13C [‰ PDB] (Isotope ratio mass spectrometry)\tC. havanensisδ18O [‰ PDB] (Isotope ratio mass spectrometry)\tComment\tReference"
       XCTAssert(header == expectedHeader, "retrieved Header does not equal expected:\n\(header)\n\(expectedHeader)")
       CFRunLoopStop(runLoop)
     })

@@ -7,7 +7,7 @@ let package = Package(
   name: "PangaeaClient",
   
   platforms: [
-  .macOS("10.12"),
+    .macOS("10.12"),
   ],
   
   products: [

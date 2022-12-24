@@ -3,7 +3,7 @@
 //  PangaeaClient
 //
 //  Created by Heiko Pälike on 09/03/2019.
-//  Copyright © 2021 Heiko Pälike. All rights reserved.
+//  Copyright ©2019-2022 Heiko Pälike. All rights reserved.
 //
 
 import Foundation

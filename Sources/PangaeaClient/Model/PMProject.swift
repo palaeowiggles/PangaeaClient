@@ -8,19 +8,44 @@
 
 import Foundation
 
+//public struct PMProject {
+//  public let label: String
+//  public let name: String?
+//  public let URI: String?
+//  public let award: PMAward?
+//}
+
 public struct PMProject {
   public let label: String
   public let name: String?
   public let URI: String?
-  public let award: PMAward?
+  public let institution: PMInstitution?
 }
+
+
 
 extension PMProject: Codable {
   enum CodingKeys: String, CodingKey {
       case label = "md:label"
       case name = "md:name"
       case URI = "md:URI"
-      case award = "md:award"
+      case institution = "md:institution"
+  }
+}
+
+public struct PMInstitution {
+  public let name: String
+  public let optionalName: String?
+  public let URI: String?
+  public let ROR: String?
+}
+
+extension PMInstitution: Codable {
+  enum CodingKeys: String, CodingKey {
+      case name = "md:name"
+      case optionalName = "md:optionalName"
+      case URI = "md:URI"
+      case ROR = "md:ROR"
   }
 }
 

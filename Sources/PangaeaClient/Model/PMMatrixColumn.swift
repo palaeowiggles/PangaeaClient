@@ -85,14 +85,14 @@ extension PMPI : Codable {
 }
 
 public struct PMMatrixColumn {
-  public let Caption: String
   public let Parameter: PMParameter
   public let Method: PMMethod?
   public let PI: PMPI?
+  public let Caption: String
   public let Behaviour: String?
   public let Column: Int
   public let Format: String?
-  public let Label: String
+  public let Label: String?
   public let Source: String?
   public let TypeType: PMColumnType
   public let Comment: String?
@@ -102,10 +102,10 @@ public struct PMMatrixColumn {
 extension PMMatrixColumn : Codable {
   
   enum CodingKeys: String, CodingKey {
-      case Caption = "md:caption"
-      case Parameter = "md:parameter"
-      case Method = "md:method"
+      case Parameter = "md:parameter" //ParameterType
+      case Method = "md:method" //MethodType
       case PI = "md:PI"
+      case Caption = "md:caption"
       case Behaviour = "behaviour"
       case Column = "col"
       case Format = "format"
@@ -116,6 +116,9 @@ extension PMMatrixColumn : Codable {
       case id = "id"
   }
 }
+
+
+
 
 
 

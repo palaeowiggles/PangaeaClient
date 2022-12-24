@@ -15,17 +15,17 @@
         "repositoryURL": "https://github.com/L1MeN9Yu/Elva",
         "state": {
           "branch": null,
-          "revision": "90d1f8a1ff07378a01b94b5619c806b489ee6a48",
-          "version": "1.5.2"
+          "revision": "df08a8e06c15216c7ad691493854256ff7aed87e",
+          "version": "1.6.0"
         }
       },
       {
-        "package": "PMKFoundation",
+        "package": "PMKFoundationPackage",
         "repositoryURL": "https://github.com/astrotuna201/Foundation",
         "state": {
           "branch": null,
-          "revision": "7de96c26fc070ecffade89d38e903dd3487f6784",
-          "version": "3.3.7"
+          "revision": "51dd97c77b7175780858090d2eedd918ae804ef1",
+          "version": "3.3.8"
         }
       },
       {
@@ -33,8 +33,8 @@
         "repositoryURL": "https://github.com/mxcl/PromiseKit",
         "state": {
           "branch": null,
-          "revision": "cd1a9b83ab2c65965d97af964b9f661fb9f84375",
-          "version": "7.0.0-alpha3"
+          "revision": "dc04daa3c7e9d9585dc3e9d06b1295de0fb14901",
+          "version": "7.0.0-rc2"
         }
       },
       {
